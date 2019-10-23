@@ -1,0 +1,27 @@
+.font-1{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.font-2{
+  /* 최상위 폰트 크키 * 2= 32px */
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.font-3{
+  font-size: 130%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+.font-4{
+  font-size: small;
+}
+
+.font-5{
+  /* 폰트로 shorthand 가능 */
+  /* font : font-style, font-weight, font-size(필수), font-family(필수) */
+  font:italic 2rem Courier;
+}

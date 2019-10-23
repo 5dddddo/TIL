@@ -1,0 +1,48 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.margin{
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.padding{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* margin-bottom: 25px; */
+}
+
+.border{
+  margin: 10px;
+  border-width: 108px;
+  border-style: dotted;
+  border-color: red;
+  border-top-color: violet;
+  /* border-radius: 85px; */
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+}
+
+.margin_shorthand-1{
+  margin : 15px;
+}
+
+.margin_shorthand-2{
+  /* 상하, 좌우 */
+  margin: 25px 35px;
+}
+
+.margin_shorthand-3{
+  /* 상,좌우,하 */
+  margin:15px 25px 5px;
+}
+
+.margin_shorthand-4{
+  /* 시계방향 : 상 우 하 좌 */
+  margin : 5px 10px 15px 20px;
+}

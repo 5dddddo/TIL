@@ -1,0 +1,29 @@
+html, body{
+  width: 100%;
+  height: 10000px;
+}
+.bg-box{
+  height: 100%;
+
+  /* background-image: 설정 */
+  background-image: url("https://images.unsplash.com/photo-1571642376444-52558bb8cee2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80");
+
+  /* background-size 설정 */
+  /* 
+  cover : 배경이미지의 크기, 비율을 유지한 상태에서 부모 요소의 width, height중 큰 값에 배경이미지를 맞춘다. 
+  contain : 배경이미지의 크기, 비율을 유지한 상태에서 부모 요소의 영역에 배경이미지가 보이지 않는 부분이 없이
+  전체가 들어갈 수 있도록 이미지 스케일을 조정한다.
+  */
+  background-size: contain;
+
+  /* background-repeat 설정 : 배경이미지의 반복을 설정(수직, 수평, 둘다) */
+  /* repeat-x / repeat-y / no-repeat */
+  background-repeat: no-repeat;
+
+  /* background-position 설정: 일반적으로는 좌상단부터 이미지 출력. Position 설정을 통해 이미지 좌표 설정 가능 */
+
+  background-position:bottom;
+
+  /* background-attachment 설정 : 스크롤을 움직이더라도 위치가 바뀌지 않는다. */
+  background-attachment:fixed;
+}

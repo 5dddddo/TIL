@@ -1,0 +1,16 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  text-align: center;
+  opacity: 0.5; 
+}
+
+.none{
+  /* display: none; */
+  visibility: hidden;
+}
+
+.hidden{
+  visibility: hidden;
+}

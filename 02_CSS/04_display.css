@@ -1,0 +1,18 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mr-auto{
+  margin-right: auto;
+}
+
+.mx-auto{
+  /* Y축, X축 */
+  margin: 0 auto;
+}
