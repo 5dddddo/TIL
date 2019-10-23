@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>당신의 이름은 {{ html_name }}입니다.</h1>
+  {% if html_name =='도현' %}
+  <p> 어서오세요, 유단자여...</p>
+  {% elif html_name =='민승'%}
+  <p> 태권도 3단 입니다</p>
+  {% else %}
+  <p> 제발 무술을 배우세요...</p>
+  {% endif %}
+</body>
+</html>
