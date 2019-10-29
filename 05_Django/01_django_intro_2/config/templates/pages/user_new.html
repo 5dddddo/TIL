@@ -1,0 +1,6 @@
+<form action="/pages/user_create/" method="POST">
+  {% csrf_token %}
+  <input type="text" name="user_id">
+  <input type="password" name="pwd">
+  <input type="submit" value="가입하기">
+</form>

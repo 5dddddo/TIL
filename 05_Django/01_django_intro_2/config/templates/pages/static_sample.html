@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Static 파일 실습</title>
+  <!--  local에 저장되어 있는 static 파일 경로를 불러올 수 없음-->
+  <!-- 최상단에 {% load static %} 작성해야 불러올 수 있음-->
+
+  {% block css %}
+  <link rel="stylesheet" href="{% static 'pages/stylesheets/sample.css' %}">
+  {% endblock%}
+</head>
+
+{% block body %}
+<body>
+  <h1> 정적 파일 출력을 실습해봅시다! </h1>
+  <img src = "{% static 'pages/images/kitten.png' %}"/>
+</body>
+{% endblock %}
+
+</html>

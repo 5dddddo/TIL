@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>  {% block title %} {% endblock %}</title>
+  {% block css %}  {% endblock css %}
 </head>
 <body>
-  <h1>영화 목록</h1>
-  <ul>
-      {% for movie in movies %}
-      <li>{{movie}}</li>
-      {% endfor %}
-  </ul>
+  <h1>base.html 템플릿을 상속받았습니다.</h1>
+  {% block body %}
+  {% endblock %}
 </body>
 </html>
