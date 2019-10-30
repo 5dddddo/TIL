@@ -1,12 +1,12 @@
 # 191030 Django Model (ORM)
 
-# 1. Migrate
+# 1. Model
 
 -  Django MTV 패턴
 
   - **Model** : 특정한 데이터의 구조(모양)에 대한 정보를 가지고 있음
 
-    ​			  데이터의 모양을 정의하는곳
+    ​			  데이터의 모양을 정의하는 곳
 
     ​			  하나의 모델 클래스는 실제 DB에는 하나의 테이블로 mapping
 
@@ -25,13 +25,15 @@
 
   - 모든 필드들은 `NOT NULL` 조건이 붙음
 
+  - 각각의 클래스 변수는 **DB의 field( 컬럼 )**를 나타 냄
+
 <br>
 
 ### 1.1 Migration
 
 - articles app 생성
 
-  - articles - models.py
+  - **articles/models.py**
 
   ``` python
   from django.db import models
@@ -142,6 +144,10 @@
 
     ​			    DB와 의사소통하는 통역사(매니저) 역할
 
+- **왜 ORM을 사용할까?**
+  - SQL문에 종속되지 않고 데이터를 개체 형태로 다루기 위해
+  - 프로그래밍 언어만 알아도 DB를 다룰 수 있음
+
 <br>
 
 - **Shell 실행**
@@ -155,14 +161,7 @@
 
 ![1572400408596](assets/1572400408596.png)
 
-
-
-- ORM을 리턴하는 형식
-
-  - QuerySet : 다수의 객체가 담김 (파이썬 리스트 다루는 것과 비슷)
-  - Query : 
-
-  <br>
+<BR>
 
 ## 2.1 Create
 
@@ -186,11 +185,11 @@ article.objects.create(title='third',content='django')
 article.full_clean()
 ```
 
-
+<BR>
 
 - 객체를 표시하는 형식 커스터 마이징하기
 
-  - **02_django_orm_curd - articles (app) - models.py**
+  - **02_django_orm_curd/articles/models.py**
 
   ``` python
   # shell 나갔다가 다시 실행
@@ -298,8 +297,6 @@ article.full_clean()
   Out[]: django.db.models.query.QuerySet
   ```
 
-  
-
 - 특정 문자열 포함하는 객체 찾기
 
   ``` sqlite
@@ -324,6 +321,8 @@ article.full_clean()
   Out[]: <QuerySet [<Article: [2]: third>, <Article: [3]: second>]>
   ```
 
+  <BR>
+
 ## 2.3 Update
 
 ``` sqlite
@@ -347,6 +346,8 @@ article.save()
 
 ![1572402552334](assets/1572402552334.png)
 
+<BR>
+
 ## 2.4 Delete
 
 ``` sqlite
@@ -356,7 +357,7 @@ Out[]: (1, {'articles.Article': 1})
 
 ![1572402597006](assets/1572402597006.png)
 
-
+<BR>
 
 # 3. Admin
 
@@ -451,13 +452,15 @@ Out[]: (1, {'articles.Article': 1})
 
 <br>
 
-### 3.4 shell 실행 시 자동 import하기
+### 3.4 Django-Extensions
 
 - shell 재실행 시 마다 `from articles.models import Article` 해주어야 함
 
 - `pip install django-extensions`
 
-- config - settings.py
+- `shell_plus`는 **필요한 모델을 자동으로 import 해주기 때문에 편리**
+
+- **config/settings.py**
 
   ```python
   INSTALLED_APPS = [

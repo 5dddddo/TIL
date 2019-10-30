@@ -5,10 +5,22 @@
 #### 0.1 프로젝트 생성
 
 ``` bash
-
+$ django-admin startproject config .
 ```
 
 #### 0.2 애플리케이션 생성
+
+``` BASH
+$ python manage.py startapp articles
+```
+
+``` BASH
+# settings.py : 출생신고 까먹지말자........
+INSTALLED_APPS = [
+    'articles',
+    ...
+]
+```
 
 #### 0.3 URL 분리 (위임)
 
@@ -23,9 +35,9 @@ urlpatterns = [
 ]
 ```
 
-- application 내에 urls.py 파일 생성
+- **articles/urls.py** 파일 생성
 
-<br>s
+<br>
 
 #### 0.4 템플릿 경로 커스터마이징 + base.html 만들기
 
@@ -91,7 +103,48 @@ urlpatterns = [
 
 #### 0.5 데이터 모델링
 
+- **articles/models.py**
 
+  ```python
+  class Article(models.Model):
+      title = models.CharField(max_length=40)
+      content = models.TextField()
+      created_at = models.DateTimeField(auto_now_add=True)
+      updated_at = models.DateTimeField(auto_now=True)
+      
+      # 객체 표시 형식 수정
+      def __str__(self):
+          return f'[{self.pk}] {self.title}'
+  ```
+
+- `makemigrations` : 설계도 만들기
+
+  ```bash
+  $ python manage.py makemigrations
+  03_django_crud/
+      config/
+      articles/
+          migrations/
+              0001_initial.py
+  ```
+
+- `migrate` : 실제 DB에 반영하기
+
+  ```bash
+  $ python manage.py migrate
+  ```
+
+- **추가 정보**
+
+  - `showmigrations` : makemigrations를 통해 만든 설계도가 실제 DB에 반영된 상태인지 아닌지 확인
+
+  - `sqlmigrate` : 실제 DB에 반영하기 전 SQL 쿼리문으로 바뀐 모습 확인
+
+    ```bash
+    $ python manage.py sqlmigrate articles 0001
+    ```
+
+<br>
 
 ## 1. CREATE
 
@@ -144,9 +197,9 @@ urlpatterns = [
 
   <br>
 
-- 데이터가 정상적으로 저장됐는지 확인하기 위해 admin 페이지로 들어가보자!
+- 데이터가 정상적으로 저장됐는지 확인하기 위해 **admin 페이지**로 들어가보자!
 
-  - admin 계정 생성
+  - **admin 계정 생성**
 
   ```bash
   $ python manage.py createsuperuser
@@ -316,3 +369,7 @@ urlpatterns = [
   {% endfor %}
   {% endblock body %}
   ```
+
+## 3. UPDATE
+
+## 4. DELETE
