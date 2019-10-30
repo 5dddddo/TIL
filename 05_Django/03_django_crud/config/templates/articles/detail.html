@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1 class="text-center">Detail</h1>
+<p>글 번호 : {{article.pk}}</p>
+<p>글 제목 : {{article.title}}</p>
+<p>글 내용 : {{article.content}}</p>
+<p>생성 시각 : {{article.created_at}}</p>
+<p>수정 시각 : {{article.updated_at}}</p>
+<a href = "/articles/"></a>
+{% endblock body %}

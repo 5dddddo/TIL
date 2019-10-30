@@ -14,7 +14,8 @@ class Article(models.Model):
     # auto_now = True : 인스턴스 최종 수정 시각 (업데이트)
     updated_at = models.DateField(auto_now=True) 
 
-    # 객체를 표시하는 형식 커스터 마이징
+    # 객체를 표시하는 형식 커스터 마이징하기
+    # shell 나갔다가 다시 실행
     def __str__(self):
         return f'[{self.pk}]: {self.title}'
     
