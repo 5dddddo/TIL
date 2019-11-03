@@ -6,5 +6,9 @@
 <p>글 내용 : {{article.content}}</p>
 <p>생성 시각 : {{article.created_at}}</p>
 <p>수정 시각 : {{article.updated_at}}</p>
-<a href = "/articles/"></a>
+<!-- <a href = "/articles/"></a> -->
+<a href="{% url 'articles:index' %}">[BACK]</a> 
+<a href="{% url 'articles:edit' article.pk %}">[EDIT]</a> 
+<a href="{% url 'articles:delete' article.pk %}">[DELETE]</a> 
+
 {% endblock body %}
