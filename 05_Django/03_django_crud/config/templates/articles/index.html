@@ -1,13 +1,20 @@
+
 {% extends 'base.html' %}
-{% block body %}
-<h1 class="text-center"> Articles </h1>
-<a href="/articles/new/">[NEW]</a>
+{% load static %}
+{% block body%}
+<h1 class="text-center">Articles</h1>
+
+<!--STATIC file 저장해서 사진 띄우기-->
+<div class="text-center">
+  <img src="{% static 'articles/kim.jpg' %}" />
+</div>
+<a href="{% url 'articles:create' %}">[NEW]</a>
 <hr>
-
 {% for article in articles %}
-
-<p>{{article.pk}} {{article.content}}</p>
-<a href="/articles/{{article.pk}}">[DETAIL]</A>
+<p>
+  [{{article.pk}}] {{article.title}}<br>
+  <a href="{% url 'articles:detail' article.pk %}">[DETAIL]</a>
+</p>
 <hr>
 {% endfor %}
-{% endblock body %}
+{% endblock %}

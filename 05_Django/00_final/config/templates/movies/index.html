@@ -2,7 +2,7 @@
 {% block body %}
 
 <h1 class='text-center'>영화목록 페이지</h1>
-<a href="{% url 'movies:new' %}" class='text-right'>[새 영화 등록]</a>
+<a href="{% url 'movies:create' %}" class='text-right'>[새 영화 등록]</a>
 <hr>
 
 {% for movie in movies %} 

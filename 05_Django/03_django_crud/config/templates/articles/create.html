@@ -1,5 +1,23 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h2> 글 작성이 완료되었습니다! <h2>
-{% endblock body %}
+<h1 class="text-center">NEW</h1>
+
+<!-- 
+Enctype
+1. application/x-www-form-urlencoded : (기본값) 모든 문자 인코딩
+2. multipart/form-data : 파일 형태 첨부시 필수 사용 / 데이터와 파일을 따로 나누어서 전송
+3. text/plain : 인코딩 X
+-->
+
+<form action="{% url 'articles:create' %}" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  TITLE : <input type="text" name="title"><br>
+  CONTENT : <textarea name="content" cols="30" rows="10"></textarea><br>
+  <label for="image"> IMAGE</label>
+  <input type="file" name="image" id="image" accept="image/*">
+  <input type="submit">
+</form>
+<hr>
+<a href="{% url 'articles:index' %}">[Back]</a>
+{% endblock %}
