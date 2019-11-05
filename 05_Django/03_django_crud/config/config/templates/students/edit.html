@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 class="text-center">Edit student</h1>
+<form action="{% url 'students:update' student.pk %}" method="POST">
+  {% csrf_token %}
+  NAME : <input type="text" name="name" value={{student.name}}><br>
+  AGE : <input type="text" name="age" value={{student.age}}><br>
+  MAJOR : <input type="text" name="major" value={{student.major}}><br>
+  <input type="submit">
+</form>
+<hr>
+<a href="{% url 'students:index' %}">[Back]</a>
+{% endblock %}

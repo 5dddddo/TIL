@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<div class="text-center">
+<br>
+  <hr>
+  <h1>전생에 무엇 ?</h1><br>
+  <form action="{% url 'jobs:name'%}" method="POST">
+    {% csrf_token %}
+    당신의 이름 : <input type="text" name='user_name'>
+    <input type="submit"><br><br>
+  </form>
+  <hr>
+  </div>
+  <img src="{% static 'jobs/images/YY.jpg' %}" alt="">
+{% endblock %}

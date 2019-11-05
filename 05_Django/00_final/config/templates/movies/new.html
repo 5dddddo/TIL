@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>새 영화 등록 하긔</h1>
+<hr>
+<form action="{% url 'movies:create' %}" method="POST">
+  {% csrf_token %}
+  <label for="title">영화제목</label> :
+  <input type="text" id="title" name="title"><br>
+
+  <label for="title_en">title_en</label> :
+  <input type="text" id="title_en" name='title_en'><br>
+
+  <label for="audience">관객 수</label> :
+  <input type="text" id="audience" name='audience'><br>
+
+  <label for="open_date">개봉 날짜</label> :
+  <input type="date" id="open_date" name='open_date'><br>
+
+  <label for="genre">장르</label> :
+  <input type="text" id="genre" name='genre'><br>
+
+  <label for="watch_grade">시청 등급</label> :
+  <input type="text" id="watch_grade" name='watch_grade'><br>
+
+  <label for="score">평점</label> :
+  <input type="floatformat" id="score" name='score'><br>
+
+  <label for="poster_url">poster_url</label> :
+  <input type="text" id="poster_url" name='poster_url'><br>
+
+  <label for="description">줄거리</label> :
+  <textarea name="description" id="" cols="30" rows="10" id="description"></textarea><br>
+
+  <input type="submit">
+</form>
+<a href="{% url 'movies:index' %}">[뒤로가기]</a>
+{% endblock %}
