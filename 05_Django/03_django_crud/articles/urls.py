@@ -12,4 +12,3 @@ urlpatterns = [
     path('<int:article_pk>/delete/', views.delete, name='delete'),      # DELETE Logic
     # path('<int:article_pk>/edit/', views.edit, name='edit'),     # UPDATE Logic - 폼 전달
     path('<int:article_pk>/update/' , views.update, name='update'), #GET(edit) / POST(update)
-]
