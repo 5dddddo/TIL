@@ -1,5 +1,6 @@
+from imagekit.models import ProcessedImageField
+from imagekit.processors import Thumbnail
 from django.db import models
-
 # Create your models here.
 
 
@@ -13,7 +14,15 @@ class Article(models.Model):
     # Django가 물어봄
     # 기본 적으로 blank = False 이기 때문
     # blamk = True : '빈 문자열'이 들어가도 됨
-    image = models.ImageField(blank=True)
+    # image = models.ImageField(blank=True)
+    
+    image = ProcessedImageField(
+        processors =[Thumbnail(200,300)], # 처리할 작업
+        format = 'JPEG',                  # 이미지 포맷
+        options={'quality':90},           # 각종 추가 옵션
+        upload_to = 'articles/images',    # 저자 위치
+        # 실제 경로 -> MEDIA_ROOT/articles/images
+    )
     # 객체 표시 형식 수정
 
     def __str__(self):

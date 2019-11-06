@@ -34,10 +34,6 @@ INSTALLED_APPS = [
     'jobs',
     'students',
     'articles',
-<<<<<<< HEAD
-=======
-    'jobs',
->>>>>>> 62b6531b9b7095cb4366bc281328c11e88fac507
     'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
