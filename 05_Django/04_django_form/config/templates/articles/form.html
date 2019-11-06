@@ -1,0 +1,14 @@
+{% extends 'articles/base.html' %}
+
+{% block body %}
+<h1>CREATE</h1>
+<hr>
+<!-- action 값이 공백일 경우, 현재 위치하고 있는 주소로 요청을 보낸다. 폼을 던져주는 경로, DB에 저장하는 경로가 동일하다면 공백으로 해도 정상적으로 동작한다. -->
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit">
+</form>
+<hr>
+<a href="{% url 'articles:index' %}">[BACK]</a>
+{% endblock %}
