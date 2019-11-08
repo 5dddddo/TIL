@@ -23,7 +23,18 @@ $ pip install django-imagekit
 
 - django-imagekit : 이미지 썸네일 helper
 
+<br>
 
+#### INSTALLED_APPS 등록
+
+```python
+# settings.py
+INSTALLED_APPS = [
+    ...
+    'imagekit',
+    ...
+]
+```
 
 #### 모델링 수정
 
@@ -50,5 +61,5 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-
+- `ProcessedImageField`의 인자로 들어가는 옵션들은 다시 migration 하지 않아도 수정시 바로 적용됨
 
