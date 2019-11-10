@@ -1,0 +1,13 @@
+{% extends 'articles/base.html' %}
+{% load bootstrap4 %}
+
+{% block body %}
+<h1>회원가입</h1>
+<hr>
+<form action="" method="POST">
+  {% csrf_token %}
+  {% bootstrap_form form %}
+  {% buttons submit='가입' reset='초기화' %}
+  {% endbuttons %}
+</form>
+{% endblock %}
