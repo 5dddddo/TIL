@@ -11,4 +11,25 @@
 <hr>
 <a href="{% url 'articles:index' %}">[BACK]</a>
 <a href="{% url 'articles:update' article.pk %}">[EDIT]</a>
+<form action="" method="POST">
+</form>
+<hr>
+<form action="{% url 'articles:comments_create' article.pk %}" method="POST">
+  {% csrf_token %}
+  {{ comment_form }}
+  <input type="submit" value="댓글작성">
+</form>
+<hr>
+<p><b>댓글 목록({{ comments|length }}개)</b></p>
+{% for comment in comments %}
+  <li>
+    {{ forloop.revcounter }}번 댓글: 
+    {{ comment.content }}
+    <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST" style="display: inline;">
+      {% csrf_token %}
+      <input type="submit" value="DELETE">
+    </form>
+  </li>
+{% endfor %}
+
 {% endblock %}
