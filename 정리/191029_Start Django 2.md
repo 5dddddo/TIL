@@ -319,13 +319,41 @@ urlpatterns = [
 - 상속은 기본적으로 코드의 재사용성에 초점
   - 템플릿에서 반복되는 코드는 미리 만들어두고 가져다 쓰자!
 
-#### 7.2 실습
+#### 7.2 `base.html` 생성 및 애플리케이션 템플릿 이동
 
-- base.html : 상속할 html 파일
+기존에 각 애플리케이션에 분리되어 있던 템플릿 파일들을 전부 한 곳에 모아준다.
 
-- `   {% block css %}'`   
+```
+01_django_intro_2
+    config/
+        templates/
+            pages/
+                ...
+                index.html
+            utilities/
+                ...
+                index.html
+            base.html
+```
 
-  `  {% endblock css %}` 로 상속받아 사용할 부분 표시
+#### 7.3 템플릿 탐색 경로 수정
+
+- 실제 파일의 경로는 바꿔 버렸는데 장고가 바라보는 템플릿 탐색 경로를 바꾸어주지 않았다. 따라서 지금 서버를 돌려보면 템플릿을 찾을 수 없기 때문에 에러를 뿜어낸다.
+- 장고는 기본적으로 애플리케이션의 `templates`라는 폴더에서 템플릿을 탐색하도록 되어 있다.
+- `DIRS`에 임의의 경로를 넣어서 템플릿을 탐색하는 경로를 커스마이징 해보자.
+
+```
+# settings.py
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'config', 'templates')],
+        'APP_DIRS': True,
+        ...
+    },
+]
+```
 
 ```django
 <!DOCTYPE html>
