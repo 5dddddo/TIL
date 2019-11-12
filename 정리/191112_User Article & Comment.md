@@ -16,7 +16,7 @@ settings.AUTH_USER_MODEL
   - return class
   - models.py 제외한 모든 곳
   - settings.py의 참조 순서에 영향을 받음
-    - django.contrib.auth이 선언이 article 위에 와야 함
+    - `django.contrib.auth`이 선언이 article 위에 와야 함
 
 ``` python
 from django.contrib.auth import get_user_model

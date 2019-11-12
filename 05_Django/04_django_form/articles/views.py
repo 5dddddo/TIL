@@ -80,7 +80,9 @@ def comments_create(request, article_pk):
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
             # save() 메서드 -> 선택 인자 : (기본값) commit=True
-            # DB에 바로 저장되는 것을 막아준다
+            # DB에 바로 저장
+            # commit=False : DB에 바로 저장하는 것을 막은 후
+            # article 정보를 입력함
             comment = comment_form.save(commit=False)
             comment.article = article
             comment.save()
