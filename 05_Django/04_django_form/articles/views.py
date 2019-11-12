@@ -25,9 +25,10 @@ def create(request):
     # POST 요청일 경우 -> 게시글 생성 로직 수행
     if request.method == 'POST':
         form = ArticleForm(request.POST)                # 유효성 검증
-
         if form.is_valid():
-            article = form.save()
+            article = form.save(commit=False)
+            article.user = request.user
+            article.save()   
         return redirect('articles:detail', article.pk)
     else:
         form = ArticleForm()
@@ -79,6 +80,7 @@ def comments_create(request, article_pk):
     if request.user.is_authenticated:
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
+            
             # save() 메서드 -> 선택 인자 : (기본값) commit=True
             # DB에 바로 저장
             # commit=False : DB에 바로 저장하는 것을 막은 후
