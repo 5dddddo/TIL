@@ -1,13 +1,13 @@
-{% extends 'base.html' %}
-{% block body %}
+{% extends 'articles/base.html' %}
 
-<h1>[INDEX]</h1>
-<a href="{% url 'articles:create' %}">[NEW}</a>
-{% for article in articles%}
+{% block body %}
+<h1>Articles</h1>
+<a href="{% url 'articles:create' %}">[NEW]</a>
 <hr>
-작성자: {{article.user}}<br>
-제목 : {{article.title}}<br>
+{% for article in articles %}
+<p>작성자: {{ article.user }}</p>
+<p>번호: {{ article.pk }}</p>
+<p>제목: {{ article.title }}</p>
 <a href="{% url 'articles:detail' article.pk %}">[DETAIL]</a>
-<hr>
 {% endfor %}
-{% endblock  %}
+{% endblock %}

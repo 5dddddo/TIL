@@ -2,50 +2,42 @@
 {% load gravatar %}
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>만들기</title>
+  <title>Document</title>
   {% bootstrap_css %}
-
 </head>
-
 <body>
   <div class="container">
-    <h1>OOO</h1>
-    <!-- 로그인 했을 경우 -->
+    <!-- 로그인했을 경우 -->
     {% if user.is_authenticated %}
-    <h2>
-      <img
-        src="https://s.gravatar.com/avatar/{{ user.email|makemd5 }}?s=80&d=https://dimg.donga.com/wps/NEWS/IMAGE/2019/08/19/97016983.2.jpg"
-        alt="" width='120'>
-    </h2>
-    <h3> 어서오세요, {{user.username}} 님 </h3>
-    <a href="{% url 'accounts:logout' %}" class="btn btn-warning text-light">로그아웃</a>
-    <a href="{% url 'accounts:update' %}">정보수정</a>
-    <a href="{% url 'accounts:change_password' %}">암호변경</a>
-    <form action="{% url 'accounts:delete' %}" method="POST" style="display: inline;">
-      {% csrf_token %}
-      <input type="submit" value="회원탈퇴" class="btn btn-danger">
-      <input type="button" value="success" class="btn btn-success">
-      <input type="button" value="dark" class="btn btn-dark">
-      <input type="button" value="primary" class="btn btn-primary">
-      <input type="button" value="secondary" class="btn btn-secondary">
-      <input type="button" value="light" class="btn btn-light">
-      <input type="button" value="info" class="btn btn-info">
-    </form>
+      <h2>
+        <img class="rounded-circle" src="https://s.gravatar.com/avatar/{{ user.email|makemd5 }}?s=80&d=https://anotherjavaduke.files.wordpress.com/2018/08/avataaars-2.png" alt="">
+        어서오세요, {{ user.username }}
+      </h2>
+      <a href="{% url 'accounts:logout' %}" class="btn btn-warning text-light">
+        로그아웃
+      </a>
+      <a href="{% url 'accounts:update' %}" class="btn btn-secondary">정보수정</a>
+      <a href="{% url 'accounts:change_password' %}" class="btn btn-secondary">암호변경</a>
+      <form action="{% url 'accounts:delete' %}" method="POST" style="display: inline;">
+        {% csrf_token %}
+        <input type="submit" value="회원탈퇴" class="btn btn-danger">
+      </form>
     <!-- 비회원일 경우 -->
     {% else %}
-
+      <h3>로그인 하셔야 서비스 이용이 가능합니다.</h3>
+      <a href="{% url 'accounts:login' %}">로그인</a>
+      <a href="{% url 'accounts:signup' %}">회원가입</a>
     {% endif %}
     <hr>
     {% block body %}
     {% endblock %}
   </div>
+
   {% bootstrap_javascript jquery='full' %}
 </body>
-
 </html>

@@ -37,7 +37,7 @@ class ArticleForm(forms.ModelForm):
         widget=forms.TextInput(
             attrs={
                 'class': 'title',
-                'placeholder': '제목 입력'
+                'placeholder': '제목 입력해라...'
             }
         )
     )
@@ -46,9 +46,9 @@ class ArticleForm(forms.ModelForm):
         widget=forms.Textarea(
             attrs={
                 'class': 'content',
-                'placeholder': '내용 입력',
+                'placeholder': '내용 입력해라...',
                 'rows': 5,
-                'cols': 30,
+                'cols': 30
             }
         )
     )
@@ -60,20 +60,9 @@ class ArticleForm(forms.ModelForm):
         fields = ('title', 'content',)
         # fields = '__all__'
 
-
 class CommentForm(forms.ModelForm):
-    content = forms.CharField(
-        label="댓글 내용",
-        widget=forms.Textarea(
-            attrs={
-                'class': 'subcontent',
-                'placeholder': '댓글 입력',
-                'rows': 1,
-                'cols': 30,
-            }
-        )
-    )
-
+    
     class Meta:
         model = Comment
         fields = ('content',)
+        # fields = '__all__'
