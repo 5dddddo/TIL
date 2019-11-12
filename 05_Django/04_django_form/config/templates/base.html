@@ -8,18 +8,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>순식간에 만들긔~!</title>
+  <title>만들기</title>
   {% bootstrap_css %}
 
 </head>
 
 <body>
   <div class="container">
-    <h1>-MSI-</h1>
+    <h1>OOO</h1>
     <!-- 로그인 했을 경우 -->
     {% if user.is_authenticated %}
     <h2>
-      <img src="https://s.gravatar.com/avatar/{{ user.email|makemd5 }}?s=80&d=https://dimg.donga.com/wps/NEWS/IMAGE/2019/08/19/97016983.2.jpg" alt="" width='120'>
+      <img
+        src="https://s.gravatar.com/avatar/{{ user.email|makemd5 }}?s=80&d=https://dimg.donga.com/wps/NEWS/IMAGE/2019/08/19/97016983.2.jpg"
+        alt="" width='120'>
     </h2>
     <h3> 어서오세요, {{user.username}} 님 </h3>
     <a href="{% url 'accounts:logout' %}" class="btn btn-warning text-light">로그아웃</a>
@@ -37,13 +39,11 @@
     </form>
     <!-- 비회원일 경우 -->
     {% else %}
-    <a href="{% url 'accounts:login' %}">로그인</a>
-    <p>
-      <a href="{% url 'accounts:signup' %}">회원가입</a>
-      {% endif %}
-      <hr>
-      {% block body %}
-      {% endblock %}
+
+    {% endif %}
+    <hr>
+    {% block body %}
+    {% endblock %}
   </div>
   {% bootstrap_javascript jquery='full' %}
 </body>
