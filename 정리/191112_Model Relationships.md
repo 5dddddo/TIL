@@ -226,7 +226,7 @@ class Reservation(models.Model):
 
   - Doctor 입장에서도  reservation_set 형태로 예약 정보를 먼저 불러와야 환자 정보 열람이 가능함
 
-  ![1573544668906](assets/157354466811906.png)
+  ![1573547337346](assets/15735473373461.png)
 
   ```python
   class Patient(models.Model):
@@ -247,7 +247,7 @@ class Reservation(models.Model):
 
 - DB 구조
 
-![1573546086266](assets/1573546086266.png)
+![1573547359713](assets/15735473597132.png)
 
 - Doctor 정보를 중개모델을 거치지 않고 바로 가져와보자
 
@@ -259,7 +259,7 @@ class Reservation(models.Model):
 
   - `related_name='patients'`
 
-  ![1573544700571](assets/1573544700232571.png)
+  ![1573547380331](assets/15735473803313.png)
 
   ```python
   class Patient(models.Model):
@@ -305,4 +305,4 @@ class Reservation(models.Model):
 
   - 중개모델을 만들지 않았지만 DB를 확인해보면 Django가 임의의 테이블을 생성해준 것을 확인할 수 있음
 
-  ![1573545557925](assets/1573541345557925.png)
+  ![1573547396066](assets/15735473960663.png)
