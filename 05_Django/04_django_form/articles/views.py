@@ -54,19 +54,22 @@ def delete(request, article_pk):
     if request.user.is_authenticated:
         article = Article.objects.get(pk=article_pk)
         article.delete()
-    return redirect('/articles/')
+    return redirect('articles:index')
 
 
 @login_required
 def update(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
-    if request.method == 'POST':
-        form = ArticleForm(request.POST, instance=article)
-        if form.is_valid():
-            article = form.save()
-            return redirect('articles:detail', article.pk)
-    else:
-        form = ArticleForm(instance=article)
+    if request.user == article.user:
+        if request.method == 'POST':
+            form = ArticleForm(request.POST, instance=article)
+            if form.is_valid():
+                article = form.save()
+                return redirect('articles:detail', article.pk)
+        else:
+            form = ArticleForm(instance=article)
+    else :
+        return redirect('articles:index')
     context = {
         'form': form,
         'article': article,

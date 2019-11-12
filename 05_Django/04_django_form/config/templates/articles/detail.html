@@ -8,7 +8,10 @@
 생성시각 : {{article.created_at}}<br>
 업뎃시각 : {{article.updated_at}}<br>
 <hr>
+
 <a href="{% url 'articles:index' %}" class="btn btn-primary">[BACK]</a>
+
+{% if  request.user == article.user %}
 <form action="{% url 'articles:delete' article.pk %}" method="POST" style="display:inline"
   onclick="return confirm('진짜... 삭제 해도... 되갓니...? ')">
   {% csrf_token %}
@@ -18,9 +21,9 @@
 <hr>
 <form action="{% url 'articles:comments_create' article.pk%}" method='POST'>
   {% csrf_token %}
-  {{ comment_form }}
   <input type="submit" value="댓글 작성" class="btn btn-success">
 </form>
+{% endif %}
 <hr>
 <p><b>댓글 목록({{ comments|length }}개)</b></p>
 {% for comment in comments %}
