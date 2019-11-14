@@ -6,7 +6,7 @@
 
   
 
-  ![1573003140692](C:\Users\student\Desktop\TIL\정리\assets\1573003140692.png)
+  ![1573715709022](assets/15737157090221.png)
 
 - html 파일에 작성
 
@@ -17,4 +17,5 @@
 
 - 실행 결과
 
-![1573003255216](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1573003255216.png)
+![1573715841855](assets/15737158418515.png)
+
