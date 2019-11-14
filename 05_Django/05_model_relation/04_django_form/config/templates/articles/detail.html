@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load make_link %}
+
+{% block body %}
+{% include 'articles/_follow.html' %}
+
+<h1>DEATIL</h1>
+<hr>
+글 번호 : {{article.pk}}<br>
+글 제목 : {{article.title}}<br>
+글 내용 : {{ article|hashtag_link|safe }}<br>
+생성시각 : {{article.created_at}}<br>
+업뎃시각 : {{article.updated_at}}<br>
+<hr>
+<a href="{% url 'articles:index' %}" class="btn btn-primary">[BACK]</a>
+
+
+{% if request.user == article.user %}
+  <a href="{% url 'articles:update' article.pk %}" class="btn btn-info">[EDIT]</a>
+  <form action="{% url 'articles:delete' article.pk %}" method="POST" style="display:inline"
+    onclick="return confirm('진짜... 삭제 해도... 되갓니...? ')">
+    {% csrf_token %}
+    <input type="submit" value="[DELETE]" class="btn btn-danger">
+  </form>
+{% endif %}
+<hr>
+
+{% if user.is_authenticated %}
+  <form action="{% url 'articles:comments_create' article.pk%}" method='POST'>
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value="댓글 작성" class="btn btn-success">
+  </form>
+{% else %}
+  <a href="{% url 'accounts:login' %}">[댓글 작성하려면 로그인 하세요]</a>
+{% endif %}
+
+<hr>
+<p><b>댓글 목록({{ comments|length }}개)</b></p>
+  {% for comment in comments %}
+  <li>
+  [{{ forloop.counter }}]번 댓글 : {{ comment.content}}
+  {% if comment.user == user %}
+    <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method='POST' style="display:inline">
+      {% csrf_token %}
+      <input type="submit" value="댓글삭제" class="btn btn-warning" >
+    </form>
+    {% endif %}
+    </li>
+{% endfor %}
+{% endblock %}

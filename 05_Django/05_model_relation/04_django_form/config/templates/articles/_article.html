@@ -1,0 +1,33 @@
+<hr>
+{% comment %} 작성자: {{article.user}}<br>
+번호: {{article.pk}}<br>
+제목 : {{article.title}}<br> {% endcomment %}
+
+{% comment %} <a href="{% url 'articles:detail' article.pk %}">[자세희]</a> {% endcomment %}
+<hr>
+  <div class="col-12 col-md-6 mb-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <p>글제목 : {{ article.title }}</p>
+          <p>작성자 : {{ article.user.username }}</p>
+        </h5>
+        <p class="card-text">
+        <a href="{% url 'articles:like' article.pk %}">
+          <!-- 사용자가 좋아요 누른 상태 == 꽉찬 하트 -->
+          {% if request.user in article.like_users.all %}
+            <i class="fas fa-heart"></i>
+
+          <!-- 안누른 상태 == 빈 하트 -->
+          {% else %}
+            <i class="far fa-heart"></i>
+
+          {% endif %}
+        </a><br>
+          {{ article.like_users.all|length}}명이 이 글을 좋아합니다.<br>
+          {{ article.create_at }}
+        </p>
+        <a href="{% url 'articles:detail' article.pk %}" class="btn btn-primary">상세보기</a>
+      </div>
+    </div>
+  </div>
