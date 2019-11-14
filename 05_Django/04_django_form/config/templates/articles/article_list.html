@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block body %}
+<!-- URL resolver를 사용해서 제목값 분기 -->
+{% if request.resolver_match.url_name == 'list' %}
+  <h1>LIST</h1>
+{% else %}
+  <h1>EXPLORE</h1>
+{% endif %}
+<hr>
+{% for article in articles %}
+  <p>글 제목 : {{ article.title }}</p>
+  <p>글 내용 : {{ article.content }}</p>
+  <hr>
+  <form action="{% url 'articles:comments_create' article.pk %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form comment_form %}
+    {% buttons submit='댓글@작성' %}{% endbuttons%}
+  </form>
+{% endfor %}
+{% endblock %}  

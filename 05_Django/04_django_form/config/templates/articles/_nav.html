@@ -1,0 +1,77 @@
+{% load gravatar %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{% url 'articles:index' %}">
+      <img class="mr-2"
+        src="https://s.gravatar.com/avatar/{{ user.email|makemd5 }}?s=50&d=mp"
+        alt="">
+        {% if user.is_authenticated %}
+          Hello, {{ user}}님!!  <br>
+        {% else %}
+         Hello, 
+        {% endif %}
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-align:center" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      {% if user.is_authenticated %}
+        <li class="nav-item active">
+          <a href="{% url 'articles:list' %}" class="btn btn-warning text-light mr-1">좋은글보기</a>
+        </li>
+        <li class="nav-item active">
+          <a href="{% url 'articles:explore' %}" class="btn btn-warning text-light mr-1">전부보기</a>
+        </li>
+        <li class="nav-item active">
+          <a href="{% url 'accounts:logout' %}" class="btn btn-warning text-light mr-1">로그아웃</a>
+        </li>
+        <li class="nav-item active">
+          <a href="{% url 'accounts:profile' user.username %}"  class="btn btn-primary text-light mr-1">마이페이지</a>
+        </li>
+        <li class="nav-item active">
+          <a href="{% url 'accounts:update' %}" class="btn btn-success text-light mr-1">정보수정</a>
+        </li>
+        <li class="nav-item active">
+          <a href="{% url 'accounts:change_password' %}" class="btn btn-info text-light mr-1">암호변경</a>
+        </li>
+          <form action="{% url 'accounts:delete' %}" method="POST" style="display: inline;">
+            {% csrf_token %}
+            <input type="submit" value="회원탈퇴" class="btn btn-danger">
+          </form>        
+      {% else %}
+        <p>
+          <a href="{% url 'accounts:login' %}" class="btn btn-primary text-light nav-item active">로그인 </a>
+          <a href="{% url 'accounts:signup' %}" class="btn btn-primary text-light nav-item active">회원가입 </a>
+        </p>
+      {% endif %}
+
+
+
+      {% comment %} <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> {% endcomment %}
+      {% comment %} <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> {% endcomment %}
+  </div>
+</nav>

@@ -28,13 +28,22 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+)
 
+# Application definition
 INSTALLED_APPS = [
-    'bootstrap4',
     'accounts',
     'articles',
+    'bootstrap4',
     'django_extensions',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.kakao',
+
+    'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,3 +136,10 @@ STATIC_URL = '/static/'
 
 
 # LOGIN_URL='/members/login'
+
+# 기본값 : auth.User
+AUTH_USER_MODEL = 'accounts.User'
+
+# 로그인 후 리다이렉트 경로
+
+LOGIN_REDIRECT_URL = 'articles:index'
