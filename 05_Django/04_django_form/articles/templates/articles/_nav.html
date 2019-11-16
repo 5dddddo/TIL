@@ -1,0 +1,45 @@
+{% load gravatar %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{% url 'articles:index' %}">
+    <img class="rounded-circle mr-2" src="https://s.gravatar.com/avatar/{{ user.email|makemd5 }}?s=80&d=mp" alt="">
+    Hello, {{ user.username }}
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      {% if user.is_authenticated %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'articles:list' %}">좋은글보기</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'articles:explore' %}">전부보기</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'accounts:logout' %}">로그아웃</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'accounts:profile' user.username %}">마이페이지</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'accounts:update' %}">정보수정</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'accounts:change_password' %}">암호변경</a>
+        </li>
+        <form action="{% url 'accounts:delete' %}" method="POST" style="display: inline;">
+          {% csrf_token %}
+          <input type="submit" value="회원탈퇴" class="btn btn-danger">
+        </form>
+      {% else %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'accounts:login' %}">로그인</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'accounts:signup' %}">회원가입</span></a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
