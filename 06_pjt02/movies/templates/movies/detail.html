@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<h1>Movie Detail</h1>
+
+<p>User: {{ movie.user.username }}</p>
+<p>Title: {{ movie.title }}</p>
+<p>Description: {{ movie.description }}</p>
+{% if movie.poster %}
+<p>Poster: <img src="{{ movie.poster.url }}" alt="Poster"></p>
+{% endif %}
+<p>Created At: {{ movie.created_at }}</p>
+<p>Updated At: {{ movie.updated_at }}</p>
+
+<div>
+  <a href="{% url 'movies:index' %}">목록</a>
+  {% if user == movie.user %}
+  <a href="{% url 'movies:edit' movie.pk %}">수정</a>
+  <form action="{% url 'movies:delete' movie.pk %}" method="POST" style="display: inline-block;">
+    {% csrf_token %}
+    <input type="submit" value="삭제">
+  </form>
+  {% endif %}
+</div>
+
+<hr>
+
+<h2>Ratings</h2>
+
+<ul>
+  {% for rating in ratings %}
+  <li>
+    <b>{{ rating.user.username }}</b> - {{ rating.score }}, {{ rating.content }}
+    {% if user == rating.user %}
+    <form action="{% url 'movies:ratings_delete' movie.pk rating.pk %}" method="POST" style="display: inline-block;">
+      {% csrf_token %}
+      <input type="submit" value="Delete">
+    </form>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<form action="{% url 'movies:ratings_new' movie.pk %}" method="POST">
+  {% csrf_token %}
+  {{ rating_form }}
+  <input type="submit">
+</form>
+
+{% endblock %}

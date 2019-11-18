@@ -6,15 +6,12 @@
 
 ### 1.1 Model 설정
 
-- ```
-  blank=True
-  ```
-
+- `blank=True`
   - 최초 작성되는 글에는 좋아요가 없고, 글이 작성되더라도 좋아요를 받지 못할 수도 있다.
   - 이 옵션을 줘서 유효성 검사를 통과한다.
-  - 실제 데이터베이스는 null이 들어가는게 아니라 빈 스트링(`''`) 형태로 들어간다.
+- 실제 데이터베이스는 null이 들어가는게 아니라 빈 스트링(`''`) 형태로 들어간다.
 
-```
+```python
 # article/models.py
 
 class Article(models.Model):
@@ -23,21 +20,11 @@ class Article(models.Model):
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_articles', blank=True)
 ```
 
-- 현재 상황에서
-
-   
-
-  ```
-  related_name
-  ```
-
-   
-
-  설정은 필수
+- 현재 상황에서 `related_name `설정은 필수
 
   - `like_users` 필드에 related_name을 쓰지 않으면, User 입장에서 article_set을 사용할 경우 user 필드를 갖고올지 like_users 필드를 갖고 올지 인식하지 못한다.
-  - related_name 설정과 함께 해당 필드는 article_set과 같은 방식으로 호출하지 못하고, like_users 방식으로 호출해야 된다.
-
+- related_name 설정과 함께 해당 필드는 article_set과 같은 방식으로 호출하지 못하고, like_users 방식으로 호출해야 된다.
+  
 - 사용할 수 있는 ORM 기능(명령어)
 
   - `user.article_set.all()` : 유저가 작성한 게시글 전부 - 1:N
@@ -47,26 +34,13 @@ class Article(models.Model):
 
 ### 1.2 View & URL
 
-- ```
-  exists()
-  ```
-
-   
-
-  &
-
-   
-
-  ```
-  filter()
-  ```
-
+- `exists()`& `filter()`
   - `filter()` : 특정 조건에 맞는 레코드들을 가져온다.
   - `exists()` : 최소한 하나의 레코드가 존재하는지 여부를 말해준다.
 
 - `get()` vs `filter()` -> 데이터가 없는 경우 에러 여부
 
-```
+```python
 # articles/views.py
 
 @login_required
@@ -92,7 +66,9 @@ urlpatterns = [
 
 ### 1.3 Template
 
-#### 1.3.1 Template 분리 (`_article.html`)
+#### 1.3.1 Template 분리 (`article.html`)
+
+![img](assets/image.png)
 
 - 모듈화한 템플릿은 제목 앞에 언더스코어(`_`) 붙여주는 것이 코딩 컨벤션!
 
@@ -109,7 +85,7 @@ urlpatterns = [
 
   - Bootstrap 공식 홈페이지 -> Documentation -> Cards
 
-```
+```html
 <!-- articles/index.html -->
 ...
 <div class="row">
@@ -117,6 +93,7 @@ urlpatterns = [
     	{% include 'articles/_article.html' %}
     {% endfor %}
 </div>
+
 <!-- articles/_article.html -->
 <div class="col-12 col-md-6">
     <p>
@@ -129,7 +106,9 @@ urlpatterns = [
 
 > Font Awesome 홈페이지 가입 후 Kits로 들어가서 코드 복사
 
-```
+![img](assets/SE-fc9bbb47-4d50-4625-aa54-01a6fd184241.png)
+
+```html
 <!-- base.html -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -138,6 +117,7 @@ urlpatterns = [
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/여러분의 kits 코드번호" crossorigin="anonymous"></script>
 </head>
+    
 <!-- articles/_article.html -->
 ...
 <p class="card-text">

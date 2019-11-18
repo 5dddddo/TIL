@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PJT 02</title>
+</head>
+<body>
+  <nav>
+    <span>{{ user.username }}</span>
+    {% if user.is_authenticated %}
+      <form action="{% url 'accounts:logout' %}" method="POST" style="display: inline-block;">
+        {% csrf_token %}
+        <input type="submit" value="Logout">
+      </form>
+    {% else %}
+      <a href="{% url 'accounts:login' %}">Login</a>
+      <a href="{% url 'accounts:signup' %}">SignUp</a>
+    {% endif %}
+  </nav>
+  {% block body %}
+  {% endblock %}
+</body>
+</html>
