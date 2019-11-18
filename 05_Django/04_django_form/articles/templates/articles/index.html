@@ -1,0 +1,13 @@
+{% extends 'articles/base.html' %}
+
+{% block body %}
+<h1>Articles</h1>
+<a href="{% url 'articles:create' %}">[NEW]</a>
+<hr>
+<div class="row">
+  {% for article in articles %}
+    <!-- 모듈화 시켜둔 article 템플릿 가져오기 -->
+    {% include 'articles/_article.html' %}
+  {% endfor %}
+</div>
+{% endblock %}

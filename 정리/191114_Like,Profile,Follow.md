@@ -66,7 +66,7 @@ urlpatterns = [
 
 ### 1.3 Template
 
-#### 1.3.1 Template 분리 (`article.html`)
+#### 1.3.1 Template 분리 (`_article.html`)
 
 ![img](assets/image.png)
 
