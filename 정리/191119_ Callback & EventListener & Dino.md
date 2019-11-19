@@ -1,4 +1,4 @@
-# 191119_ Callback & EventListener & Dino
+# 191119_Callback & EventListener & Dino
 
 ## 1. Callback Function
 
