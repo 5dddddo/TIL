@@ -178,7 +178,49 @@
 
 ## 8.3 `filter`
 
+> 10_filter.js 참고
+
 - `arr.filter(callback(element))`
 - 주어진  callback 함수의 **테스트를 통과하는 모든 요소**를 모아서 새로운 배열로 반환
   - 즉, callback 함수에 조건을 적어서 **원하는 요소들만 filtering**
-  - 
+
+- [실습]  STUDENTS 배열의 객체들 중 type이 female인 요소만 뽑기
+
+  ```javascript
+  // STUDENTS 배열 자체를 바꾸고 싶은 것이 아니라,
+  // 원하는 조건에 맞는 새로운 배열을 만들어보자
+  const STRONGSTUDENTS1 = STUDENTS.filter(function(student){
+       return student.type === 'female'
+  })
+  
+  const STRONGSTUDENTS2 = STUDENTS.filter(student => student.type === 'female')
+  ```
+
+<Br>
+
+## 8.4 `Reduce`
+
+>  11_reduce.js 참고
+
+- `arr.reduce(callback(acc,element,index))` 
+  - acc : 누적값 (전 단계의 결과물)
+  - element : 현재 배열 요소
+  - index : 배열 순서 (인덱스 번호)
+- 배열의 각 요소에 대해 주어진 callback 함수를 실행하고 하나의 결과값을 반환함
+  - **배열 내의 숫자의 총합, 평균 계산 등 배열의 값을 하나로 줄이는 동작 수행**
+
+- `map`은 배열의 각 요소를 변형했다면, **reduce는 배열 자체를 변형**함
+
+- map, filter 등 여러 메소들의 동작을 대부분 대체 가능
+
+<br>
+
+## 8.5 `find`
+
+> 12_find.js 참고
+
+- `arr.find(callback(element, index, array))`
+
+- 주어진 callback 함수를 만족하는 **첫 번째 요소의 값을 반환**
+  - 값이 없으면 undefined
+- 조건에 맞는 인덱스가 아니라 **요소 자체를 원할 때 사용**
