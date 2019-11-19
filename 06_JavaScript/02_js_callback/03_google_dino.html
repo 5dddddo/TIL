@@ -54,28 +54,28 @@
         // 문서 전체에 키 입력을 확인하는 이벤트 리스너 등록
         document.addEventListener('keydown', function (e) {
             console.log(e)
-            if (e.code === 'ArrowUp') {
-                y += 20
-                dino.style.marginBottom = `${y}px`
-                console.log('Up')
-            } else if (e.code === 'ArrowDown') {
-                y -= 20
-                dino.style.marginBottom = `${y}px`
-                console.log('Down')
-            } else if (e.code === 'ArrowLeft') {
-                x -= 20
-                dino.style.marginLeft = `${x}px`
-                console.log('Left')
-            } else if (e.code === 'ArrowRight') {
-                x += 20
-                dino.style.marginLeft = `${x}px`
-                console.log('Right')
-            } else if (e.code === 'Space') {
-                console.log('크아앙')
-                console.log('SpaceBar')
-            } else {
-                console.log('잘못누름!')
-            }
+            // if (e.code === 'ArrowUp') {
+            //     y += 20
+            //     dino.style.marginBottom = `${y}px`
+            //     console.log('Up')
+            // } else if (e.code === 'ArrowDown') {
+            //     y -= 20
+            //     dino.style.marginBottom = `${y}px`
+            //     console.log('Down')
+            // } else if (e.code === 'ArrowLeft') {
+            //     x -= 20
+            //     dino.style.marginLeft = `${x}px`
+            //     console.log('Left')
+            // } else if (e.code === 'ArrowRight') {
+            //     x += 20
+            //     dino.style.marginLeft = `${x}px`
+            //     console.log('Right')
+            // } else if (e.code === 'Space') {
+            //     console.log('크아앙')
+            //     console.log('SpaceBar')
+            // } else {
+            //     console.log('잘못누름!')
+            // }
         })
 
         // 움직이는 공룡
