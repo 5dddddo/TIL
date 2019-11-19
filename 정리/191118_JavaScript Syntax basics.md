@@ -50,7 +50,7 @@
 
 ## 1. Variable
 
-> 00_variable.js 참고
+> [00_variable.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/00_variable.js) 참고
 
 ### 1.1 let (변수)
 
@@ -104,7 +104,7 @@ console.log(x) // 출력 : 1
 
 ### 2.1 if문
 
-> 01_if.js 참고
+> [01_if.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/01_if.js) 참고
 
 - 파이썬의 if문과 흡사
   - `elif` -> `else if` 로 바꾸기만 하면 됨
@@ -140,11 +140,12 @@ document.write(message)
 
 ## 3. 반복문
 
-> 02_loop.js 참고
+> [02_loop.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/02_loop.js) 참고
 
 - `while`문
-  - while 키워드 뒤에 나오는 조건이 true일 때 반복
-
+  
+- while 키워드 뒤에 나오는 조건이 true일 때 반복
+  
 - `for`문
 
   -  javascript의 가장 기본적인 반복문
@@ -166,7 +167,7 @@ document.write(message)
 
 ## 4. 함수
 
-> 03_function.js 참고
+> [03_function.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/03_function.js) 참고
 
 ### 4.1 선언식
 
@@ -203,7 +204,7 @@ console.log(typeof sub) // function
 
 ## 5. 화살표 함수 (Arrow function)
 
-> 03_function.js 참고
+> [03_function.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/03_function.js) 참고
 
 - ES6 이후 
 - function과 중괄호 숫자를 줄이려고 고안된 문법
@@ -309,16 +310,20 @@ console.log(typeof sub) // function
      ```
 
 - 일반적으로는 함수를 정의, 변수에 함수를 저장하는 과정 등을 거쳐서 실행함
-  - 하지만, **즉시실행함수**는 함수가 선언되자마자 즉시 실행 됨
-
+  
+- 하지만, **즉시실행함수**는 함수가 선언되자마자 즉시 실행 됨
+  
 - 사용 목적 : **초기화**에 사용 됨
-  - 즉시실행함수는 선언되자마자 실행되기 때문에, 같은 함수를 다시 호출할 수 는 없음.
-
+  
+- 즉시실행함수는 선언되자마자 실행되기 때문에, 같은 함수를 다시 호출할 수 는 없음.
+  
 - 다시 사용하려면 변수에 담아야 함
 
 
 
 ## 7. Array
+
+> [04_array.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/04_array.js) 참고
 
 ### 7.1 Array 함수
 
@@ -409,7 +414,7 @@ undefined
 
 ## 7. 객체 (Object)
 
-> 05_object.js 참고
+> [05_object.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/05_object.js) 참고
 
 ``` javascript
 > const me = {
@@ -438,7 +443,7 @@ undefined
 
 <br>
 
-> 06_object2.js 참고
+> [06_object2.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/06_object2.js) 참고
 
 - **ES5 이전**
 
@@ -496,7 +501,7 @@ const bookShop = {
 
 ### 7.1 JSON과 비교
 
-> 07_JSON.js 참고
+> [07_JSON.js](https://github.com/5dddddo/TIL/blob/master/06_JavaScript/07_JSON.js) 참고
 
 - JavaScript Object Notation - JavaScript 객체 표기법
 
@@ -536,95 +541,3 @@ const parseData = JSON.parse(jsonData)
 > console.log(typeof parseData)
 object
 ```
-
-<br>
-
-## 8. Array Helper Method
-
-> 08_forEach.js 참고
-
-- Helper란 자주 사용하는 로직을 재활용 할 수 있게 만든 일종의 library
-- ES6부터 본격적으로 사용됨
-- 상세한 사용법 : **MDN** 문서 참고
-
-### 8.1 `forEach`
-
-- `arr.forEach(callback(element, index, array))`
-
-  - 주어진 callback을 배열에 있는 각 요소에 대해 한 번씩 실행
-
-  ``` javascript
-  // ES5 for loop
-  var iot1 = ['도현', '혁진', '은애']
-  for (var i = 0; i < iot1.length; i++) {
-    console.log(iot[i])
-  }
-  
-  // ES6+
-  const IOT1 = ['수연', '선아', '주현']
-  IOT1.forEach(function (student) {
-    console.log(student)
-  })
-  
-  // 한 줄로 리팩토링 가능
-  IOT1.forEach(student => console.log(student))
-  
-  const res = IOT1.forEach(student => console.log(student))
-  > console.log(res)
-  undefined
-  ```
-
-- [실습] for를 forEach로 바꾸기
-
-  ``` javascript
-  function handleStudents() {
-    const students = [{
-      id: 1,
-      name: '오은애',
-      status: '응애?'
-    }, {
-      id: 15,
-      name: '서혁진',
-      status: '감자?'
-    }, {
-      id: 28,
-      name: '김영선',
-      status: '쉽다쉬훠'
-    }]
-  
-    // for (let i = 0; i < students.length; i++) {
-    //   console.log(students[i])
-    //   console.log(students[i].name)
-    //   console.log(students[i].status)
-    // }
-    students.forEach(student => console.log(student, student.name, student.status))
-  }
-  ```
-
-- [실습] images 배열 안에 있는 정보를 곱해 넓이를 구하여 areas 배열에 저장
-
-  ``` javascript
-  const images = [{
-      height: 30,
-      width: 55
-    },
-    {
-      height: 50,
-      width: 178
-    },
-    {
-      height: 81,
-      width: 35
-    }
-  ]
-  const areas = []
-  
-  images.forEach(image =>
-    areas.push(image.height * image.width)
-  )
-  
-  > console.log(areas)
-  [ 1650, 8900, 2835 ]
-  ```
-
-  
