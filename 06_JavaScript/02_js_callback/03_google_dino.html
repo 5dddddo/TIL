@@ -24,13 +24,73 @@
             src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/88/e5/36/88e536d4-8a08-7c3b-ad29-c4e5dabc9f45/AppIcon-1x_U007emarketing-sRGB-85-220-0-6.png/246x0w.jpg"
             alt="google-dino" />
     </div>
-    <div class="bg">
-        <img id="dino-2" width="100px" height="100px"
-            src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/88/e5/36/88e536d4-8a08-7c3b-ad29-c4e5dabc9f45/AppIcon-1x_U007emarketing-sRGB-85-220-0-6.png/246x0w.jpg"
-            alt="google-dino" />
-    </div>
     <script>
+        const bg = document.querySelector('.bg')
+        // // 기존의 dino 삭제
+        const dino = bg.querySelector('#dino')
+        // dino.remove()
+        // // 새로운 dino 생성
+        // const newDino = document.createElement('img')
+        // newDino.src = 'https://miro.medium.com/max/300/0*9U_PkckAUtKGrb_R.png'
+        // newDino.alt = 'dino'
+        // newDino.id = 'dino'
+        // newDino.style.width = '100px'
+        // newDino.style.height = '100px'
+        // // div 태그의 자식 태그 중 마지막에 요소를 추가
+        // bg.append(newDino)
+        // // div 태그의 자식 요소 중 가장 처음에 요소를 추가
+        // bg.insertBefore(newDino, bg.firstElementChild)
 
+        // 사용자가 dino라는 요소를 클릭했을 때, 이 클릭 이벤트가 발생할 때 마다
+        // '아야!!'라는 문자열을 출력하는 이벤트 등록
+        dino.addEventListener('click', function (e) {
+            console.log('아야!!')
+            console.log(e)
+
+        })
+
+        let x = 0,
+            y = 0
+        // 문서 전체에 키 입력을 확인하는 이벤트 리스너 등록
+        document.addEventListener('keydown', function (e) {
+            console.log(e)
+            if (e.code === 'ArrowUp') {
+                y += 20
+                dino.style.marginBottom = `${y}px`
+                console.log('Up')
+            } else if (e.code === 'ArrowDown') {
+                y -= 20
+                dino.style.marginBottom = `${y}px`
+                console.log('Down')
+            } else if (e.code === 'ArrowLeft') {
+                x -= 20
+                dino.style.marginLeft = `${x}px`
+                console.log('Left')
+            } else if (e.code === 'ArrowRight') {
+                x += 20
+                dino.style.marginLeft = `${x}px`
+                console.log('Right')
+            } else if (e.code === 'Space') {
+                console.log('크아앙')
+                console.log('SpaceBar')
+            } else {
+                console.log('잘못누름!')
+            }
+        })
+
+        // 움직이는 공룡
+        dino.style.position = 'absolute'
+        dino.addEventListener('mouseover', function () {
+            // [현재 윈도우 너비 * 난수] - [현재 윈도우 너비 / 2]
+            const newWidth = window.innerWidth * Math.random() - window.innerWidth / 2
+
+            // [현재 윈도우 높이 * 난수] - [현재 윈도우 높이 / 2]
+            const newHeight = window.innerHeight * Math.random() - window.innerHeight / 2
+
+            // 새로운 값을 dino의 마진 값으로 할당
+            dino.style.marginLeft = newWidth + 'px'
+            dino.style.marginTop = newHeight + 'px'
+        })
     </script>
 </body>
 
