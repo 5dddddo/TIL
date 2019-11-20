@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block body %}
+<h1>{{person.username }}님의  Profile</h1>
+<hr> 
+<h3> {{person.username }}님이 작성한 게시글 </h3>
+<div class="row">
+  {% for article in person.article_set.all %}
+   <div class="col-12 col-md-6 mb-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{article.title}}
+        </h5>
+        <p class="card-text">
+        {{article.like_users.all|length}}명이 좋아요
+        {{article.created_at}}</p><br>       
+        <a href="{% url 'articles:detail' article.pk %}" class="btn btn-primary">상세보기</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<hr>
+<h3> {{person.username }}님이 작성한 댓글 </h3>
+<div class="row">
+  {% for comment in person.comment_set.all %}
+  <div class="col-12 col-md-6 mb-3">
+  <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ comment.content }}</h5>
+    <p class="card-text">작성시각{{comment.created_at|date:"SHORT_DATETIME_FORMAT"}}</p>
+    <a href="{% url 'articles:detail' comment.article.pk %}" class="btn btn-primary">게시글 확인</a>
+  </div>
+  </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

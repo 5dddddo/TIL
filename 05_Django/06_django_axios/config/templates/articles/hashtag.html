@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load make_link %}
+
+{% block body %}
+
+{{ hashtag.content }} 게시글 모아보기
+{{ articles|length }}개의 글이 존재합니다
+
+
+{% for article in articles %}
+<p> 글제목: {{article.title}}</p>
+<p> 글내용: {{article|hashtag_link|safe }}</p>
+
+<p>{{ article.comment_set.all|length }}개의 댓글이 있습니다</p>
+<p>{{ article.like_users.all|length }}명이 이 글을 좋아합니다</p>
+<br><hr>
+<a href="{% url 'articles:detail' article.pk %}">게시글바로가기</a>
+{% endfor %}
+
+{% endblock %}

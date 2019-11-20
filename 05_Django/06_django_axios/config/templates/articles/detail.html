@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load make_link %}
+{% load bootstrap4 %}
+
+
+{% block body %}
+{% include 'articles/_follow.html' %}
+
+
+
+<h1 class="text-center">DETAIL</h1>
+<p>글 번호 : {{article.pk}}</p>
+<p>글 제목 : {{article.title}}</p>
+<p>생성 시각 : {{article.created_at}}</p>
+<p>글 내용 : {{article.content}}</p>
+<hr>
+
+    
+
+<form action ="{% url 'articles:delete' article.pk %}" method="POST" style="display:inline">
+{% csrf_token %}
+<input type="submit" value="게시글 삭제"  class="btn btn-danger" style="display:inline">
+</form>
+
+<a href="/articles/index" class="btn btn-warning" style="display:inline">[back]</a>
+{% if request.user == article.user %}
+<a href="{% url 'articles:update' article.pk %}"  class="btn btn-warning" style="display:inline">[edit]</a>
+
+{% endif %}
+
+<br>
+<hr>
+<br>
+{% if user.is_authenticated %} <!-- 로그인 했을 땐 댓글작성폼을 보이고 안했으면 로그인하라고 로직을 바꿔보자-->
+<form action="{% url 'articles:comments_create' article.pk %}" method="POST">
+  {{ comment_form }}
+  {% csrf_token %}
+   <input type="submit" value="댓글작성" name="comment"  class="btn btn-secondary" style="display:inline">
+ </form>
+{% else %}
+  <a href="{% url 'accounts:login' %}">[댓글작성하려면 로그인을 해주세요]</a>
+ {% endif %} 
+<br>
+<div class="text-center">
+  <p><b>댓글목록({{ comments|length}})개</b></p>
+  {% for comment in comments %}
+  <p>[{{forloop.revcounter}}] [ID:{{comment.user}}] {{comment.content}}</p>
+
+  
+{% if comment.user == request.user %}   
+{% comment %} {% if comment.user == user %}  {% endcomment %}
+  <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST" style="display:inline">
+    {% csrf_token %}
+    <input type="submit" value="댓글삭제" name="comment"  class="btn btn-danger" style="display:inline">
+  </form>
+  {% endif %}
+
+  {% endfor %}
+</div>
+
+{% endblock %}

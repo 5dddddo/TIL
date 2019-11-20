@@ -1,0 +1,31 @@
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장고 CRUD</title>
+  <!-- Bootstrap -->
+  {% bootstrap_css %}
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/0b59b957c4.js" crossorigin="anonymous"></script>
+
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  {% include 'articles/_nev.html' %}
+  <div class="container">
+    {% block body %}
+    {% endblock body %}
+  </div>
+
+  {% bootstrap_javascript jquery='full' %}
+</body>
+
+</html>

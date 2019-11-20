@@ -1,0 +1,35 @@
+<br>
+{% comment %} <p> 작성자 {{article.user}}</p>
+<p style="display:inline">[{{article.pk}}] {{article.title}} </p style="display:inline">
+<a href="/articles/{{article.pk}}/" class="btn btn-primary" style="display:inline">[DETAIL]</a>
+<i class="fab fa-gratipay"></i> {% endcomment %}
+{% comment %} <br>
+<hr> {% endcomment %}
+
+<div class="col-12 col-md-6 mb-3">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{article.title}}
+      </h5>
+      <p class="card-text">
+        <!-- 사용자가 좋아요 누른 상태 -> 꽉찬 하트 -->
+        <!-- data-id : JS가 데이터를 처리할 때 해당 요소가 어떤 article의 번호인지 구분하기 위해서 지정 -->
+        {% if request.user in article.like_users.all %}
+        <i data-id="{{article.pk }}" class="like-button fas fa-heart" style="color:crimson; cursor : pointer"></i>
+        <!-- 사용자가 좋아요 안 누른 상태 -> 빈 하트-->
+        {% else %}
+        <i data-id="{{article.pk }}" class=" like-button fas fa-heart" style="color:black; cursor : pointer"></i>
+        {% endif %}
+        <br>
+
+        <span id="like-count-{{article.pk}}">
+          {{article.like_users.all|length}}
+        </span>명이 이 글을 좋아합니다.
+        <br>
+        작성자 : {{article.user}}</p>
+      <div align="right">
+        <a href="{% url 'articles:detail' article.pk %}" class="btn btn-primary">상세보기</a>
+      </div>
+    </div>
+  </div>
+</div>

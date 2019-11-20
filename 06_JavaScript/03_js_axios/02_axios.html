@@ -1,0 +1,54 @@
+<html>
+  <head></head>
+  <body>
+    <h1>댕댕이들 :)</h1>
+    <button id = "dog">댕댕이 내놔!</button>
+    <button id = "cat">집사야 밥을 내오거라</button>
+    <div class="animals">
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      const getDogImage = () => {
+        axios.get('https://dog.ceo/api/breeds/image/random' )
+        .then(response=>{
+          // 1. url을 변수에 담는다.
+          const imgUrl = response.data.message  
+          // 2. img 태그를 만든다.      
+          const imgTag = document.createElement('img')
+          // 3. src를 추가한다.
+          imgTag.src = imgUrl
+          imgTag.style.width = '200px'
+          imgTag.style.height = '200px'
+          // 4. html 문서에 요소를 위치시킨다.
+          document.querySelector('.animals').append(imgTag)
+        }).catch(error=>{
+          console.log(error)
+        })
+      }
+    const dogButton = document.querySelector('#dog')
+    dogButton.addEventListener('click', getDogImage)
+
+    const getCatImage = () => {
+        axios.get('https://api.thecatapi.com/v1/images/search' )
+        .then(response=>{
+          // 1. url을 변수에 담는다.
+          const imgUrl = response.data[0].url 
+          // 2. img 태그를 만든다.      
+          const imgTag = document.createElement('img')
+          // 3. src를 추가한다.
+          imgTag.src = imgUrl
+          imgTag.style.width = '200px'
+          imgTag.style.height = '200px'
+          // 4. html 문서에 요소를 위치시킨다.
+          document.querySelector('.animals').append(imgTag)
+        }).catch(error=>{
+          console.log(error)
+        })
+      }
+
+      const catButton = document.querySelector('#cat')
+      catButton.addEventListener('click', getCatImage)
+
+    </script>
+  </body>
+</html>

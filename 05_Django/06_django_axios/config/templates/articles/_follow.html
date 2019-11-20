@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <h1 class="display-4">{{person.username}}</h1>
+  {% comment %} 
+  지금 user instance가 다 넘어왓다
+  이때 팔로워 뽑을거면?
+   person.followers.all  하면 명단 다 뜰거고 length로 필터를 걸면 명 수 가 나온다
+    {% endcomment %}
+  <p class="lead">팔로워:{{person.followers.all|length}}명 | 팔로잉:{{person.followings.all|length}}명 </p>
+  <hr class="my-4">
+  <h3>{{person.username}}님의 팔로워 명단</h3>
+  {% for follower in person.followers.all %}
+  <br>
+  <p>{{ follower.username }}</p>
+  <br>
+  {% empty %}
+  <br>
+  <p> 팔로워가 없어요 ...</p>
+  <br>
+  {% endfor %}
+
+  {% if user != article.user %}
+  <a class="btn btn-primary btn-lg" href="{% url 'articles:follow' article.pk person.pk %}" role="button">
+  {% if user in person.followers.all %}
+  UNFOLLOW
+  {% else %}
+  FOLLOW
+  {% endif %}
+   {% endif %}
+  </a>
+</div>
