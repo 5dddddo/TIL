@@ -288,7 +288,7 @@ def search(request):
     # ORM에 like와 같이 지정한 문자열 포함하는 자료 검색 키워드 2가지
     # __contains
     # __icontains : 대소문자 구별 X
-    articles = Article.object.filter(title__icontains=query)
+    articles = Article.objects.filter(title__icontains=query)
 
     #3. context로 전달
     context = {'articles': articles}
