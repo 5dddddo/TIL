@@ -87,7 +87,7 @@
 
 - 실행 결과
 
-  ![1574297563106](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1574297563106.png)
+  ![1574297563106](assets/1574297563106.png)
 
 ## 2. Search
 
@@ -119,7 +119,7 @@
 
 - 실행 결과
 
-  ![1574298638556](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1574298638556.png)
+  ![1574298638556](assets/1574298638556.png)
 
 - `articles/views.py`
 
