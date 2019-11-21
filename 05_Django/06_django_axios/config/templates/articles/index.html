@@ -7,13 +7,14 @@
 <a href="{% url 'articles:create' %}"> [new] </a>
 <hr>
 
-<form class = "mb-4">
-  <div class="form-row">
-    <div class="col-12 col-xs-9 col-sm-10">
-      <input type="text" class="form-control" placeholder="First name">
+<form class = "mb-4" action="{% url 'articles:search' %}">
+  <div class="form-row justify-content-center">
+    <div class="mb-2 col-12 col-sm-9 col-md-10">
+    <!-- views.py 에서 사용자가 입력한검색어 가져오기위해 name 설정-->
+      <input type="text" name = "query" class="form-control" placeholder="First name">
     </div>
-    <div class="col-12 col-xs-3  col-sm-2">
-      <input type="text" class="form-control btn btn-success" value ="검색">
+    <div class="col-6 col-sm-3 col-md-2">
+      <input type="submit" class="form-control btn btn-success" value ="검색">
     </div>
   </div>
 </form>
