@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1 class="mt-4"> 검색 결과</h1>
+
+<ul class="list-group">
+  {% for article in articles %}
+  <a href="{% url 'articles:detail' article.pk %}" class="mb-2">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+    [{{forloop.counter}}]  {{article.title}}
+      <span class="badge badge-warning badge-pill"> {{article.comment_set.all|length}}</span>
+    </li>
+    </a>
+    {% endfor %}
+</ul>
