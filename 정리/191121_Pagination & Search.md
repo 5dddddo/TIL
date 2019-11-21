@@ -189,7 +189,7 @@
   
 - 실행 결과
 
-  ![1574301437549](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1574301437549.png)
+  ![1574301437549](assets/1574301437549.png)
 
 <br>
 
