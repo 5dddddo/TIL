@@ -98,6 +98,7 @@
 - 검색 기능을 추가해보자!
 
 - bootstrap 검색 창 참고 : https://getbootstrap.com/docs/4.3/components/forms/#form-row
+
 - bootstrap grid 참고 : https://getbootstrap.com/docs/4.3/layout/grid/
 
 - `articles/index.html`
@@ -110,7 +111,7 @@
         <input type="text" name = "query" class="form-control" placeholder="First name">
       </div>
       <div class="col-6 col-sm-3 col-md-2">
-        <input type="text" class="form-control btn btn-success" value ="검색">
+        <input type="submit" class="form-control btn btn-success" value ="검색">
       </div>
     </div>
   </form>
@@ -131,7 +132,7 @@
       # ORM에 like와 같이 지정한 문자열 포함하는 자료 검색 키워드 2가지
       # __contains
       # __icontains : 대소문자 구별 X
-      articles = Article.object.filter(title__icontains=query)
+      articles = Article.objects.filter(title__icontains=query)
   
       #3. context로 전달
       context = {'articles': articles}
@@ -148,6 +149,8 @@
 
   with badges : https://getbootstrap.com/docs/4.3/components/list-group/ 
 
+  - **댓글 갯수를 뱃지로 표시**
+
   ``` html
   <ul class="list-group">
     <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -160,10 +163,11 @@
 - `articles/search.html`
 
   ``` html
-  {% extends 'articles/base.html' %}
+  {% extends 'base.html' %}
   {% block body %}
   
   <h1 class="mt-4"> 검색 결과</h1>
+  
   <ul class="list-group">
     {% for article in articles %}
     <a href="{% url 'articles:detail' article.pk %}" class="mb-2">
@@ -174,7 +178,12 @@
       </a>
       {% endfor %}
   </ul>
+  {% endblock %}
   ```
+
+- 실행 결과
+
+  ![1574301437549](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1574301437549.png)
 
 <br>
 
