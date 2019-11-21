@@ -23,4 +23,5 @@ urlpatterns = [
     path('explore/',views.explore, name='explore'),
     path('list/',views.list, name='list'),
     path('<int:hash_pk>/hashtag/', views.hashtag, name='hashtag'),   
+    path('search/',views.search,name ='search'),
 ]
