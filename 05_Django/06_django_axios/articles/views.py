@@ -7,18 +7,23 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Article, Comment, Hashtag
 from django.http import JsonResponse, HttpResponseBadRequest
 from .forms import ArticleForm, CommentForm
+from django.core.paginator import Paginator
 
-# Create your views here.
 def index(request):
-    if request.user.is_authenticated:
-        gravatar_url = hashlib.md5(request.user.email.encode('utf-8').lower().strip()).hexdigest()
-    else:
-        gravatar_url = None
-
-    articles = Article.objects.all()[::-1]
-    context =  {'articles': articles,'gravatar_url':gravatar_url,}
+    articles = Article.objects.all()
+    # 1. articles를 Paginator에 넣기
+    # Paginator(전체 리스트, 보여줄 갯수)
+    paginator = Paginator(articles,4)
+    
+    # 2. 사용자가 요청한 Page 가져오기
+    page = request.GET.get('page')
+    
+    # 3. 해당하는 page의 article만 가져오기
+    articles = paginator.get_page(page)
+    print(dir(articles))
+    print(dir(articles.paginator))
+    context = {'articles': articles}
     return render(request, 'articles/index.html', context)
-
 
 #로그인 안한상태로 create 로직에 접근하면 접근 못하게 하기
 @login_required
@@ -275,20 +280,16 @@ def hashtag(request, hash_pk):
     }
     return render(request, 'articles/hashtag.html' ,context)
 
-from django.core.paginator import Paginator
+def search(request):
+    # 1. 사용자가 입력한 검색어 가져오기
+    query = request.GET.get('query')
 
-def index(request):
-    articles = Article.objects.all()
-    # 1. articles를 Paginator에 넣기
-    # Paginator(전체 리스트, 보여줄 갯수)
-    paginator = Paginator(articles,4)
-    
-    # 2. 사용자가 요청한 Page 가져오기
-    page = request.GET.get('page')
-    
-    # 3. 해당하는 page의 article만 가져오기
-    articles = paginator.get_page(page)
-    print(dir(articles))
-    print(dir(articles.paginator))
+    # 2. DB에서 query가 포함된 제목을 가진 article 가져오기
+    # ORM에 like와 같이 지정한 문자열 포함하는 자료 검색 키워드 2가지
+    # __contains
+    # __icontains : 대소문자 구별 X
+    articles = Article.object.filter(title__icontains=query)
+
+    #3. context로 전달
     context = {'articles': articles}
-    return render(request, 'articles/index.html', context)
+    return render(request, 'articles/search.html',context)
