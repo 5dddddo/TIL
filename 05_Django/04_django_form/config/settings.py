@@ -134,7 +134,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 # LOGIN_URL='/members/login'
 
 # 기본값 : auth.User

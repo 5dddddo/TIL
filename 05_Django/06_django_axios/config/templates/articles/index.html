@@ -1,105 +1,78 @@
+  
 {% extends 'base.html' %}
-{% load bootstrap4 %}
-
 
 {% block body %}
-<h1 class="text-center"> ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚ ✩‧₊˚ </h1>
-<a href="{% url 'articles:create' %}"> [new] </a>
+<h1>Articles</h1>
+<a href="{% url 'articles:create' %}">[NEW]</a>
 <hr>
 
-<form class = "mb-4" action="{% url 'articles:search' %}">
+<form class="mb-4" action="{% url 'articles:search' %}">
   <div class="form-row justify-content-center">
     <div class="mb-2 col-12 col-sm-9 col-md-10">
-    <!-- views.py 에서 사용자가 입력한검색어 가져오기위해 name 설정-->
-      <input type="text" name = "query" class="form-control" placeholder="First name">
+      <input type="text" name="query" class="form-control" placeholder="제목을 입력해주세요.">
     </div>
-    <div class="col-6 col-sm-3 col-md-2">
-      <input type="submit" class="form-control btn btn-success" value ="검색">
+    <div class="col-8 col-sm-3 col-md-2">
+      <input type="submit" class="form-control btn btn-success" value="검색">
     </div>
   </div>
 </form>
 
 <div class="row">
   {% for article in articles %}
-  <!-- 모듈화 시켜둔 article 템플릿 가져오기 -->
-  {% include 'articles/_article.html' %}
+    <!-- 모듈화 시켜둔 article 템플릿 가져오기 -->
+    {% include 'articles/_article.html' %}
   {% endfor %}
 </div>
 
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-
-    <!-- 이전 버튼 -->
-    <!-- 이전 페이지 있으면 Previous 버튼 출력-->
+    <!-- 이전 페이지가 있을 경우 -->
     {% if articles.has_previous %}
-    <li class="page-item disabled">
-      <a class="page-link" 
-         href="{% url 'articles:index' %}?page={{articles.previous_page_number}}" 
-         tabindex="-1" aria-disabled="true"><</a>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'articles:index' %}?page={{ articles.previous_page_number }}" tabindex="-1" aria-disabled="true">◀</a>
     </li>
     {% endif %}
-        
+
     <!-- 페이지 버튼 -->
-    {% for num in articles.paginator.page_range  %}
-    <li class="page-item">
-        <a class="page-link"
-           href="{% url 'articles:index' %}?page={{num}}">{{num}}</a>
+    {% for num in articles.paginator.page_range %}
+    <li class="page-item {% if num == articles.number %}active{% endif %}">
+      <a class="page-link" href="{% url 'articles:index' %}?page={{ num }}">{{ num }}</a>
     </li>
     {% endfor %}
-      
-    <!-- 다음 버튼 -->
-    <!-- 다음 페이지 있으면 Next 버튼 출력-->
+
+    <!-- 다음 페이지 있으면 Next 버튼 출력 -->
     {% if articles.has_next %}
     <li class="page-item">
-      <a class="page-link"
-         href="{% url 'articles:index' %}?page={{articles.next_page_number}}">></a>
+      <a class="page-link" href="{% url 'articles:index' %}?page={{ articles.next_page_number }}">▶</a>
     </li>
     {% endif %}
   </ul>
 </nav>
 
-<script>
-  // 1. 모든 좋아요 버튼 가져오기
-  const likeButtons = document.querySelectorAll('.like-button')
 
-  // 2.forEach 함수 활용 ->  
+<script>
+  const likeButtons = document.querySelectorAll('.like-button')
   likeButtons.forEach(button => {
-    button.addEventListener('click', function (event) {
-      // event.target.classList, event.target.dataset.id
-      // 1. data-id에 article.pk가 들어있음 -> 동적 라우팅 활용
+    button.addEventListener('click', function(event) {
       const articleId = event.target.dataset.id
-      // django가 Ajax 요청을 구분하게 하기 위해서 XHR 객체를 담아서 보내줌
+      // 장고가 Ajax 요청을 구분하게 하기 위해서 XHR 객체를 담아서 보내준다.
       axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
-      // 요청 보내기 전에 Default로 인증 값 설정
       axios.defaults.xsrfCookieName = 'csrftoken'
       axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-      // 2. 해당 게시글의 좋아요 요청 보내기
-      // 로그인 했을 때만 수행되도록
-      {
-        %
-        if user.is_authenticated %
-      }
+      {% if user.is_authenticated %}
       axios.post(`/articles/${articleId}/like/`)
         .then(response => {
-          //3. 응답 결과 확인
-          console.log(response.data)
-          // 알맞은 id 값을 가진 span 태그를 선택해서,
-          // 사용자가 좋아요를 누를 때마다 response.data.count 값으로 갱신시킨다.
           document.querySelector(`#like-count-${articleId}`).innerText = response.data.count
           if (response.data.liked) {
             event.target.style.color = 'crimson'
           } else {
             event.target.style.color = 'black'
           }
-        }).catch(error => {
-          console.log(error)
-        }) {
-          %
-          else %
-        }
-      alert('로그인을 해야 기능을 사용할 수 있습니다.') {
-        % endif %
-      }
+        })
+        .catch(error => { console.log(error) })
+      {% else %}
+        alert('로그인을 해야 기능을 사용할 수 있습니다.')
+      {% endif %}
     })
   })
 </script>

@@ -1,25 +1,35 @@
 from django.contrib import admin
-from .models import Streetlamp_Kind, Streetlamp, CCTV_Kind, CCTV
+from .models import StreetlampKind, Streetlamp, CCTVKind, CCTV
 # Register your models here.
 
 
 class StreetlampKindAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'STR_KIND', 'STR_RADIUS',)
+    list_display = ('pk', 'STR_RADIUS',)
+    list_editable = ('STR_RADIUS',)
 
 
 class StreetlampAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'STR_KIND', 'STR_LONGITUDE', 'STR_LATITUDE',)
+    list_display = ('pk', 'STR_KIND', 'STR_ADDRESS_NAME',
+                    'STR_LONGITUDE', 'STR_LATITUDE',)
+    list_editable = ('STR_KIND', 'STR_ADDRESS_NAME',
+                     'STR_LONGITUDE', 'STR_LATITUDE',)
+    list_filter = ('STR_KIND',)
 
 
-class CCTV_KindAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'CCTV_KIND', 'CCTV_RADIUS',)
+class CCTVKindAdmin(admin.ModelAdmin):
+    list_display = ('pk',  'CCTV_RADIUS',)
+    list_editable = ('CCTV_RADIUS',)
 
 
 class CCTVAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'CCTV_KIND', 'CCTV_LONGITUDE', 'CCTV_LATITUDE',)
+    list_display = ('pk', 'CCTV_KIND', 'CCTV_ADDRESS_NAME',
+                    'CCTV_LONGITUDE', 'CCTV_LATITUDE',)
+    list_editable = ('CCTV_KIND', 'CCTV_ADDRESS_NAME',
+                     'CCTV_LONGITUDE', 'CCTV_LATITUDE',)
+    list_filter = ('CCTV_KIND',)
 
 
-admin.site.register(Streetlamp_Kind, StreetlampKindAdmin)
+admin.site.register(StreetlampKind, StreetlampKindAdmin)
 admin.site.register(Streetlamp, StreetlampAdmin)
-admin.site.register(CCTV_Kind, CCTV_KindAdmin)
+admin.site.register(CCTVKind, CCTVKindAdmin)
 admin.site.register(CCTV, CCTVAdmin)
