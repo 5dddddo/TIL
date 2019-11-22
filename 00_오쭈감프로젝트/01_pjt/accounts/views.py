@@ -19,7 +19,7 @@ def index(request):
 
 def signup(request):
     if request.user.is_authenticated:
-        return redirect('articles:index')
+        return redirect('safeLoad:index')
 
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
@@ -28,7 +28,7 @@ def signup(request):
             # 회원가입 하면 바로 로그인으로 넘겨버리기
             user = form.save()
             auth_login(request, user)
-            return redirect('articles:index')
+            return redirect('safeLoad:index')
     else:
         form = CustomUserCreationForm()
     context = {'form': form}
@@ -69,3 +69,19 @@ def login(request):
 def logout(request):
     auth_logout(request)
     return redirect('safeLoad:index')
+
+
+# 회원정보 수정
+@login_required
+def update(request):
+    if request.method =='POST':
+        # 첫번째 : 사용자가 입력한 데이터 # 두번째 : 접속하고 있는 회원 instance인자로 넘김
+        form = CustomUserChangeForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            return redirect('articles:index')
+    else:
+        # form = UserChangeForm(instance=request.user)
+        form = CustomUserChangeForm(instance=request.user)
+    context={'form':form}
+    return render(request, 'accounts/auth_form.html', context)

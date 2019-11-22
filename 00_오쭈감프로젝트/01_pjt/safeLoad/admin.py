@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import StreetlampKind, Streetlamp, CCTVKind, CCTV
+from accounts.models import Profile
 # Register your models here.
 
 
@@ -29,7 +30,14 @@ class CCTVAdmin(admin.ModelAdmin):
     list_filter = ('CCTV_KIND',)
 
 
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('pk', 'user', 'member_tel', 'member_emergency',
+                    'member_msg', 'member_longitude', 'member_latitude')
+    list_editable = ('user', 'member_tel', 'member_emergency',
+                    'member_msg', 'member_longitude', 'member_latitude')
+
 admin.site.register(StreetlampKind, StreetlampKindAdmin)
 admin.site.register(Streetlamp, StreetlampAdmin)
 admin.site.register(CCTVKind, CCTVKindAdmin)
 admin.site.register(CCTV, CCTVAdmin)
+admin.site.register(Profile, ProfileAdmin)
