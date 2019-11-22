@@ -74,14 +74,14 @@ def logout(request):
 # 회원정보 수정
 @login_required
 def update(request):
-    if request.method =='POST':
+    if request.method == 'POST':
         # 첫번째 : 사용자가 입력한 데이터 # 두번째 : 접속하고 있는 회원 instance인자로 넘김
         form = CustomUserChangeForm(request.POST, instance=request.user)
         if form.is_valid():
             form.save()
-            return redirect('articles:index')
+            return redirect('safeLoad:index')
     else:
         # form = UserChangeForm(instance=request.user)
         form = CustomUserChangeForm(instance=request.user)
-    context={'form':form}
+    context = {'form': form}
     return render(request, 'accounts/auth_form.html', context)

@@ -111,7 +111,7 @@
                     <div class="d-flex align-items-center custom-icon-wrap mb-3">
                       <span class="custom-icon-inner mr-3"><span class="icon icon-phone"></span></span>
                       <div>
-                        <h3 class="m-0">01056113427</h3>
+                        <h3 class="m-0">{{user.first_name}}</h3>
                       </div>
                     </div>
 
@@ -122,7 +122,8 @@
                       </div>
                     </div>
                     <div class="form-group text-center">
-                      <input type="submit" class="btn btn-primary btn-pill" value="정보 수정"></a>
+                      <a href="{% url 'accounts:update' %}" type="submit" class="btn btn-primary btn-pill"
+                        value="정보 수정"></a>
 
                     </div>
                     {% endif %}

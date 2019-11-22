@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import StreetlampKind, Streetlamp, CCTVKind, CCTV
 from accounts.models import Profile
+from django.contrib.auth.admin import UserAdmin
+from accounts.forms import CustomUserChangeForm
 # Register your models here.
 
 
@@ -31,10 +33,12 @@ class CCTVAdmin(admin.ModelAdmin):
 
 
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'user', 'member_tel', 'member_emergency',
+    form = CustomUserChangeForm
+    list_display = ('pk',  'member_tel', 'member_emergency',
                     'member_msg', 'member_longitude', 'member_latitude')
-    list_editable = ('user', 'member_tel', 'member_emergency',
-                    'member_msg', 'member_longitude', 'member_latitude')
+    list_editable = ('member_tel', 'member_emergency',
+                     'member_msg', 'member_longitude', 'member_latitude')
+
 
 admin.site.register(StreetlampKind, StreetlampKindAdmin)
 admin.site.register(Streetlamp, StreetlampAdmin)
