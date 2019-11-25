@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import StreetlampKind, Streetlamp, CCTVKind, CCTV
-from accounts.models import Profile
+from accounts.models import MyUser
 from django.contrib.auth.admin import UserAdmin
 from accounts.forms import CustomUserChangeForm
 # Register your models here.
@@ -32,9 +32,13 @@ class CCTVAdmin(admin.ModelAdmin):
     list_filter = ('CCTV_KIND',)
 
 
-class ProfileAdmin(admin.ModelAdmin):
-    form = CustomUserChangeForm
-    list_display = ('pk',  'member_tel', 'member_emergency',
+class MyUserAdmin(UserAdmin):
+    # form = CustomUserChangeForm
+    UserAdmin.fieldsets[1][1]['fields'] += (
+        'member_tel', 'member_emergency', 'member_msg', 'member_longitude', 'member_latitude')
+    UserAdmin.add_fieldsets += ((('Additional Info'), {'fields': (
+        'member_tel', 'member_emergency', 'member_msg', 'member_longitude', 'member_latitude')}),)
+    list_display = ('pk', 'username', 'member_tel', 'member_emergency',
                     'member_msg', 'member_longitude', 'member_latitude')
     list_editable = ('member_tel', 'member_emergency',
                      'member_msg', 'member_longitude', 'member_latitude')
@@ -44,4 +48,4 @@ admin.site.register(StreetlampKind, StreetlampKindAdmin)
 admin.site.register(Streetlamp, StreetlampAdmin)
 admin.site.register(CCTVKind, CCTVKindAdmin)
 admin.site.register(CCTV, CCTVAdmin)
-admin.site.register(Profile, ProfileAdmin)
+admin.site.register(MyUser, MyUserAdmin)
