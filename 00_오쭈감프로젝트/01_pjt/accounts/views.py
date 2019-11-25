@@ -85,3 +85,17 @@ def update(request):
         form = CustomUserChangeForm(instance=request.user)
     context = {'form': form}
     return render(request, 'accounts/auth_form.html', context)
+
+# 로그인 한 상태에서만 폼을 보여야 하므로 login_required 데코레이터 사용
+@login_required
+def change_password(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)
+            return redirect('articles:index')
+    else:
+        form = PasswordChangeForm(request.user)
+    context = {'form': form}
+    return render(request, 'accounts/auth_form.html', context)

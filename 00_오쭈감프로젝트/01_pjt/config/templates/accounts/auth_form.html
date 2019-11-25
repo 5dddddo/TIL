@@ -5,13 +5,13 @@
 
 <!-- 4개를 합쳤다-->
 {% if request.resolver_match.url_name == 'signup' %}
-  <h1>회원가입</h1>
+<h1>회원가입</h1>
 {% elif request.resolver_match.url_name == 'login' %}
-  <h1>로그인</h1>
+<h1>로그인</h1>
 {% elif request.resolver_match.url_name == 'update' %}
-  <h1>회원정보수정</h1> 
+<h1>회원 정보 수정</h1>
 {% else %}
-  <h1>비밀번호　변경</h1>
+<h1>비밀번호 변경</h1>
 {% endif %}
 
 <form action="" method="POST">
@@ -19,6 +19,4 @@
   {% bootstrap_form form %}
   {% buttons submit='제출' reset='초기화' %}
   {% endbuttons %}
-  {% comment %} <input type="submit" value="가입" {% endcomment %} 
-</form> 
-{% endblock %}
+  {% comment %} <input type="submit" value="가입" {% endcomment %} </form> {% endblock %}
