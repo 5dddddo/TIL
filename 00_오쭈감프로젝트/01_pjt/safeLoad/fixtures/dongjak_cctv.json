@@ -1,0 +1,6972 @@
+[
+    {
+        "pk": 1,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로23길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939452",
+            "CCTV_LATITUDE": "37.510141"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로8길 40 마당쇠숯불갈비",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937588",
+            "CCTV_LATITUDE": "37.512401"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로18길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941599",
+            "CCTV_LATITUDE": "37.507402"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로14다길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94531",
+            "CCTV_LATITUDE": "37.511299"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로22길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941561",
+            "CCTV_LATITUDE": "37.508595"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로19다길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937572",
+            "CCTV_LATITUDE": "37.509271"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로24가길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942072",
+            "CCTV_LATITUDE": "37.511253"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955522",
+            "CCTV_LATITUDE": "37.5097"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로18길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95097",
+            "CCTV_LATITUDE": "37.511993"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로60길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954596",
+            "CCTV_LATITUDE": "37.492257"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로67길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956525",
+            "CCTV_LATITUDE": "37.494556"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로41가길 6",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950148",
+            "CCTV_LATITUDE": "37.502511"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 41길 50",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95185",
+            "CCTV_LATITUDE": "37.502509"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47다길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.953161",
+            "CCTV_LATITUDE": "37.501578"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로56길 6",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952592",
+            "CCTV_LATITUDE": "37.496134"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15마길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933614",
+            "CCTV_LATITUDE": "37.503376"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15아길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93464",
+            "CCTV_LATITUDE": "37.504266"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로26가길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938269",
+            "CCTV_LATITUDE": "37.503636"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로1길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946482",
+            "CCTV_LATITUDE": "37.506361"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동2길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927738",
+            "CCTV_LATITUDE": "37.502696"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉10길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93111",
+            "CCTV_LATITUDE": "37.495284"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6가길 41",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933476",
+            "CCTV_LATITUDE": "37.496948"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉5길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930216",
+            "CCTV_LATITUDE": "37.49776"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로21가길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935076",
+            "CCTV_LATITUDE": "37.499267"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로10길 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93643",
+            "CCTV_LATITUDE": "37.495933"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로31길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938806",
+            "CCTV_LATITUDE": "37.500228"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로28길 54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946702",
+            "CCTV_LATITUDE": "37.498074"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로8가길2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961821",
+            "CCTV_LATITUDE": "37.505868"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로10길 64",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962923",
+            "CCTV_LATITUDE": "37.504228"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로3길 38-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955996",
+            "CCTV_LATITUDE": "37.508554"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로6길 19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961867",
+            "CCTV_LATITUDE": "37.503286"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동13길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925405",
+            "CCTV_LATITUDE": "37.50129"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동2길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928497",
+            "CCTV_LATITUDE": "37.501632"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로4길 43",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934881",
+            "CCTV_LATITUDE": "37.50754"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로62길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927954",
+            "CCTV_LATITUDE": "37.513961"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동 9길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926474",
+            "CCTV_LATITUDE": "37.502113"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24라길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.92241",
+            "CCTV_LATITUDE": "37.498486"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2나길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971126",
+            "CCTV_LATITUDE": "37.489637"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1길 72",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.907861",
+            "CCTV_LATITUDE": "37.485881"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.913845",
+            "CCTV_LATITUDE": "37.488202"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.915635",
+            "CCTV_LATITUDE": "37.489168"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방14길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.91114",
+            "CCTV_LATITUDE": "37.489686"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방14가길 47",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.913336",
+            "CCTV_LATITUDE": "37.489872"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22카길 47",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925826",
+            "CCTV_LATITUDE": "37.496137"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉2길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928482",
+            "CCTV_LATITUDE": "37.497135"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로9길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926443",
+            "CCTV_LATITUDE": "37.495"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22라길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.923357",
+            "CCTV_LATITUDE": "37.495315"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로29가길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981507",
+            "CCTV_LATITUDE": "37.488725"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로 43길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98061",
+            "CCTV_LATITUDE": "37.49718"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35가길 56",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978754",
+            "CCTV_LATITUDE": "37.491329"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로27길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979921",
+            "CCTV_LATITUDE": "37.487471"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로29길 63-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978653",
+            "CCTV_LATITUDE": "37.488666"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로257가길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975572",
+            "CCTV_LATITUDE": "37.4788"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로259길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972527",
+            "CCTV_LATITUDE": "37.476405"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20길 63",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975619",
+            "CCTV_LATITUDE": "37.480336"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로265길 21",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.974711",
+            "CCTV_LATITUDE": "37.47717"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로29길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97826",
+            "CCTV_LATITUDE": "37.485536"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35길 43",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98031",
+            "CCTV_LATITUDE": "37.491442"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로27길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978914",
+            "CCTV_LATITUDE": "37.484973"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로9나길7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970305",
+            "CCTV_LATITUDE": "37.486125"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "솔밭로 74-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967271",
+            "CCTV_LATITUDE": "37.483101"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2자길 2-15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.964628",
+            "CCTV_LATITUDE": "37.489331"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2차길 36",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965974",
+            "CCTV_LATITUDE": "37.487015"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로14길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971011",
+            "CCTV_LATITUDE": "37.482635"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97348",
+            "CCTV_LATITUDE": "37.482728"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로255라길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970335",
+            "CCTV_LATITUDE": "37.477351"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20다길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973501",
+            "CCTV_LATITUDE": "37.480667"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로14길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942534",
+            "CCTV_LATITUDE": "37.512362"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로30길 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956854",
+            "CCTV_LATITUDE": "37.510953"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95137",
+            "CCTV_LATITUDE": "37.499693"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로 37",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950991",
+            "CCTV_LATITUDE": "37.506506"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 119",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933041",
+            "CCTV_LATITUDE": "37.501462"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로28길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94462",
+            "CCTV_LATITUDE": "37.498969"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로17길 78",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934254",
+            "CCTV_LATITUDE": "37.500512"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로22길 52",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971261",
+            "CCTV_LATITUDE": "37.504835"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로14길 11",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96365",
+            "CCTV_LATITUDE": "37.508022"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35길 71",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979115",
+            "CCTV_LATITUDE": "37.492523"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로27길 86",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975568",
+            "CCTV_LATITUDE": "37.486923"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로13길 50",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971528",
+            "CCTV_LATITUDE": "37.48628"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20사길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972556",
+            "CCTV_LATITUDE": "37.47911"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2아길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.964579",
+            "CCTV_LATITUDE": "37.490168"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 170",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967617",
+            "CCTV_LATITUDE": "37.486624"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동길 30",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927893",
+            "CCTV_LATITUDE": "37.502094"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로8가길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933515",
+            "CCTV_LATITUDE": "37.50689"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1길 126",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.904984",
+            "CCTV_LATITUDE": "37.485264"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로7가길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925753",
+            "CCTV_LATITUDE": "37.4939"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉2나길 19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929566",
+            "CCTV_LATITUDE": "37.496934"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로10길 100",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.914575",
+            "CCTV_LATITUDE": "37.492062"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912608",
+            "CCTV_LATITUDE": "37.487677"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로11길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926304",
+            "CCTV_LATITUDE": "37.495509"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 38길 52",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.948616",
+            "CCTV_LATITUDE": "37.500997"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉16길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932779",
+            "CCTV_LATITUDE": "37.494577"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도4동 279-477 주변",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938819",
+            "CCTV_LATITUDE": "37.496504"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로22바길 66",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.947165",
+            "CCTV_LATITUDE": "37.49773"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로6길 93",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962356",
+            "CCTV_LATITUDE": "37.500251"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로10나길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934401",
+            "CCTV_LATITUDE": "37.509785"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2다길 84",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962954",
+            "CCTV_LATITUDE": "37.489607"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 31",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954867",
+            "CCTV_LATITUDE": "37.511247"
+        }
+    },
+    {
+        "pk": 99,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로5길 1-2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.957067",
+            "CCTV_LATITUDE": "37.50678"
+        }
+    },
+    {
+        "pk": 100,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952186",
+            "CCTV_LATITUDE": "37.501089"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로34다길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945828",
+            "CCTV_LATITUDE": "37.502801"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로37길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938986",
+            "CCTV_LATITUDE": "37.500733"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉8길 77",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931367",
+            "CCTV_LATITUDE": "37.493446"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉6길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929981",
+            "CCTV_LATITUDE": "37.495792"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로25가길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942447",
+            "CCTV_LATITUDE": "37.499117"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 170",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971344",
+            "CCTV_LATITUDE": "37.489549"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35길 120",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.976701",
+            "CCTV_LATITUDE": "37.492633"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로33길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98104",
+            "CCTV_LATITUDE": "37.49055"
+        }
+    },
+    {
+        "pk": 109,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로7길 80",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978261",
+            "CCTV_LATITUDE": "37.477791"
+        }
+    },
+    {
+        "pk": 110,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16라길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969648",
+            "CCTV_LATITUDE": "37.482028"
+        }
+    },
+    {
+        "pk": 111,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로8길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968809",
+            "CCTV_LATITUDE": "37.484122"
+        }
+    },
+    {
+        "pk": 112,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975594",
+            "CCTV_LATITUDE": "37.482189"
+        }
+    },
+    {
+        "pk": 113,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로271길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980062",
+            "CCTV_LATITUDE": "37.47732"
+        }
+    },
+    {
+        "pk": 114,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방16길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.909711",
+            "CCTV_LATITUDE": "37.490057"
+        }
+    },
+    {
+        "pk": 115,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22자길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924359",
+            "CCTV_LATITUDE": "37.496973"
+        }
+    },
+    {
+        "pk": 116,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로20길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940412",
+            "CCTV_LATITUDE": "37.508377"
+        }
+    },
+    {
+        "pk": 117,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로19길 42",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93763",
+            "CCTV_LATITUDE": "37.50806"
+        }
+    },
+    {
+        "pk": 118,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로19길 42",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960979",
+            "CCTV_LATITUDE": "37.508992"
+        }
+    },
+    {
+        "pk": 119,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로25길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979901",
+            "CCTV_LATITUDE": "37.485208"
+        }
+    },
+    {
+        "pk": 120,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로267나길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977286",
+            "CCTV_LATITUDE": "37.47837"
+        }
+    },
+    {
+        "pk": 121,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16자길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97026",
+            "CCTV_LATITUDE": "37.4799"
+        }
+    },
+    {
+        "pk": 122,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로60가길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954259",
+            "CCTV_LATITUDE": "37.493465"
+        }
+    },
+    {
+        "pk": 123,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로25마길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941218",
+            "CCTV_LATITUDE": "37.498074"
+        }
+    },
+    {
+        "pk": 124,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방길 19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.91161",
+            "CCTV_LATITUDE": "37.487844"
+        }
+    },
+    {
+        "pk": 125,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로6라길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936006",
+            "CCTV_LATITUDE": "37.508871"
+        }
+    },
+    {
+        "pk": 126,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로32길 53",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.957506",
+            "CCTV_LATITUDE": "37.511584"
+        }
+    },
+    {
+        "pk": 127,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로19길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939253",
+            "CCTV_LATITUDE": "37.508094"
+        }
+    },
+    {
+        "pk": 128,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94754",
+            "CCTV_LATITUDE": "37.502087"
+        }
+    },
+    {
+        "pk": 129,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로9나길 32-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938624",
+            "CCTV_LATITUDE": "37.501368"
+        }
+    },
+    {
+        "pk": 130,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉8길 70",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931079",
+            "CCTV_LATITUDE": "37.493876"
+        }
+    },
+    {
+        "pk": 131,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로20길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94413",
+            "CCTV_LATITUDE": "37.495272"
+        }
+    },
+    {
+        "pk": 132,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로9길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.958876",
+            "CCTV_LATITUDE": "37.507815"
+        }
+    },
+    {
+        "pk": 133,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로257가길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972679",
+            "CCTV_LATITUDE": "37.477385"
+        }
+    },
+    {
+        "pk": 134,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로43길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.982458",
+            "CCTV_LATITUDE": "37.496431"
+        }
+    },
+    {
+        "pk": 135,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로9라길 25",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970132",
+            "CCTV_LATITUDE": "37.487183"
+        }
+    },
+    {
+        "pk": 136,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16사길 59",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96939",
+            "CCTV_LATITUDE": "37.479738"
+        }
+    },
+    {
+        "pk": 137,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2차길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.964627",
+            "CCTV_LATITUDE": "37.487723"
+        }
+    },
+    {
+        "pk": 138,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 43-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925295",
+            "CCTV_LATITUDE": "37.500313"
+        }
+    },
+    {
+        "pk": 139,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방4길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.911938",
+            "CCTV_LATITUDE": "37.488631"
+        }
+    },
+    {
+        "pk": 140,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22마길 37",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.922388",
+            "CCTV_LATITUDE": "37.496716"
+        }
+    },
+    {
+        "pk": 141,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 12길 57",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.948289",
+            "CCTV_LATITUDE": "37.510583"
+        }
+    },
+    {
+        "pk": 142,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로6다길 50",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935886",
+            "CCTV_LATITUDE": "37.508437"
+        }
+    },
+    {
+        "pk": 143,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47가길 34",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950681",
+            "CCTV_LATITUDE": "37.501223"
+        }
+    },
+    {
+        "pk": 144,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15바길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934725",
+            "CCTV_LATITUDE": "37.504868"
+        }
+    },
+    {
+        "pk": 145,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931451",
+            "CCTV_LATITUDE": "37.498655"
+        }
+    },
+    {
+        "pk": 146,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로11길 69",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93354",
+            "CCTV_LATITUDE": "37.500302"
+        }
+    },
+    {
+        "pk": 147,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로12길 86",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96422",
+            "CCTV_LATITUDE": "37.504363"
+        }
+    },
+    {
+        "pk": 148,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로263길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975788",
+            "CCTV_LATITUDE": "37.477737"
+        }
+    },
+    {
+        "pk": 149,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로33가길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981918",
+            "CCTV_LATITUDE": "37.490807"
+        }
+    },
+    {
+        "pk": 150,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23아길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969647",
+            "CCTV_LATITUDE": "37.491504"
+        }
+    },
+    {
+        "pk": 151,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로255바길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971561",
+            "CCTV_LATITUDE": "37.478304"
+        }
+    },
+    {
+        "pk": 152,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "솔밭로 102-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968174",
+            "CCTV_LATITUDE": "37.485368"
+        }
+    },
+    {
+        "pk": 153,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동 15길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.922712",
+            "CCTV_LATITUDE": "37.502806"
+        }
+    },
+    {
+        "pk": 154,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2나길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912827",
+            "CCTV_LATITUDE": "37.489546"
+        }
+    },
+    {
+        "pk": 155,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22아길 72",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924633",
+            "CCTV_LATITUDE": "37.495693"
+        }
+    },
+    {
+        "pk": 156,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로14길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969323",
+            "CCTV_LATITUDE": "37.505206"
+        }
+    },
+    {
+        "pk": 157,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로10길 6",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946658",
+            "CCTV_LATITUDE": "37.509006"
+        }
+    },
+    {
+        "pk": 158,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로14길 60",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.947435",
+            "CCTV_LATITUDE": "37.512502"
+        }
+    },
+    {
+        "pk": 159,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 28길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955926",
+            "CCTV_LATITUDE": "37.511304"
+        }
+    },
+    {
+        "pk": 160,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 16길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944576",
+            "CCTV_LATITUDE": "37.511681"
+        }
+    },
+    {
+        "pk": 161,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 143 장미빌라",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942435",
+            "CCTV_LATITUDE": "37.510838"
+        }
+    },
+    {
+        "pk": 162,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 12길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946324",
+            "CCTV_LATITUDE": "37.510234"
+        }
+    },
+    {
+        "pk": 163,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951433",
+            "CCTV_LATITUDE": "37.508077"
+        }
+    },
+    {
+        "pk": 164,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 26길47",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955277",
+            "CCTV_LATITUDE": "37.510286"
+        }
+    },
+    {
+        "pk": 165,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 10가길 28",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936041",
+            "CCTV_LATITUDE": "37.511645"
+        }
+    },
+    {
+        "pk": 166,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 19라길 34",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936137",
+            "CCTV_LATITUDE": "37.507002"
+        }
+    },
+    {
+        "pk": 167,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 12길44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937663",
+            "CCTV_LATITUDE": "37.511515"
+        }
+    },
+    {
+        "pk": 168,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 8나길 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937128",
+            "CCTV_LATITUDE": "37.510085"
+        }
+    },
+    {
+        "pk": 169,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 27길 80",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938573",
+            "CCTV_LATITUDE": "37.509453"
+        }
+    },
+    {
+        "pk": 170,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로14길81",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936003",
+            "CCTV_LATITUDE": "37.512797"
+        }
+    },
+    {
+        "pk": 171,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 6길79",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936748",
+            "CCTV_LATITUDE": "37.509686"
+        }
+    },
+    {
+        "pk": 172,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15길 111-7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936838",
+            "CCTV_LATITUDE": "37.505059"
+        }
+    },
+    {
+        "pk": 173,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로31길 49",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945935",
+            "CCTV_LATITUDE": "37.506745"
+        }
+    },
+    {
+        "pk": 174,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 22길 25",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93706",
+            "CCTV_LATITUDE": "37.502136"
+        }
+    },
+    {
+        "pk": 175,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 9나길1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939514",
+            "CCTV_LATITUDE": "37.502527"
+        }
+    },
+    {
+        "pk": 176,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 30길73",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94488",
+            "CCTV_LATITUDE": "37.503809"
+        }
+    },
+    {
+        "pk": 177,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로10길 28",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940745",
+            "CCTV_LATITUDE": "37.504774"
+        }
+    },
+    {
+        "pk": 178,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946776",
+            "CCTV_LATITUDE": "37.50554"
+        }
+    },
+    {
+        "pk": 179,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 6마길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935133",
+            "CCTV_LATITUDE": "37.495338"
+        }
+    },
+    {
+        "pk": 180,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 11길23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929044",
+            "CCTV_LATITUDE": "37.501938"
+        }
+    },
+    {
+        "pk": 181,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로13나길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929259",
+            "CCTV_LATITUDE": "37.502663"
+        }
+    },
+    {
+        "pk": 182,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 13다길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930296",
+            "CCTV_LATITUDE": "37.500765"
+        }
+    },
+    {
+        "pk": 183,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15사길 30",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932949",
+            "CCTV_LATITUDE": "37.503008"
+        }
+    },
+    {
+        "pk": 184,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉1길 178",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934709",
+            "CCTV_LATITUDE": "37.494809"
+        }
+    },
+    {
+        "pk": 185,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 6가길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932901",
+            "CCTV_LATITUDE": "37.49783"
+        }
+    },
+    {
+        "pk": 186,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 21길 54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936413",
+            "CCTV_LATITUDE": "37.500347"
+        }
+    },
+    {
+        "pk": 187,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 22다길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945867",
+            "CCTV_LATITUDE": "37.496815"
+        }
+    },
+    {
+        "pk": 188,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 14길 81",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938693",
+            "CCTV_LATITUDE": "37.494863"
+        }
+    },
+    {
+        "pk": 189,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 165",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939487",
+            "CCTV_LATITUDE": "37.498689"
+        }
+    },
+    {
+        "pk": 190,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로1가길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935744",
+            "CCTV_LATITUDE": "37.501525"
+        }
+    },
+    {
+        "pk": 191,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 10길 3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934634",
+            "CCTV_LATITUDE": "37.4975"
+        }
+    },
+    {
+        "pk": 192,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 16길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937804",
+            "CCTV_LATITUDE": "37.496808"
+        }
+    },
+    {
+        "pk": 193,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 25길 51",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941474",
+            "CCTV_LATITUDE": "37.49706"
+        }
+    },
+    {
+        "pk": 194,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로 10가길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933194",
+            "CCTV_LATITUDE": "37.509772"
+        }
+    },
+    {
+        "pk": 195,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로 10길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934101",
+            "CCTV_LATITUDE": "37.510421"
+        }
+    },
+    {
+        "pk": 196,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 24다길 57",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924367",
+            "CCTV_LATITUDE": "37.49879"
+        }
+    },
+    {
+        "pk": 197,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 11길 9-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929372",
+            "CCTV_LATITUDE": "37.500651"
+        }
+    },
+    {
+        "pk": 198,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동 23길 45",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.92266",
+            "CCTV_LATITUDE": "37.50409"
+        }
+    },
+    {
+        "pk": 199,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동 23길 21",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924172",
+            "CCTV_LATITUDE": "37.503972"
+        }
+    },
+    {
+        "pk": 200,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24나길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.920952",
+            "CCTV_LATITUDE": "37.498445"
+        }
+    },
+    {
+        "pk": 201,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로10가길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.913195",
+            "CCTV_LATITUDE": "37.492078"
+        }
+    },
+    {
+        "pk": 202,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방14가길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912259",
+            "CCTV_LATITUDE": "37.489967"
+        }
+    },
+    {
+        "pk": 203,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.909988",
+            "CCTV_LATITUDE": "37.48652"
+        }
+    },
+    {
+        "pk": 204,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 10길 73",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9149",
+            "CCTV_LATITUDE": "37.493399"
+        }
+    },
+    {
+        "pk": 205,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대림로 43",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.908275",
+            "CCTV_LATITUDE": "37.487625"
+        }
+    },
+    {
+        "pk": 206,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방3길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.909689",
+            "CCTV_LATITUDE": "37.487627"
+        }
+    },
+    {
+        "pk": 207,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방6길 25",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.911369",
+            "CCTV_LATITUDE": "37.488902"
+        }
+    },
+    {
+        "pk": 208,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로16길 12-7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.916212",
+            "CCTV_LATITUDE": "37.496297"
+        }
+    },
+    {
+        "pk": 209,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 22카길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925845",
+            "CCTV_LATITUDE": "37.497724"
+        }
+    },
+    {
+        "pk": 210,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로9길 38-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925117",
+            "CCTV_LATITUDE": "37.495038"
+        }
+    },
+    {
+        "pk": 211,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로7가길 6",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926309",
+            "CCTV_LATITUDE": "37.493847"
+        }
+    },
+    {
+        "pk": 212,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉2가길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929073",
+            "CCTV_LATITUDE": "37.497508"
+        }
+    },
+    {
+        "pk": 213,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로17길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926859",
+            "CCTV_LATITUDE": "37.497321"
+        }
+    },
+    {
+        "pk": 214,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2가길 10-3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961114",
+            "CCTV_LATITUDE": "37.493351"
+        }
+    },
+    {
+        "pk": 215,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로55길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955321",
+            "CCTV_LATITUDE": "37.497876"
+        }
+    },
+    {
+        "pk": 216,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47가길9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951381",
+            "CCTV_LATITUDE": "37.50031"
+        }
+    },
+    {
+        "pk": 217,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로52길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951464",
+            "CCTV_LATITUDE": "37.498092"
+        }
+    },
+    {
+        "pk": 218,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로12길 106",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9682",
+            "CCTV_LATITUDE": "37.503997"
+        }
+    },
+    {
+        "pk": 219,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로23길 82",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938547",
+            "CCTV_LATITUDE": "37.496179"
+        }
+    },
+    {
+        "pk": 220,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로6길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956084",
+            "CCTV_LATITUDE": "37.505459"
+        }
+    },
+    {
+        "pk": 221,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로10나길 19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962272",
+            "CCTV_LATITUDE": "37.503404"
+        }
+    },
+    {
+        "pk": 222,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로3길 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979016",
+            "CCTV_LATITUDE": "37.478834"
+        }
+    },
+    {
+        "pk": 223,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로15길 96",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.976209",
+            "CCTV_LATITUDE": "37.482682"
+        }
+    },
+    {
+        "pk": 224,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로255나길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97157",
+            "CCTV_LATITUDE": "37.47706"
+        }
+    },
+    {
+        "pk": 225,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로271길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98003",
+            "CCTV_LATITUDE": "37.478328"
+        }
+    },
+    {
+        "pk": 226,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로41길22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980595",
+            "CCTV_LATITUDE": "37.496509"
+        }
+    },
+    {
+        "pk": 227,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로25길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981138",
+            "CCTV_LATITUDE": "37.486286"
+        }
+    },
+    {
+        "pk": 228,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로31길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98055",
+            "CCTV_LATITUDE": "37.489088"
+        }
+    },
+    {
+        "pk": 229,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로 33마길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977737",
+            "CCTV_LATITUDE": "37.491017"
+        }
+    },
+    {
+        "pk": 230,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로29다길 54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97713",
+            "CCTV_LATITUDE": "37.486837"
+        }
+    },
+    {
+        "pk": 231,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 181",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970926",
+            "CCTV_LATITUDE": "37.490157"
+        }
+    },
+    {
+        "pk": 232,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로27길 247",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969257",
+            "CCTV_LATITUDE": "37.492615"
+        }
+    },
+    {
+        "pk": 233,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로13길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972755",
+            "CCTV_LATITUDE": "37.484446"
+        }
+    },
+    {
+        "pk": 234,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20나길 114",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971481",
+            "CCTV_LATITUDE": "37.478817"
+        }
+    },
+    {
+        "pk": 235,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16가길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972734",
+            "CCTV_LATITUDE": "37.482977"
+        }
+    },
+    {
+        "pk": 236,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16바길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971607",
+            "CCTV_LATITUDE": "37.481357"
+        }
+    },
+    {
+        "pk": 237,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로14가길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971807",
+            "CCTV_LATITUDE": "37.484012"
+        }
+    },
+    {
+        "pk": 238,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로8가길 9-8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967635",
+            "CCTV_LATITUDE": "37.484065"
+        }
+    },
+    {
+        "pk": 239,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로49길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951945",
+            "CCTV_LATITUDE": "37.499024"
+        }
+    },
+    {
+        "pk": 240,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로8길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969349",
+            "CCTV_LATITUDE": "37.484575"
+        }
+    },
+    {
+        "pk": 241,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로14나길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943357",
+            "CCTV_LATITUDE": "37.511769"
+        }
+    },
+    {
+        "pk": 242,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로32길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956204",
+            "CCTV_LATITUDE": "37.512937"
+        }
+    },
+    {
+        "pk": 243,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로34나길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946007",
+            "CCTV_LATITUDE": "37.504012"
+        }
+    },
+    {
+        "pk": 244,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로18길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968238",
+            "CCTV_LATITUDE": "37.505197"
+        }
+    },
+    {
+        "pk": 245,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로257가길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.976487",
+            "CCTV_LATITUDE": "37.480008"
+        }
+    },
+    {
+        "pk": 246,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로31길 46-6",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979927",
+            "CCTV_LATITUDE": "37.489448"
+        }
+    },
+    {
+        "pk": 247,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로길27길 5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981628",
+            "CCTV_LATITUDE": "37.487172"
+        }
+    },
+    {
+        "pk": 248,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16나길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972059",
+            "CCTV_LATITUDE": "37.483017"
+        }
+    },
+    {
+        "pk": 249,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로62길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927093",
+            "CCTV_LATITUDE": "37.513546"
+        }
+    },
+    {
+        "pk": 250,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22나길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.921268",
+            "CCTV_LATITUDE": "37.496799"
+        }
+    },
+    {
+        "pk": 251,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로3길 47",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956989",
+            "CCTV_LATITUDE": "37.50932"
+        }
+    },
+    {
+        "pk": 252,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로3길 60",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.958052",
+            "CCTV_LATITUDE": "37.509556"
+        }
+    },
+    {
+        "pk": 253,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로13길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.958867",
+            "CCTV_LATITUDE": "37.509986"
+        }
+    },
+    {
+        "pk": 254,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로5길 92",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.958717",
+            "CCTV_LATITUDE": "37.509083"
+        }
+    },
+    {
+        "pk": 255,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로5길 74",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.957812",
+            "CCTV_LATITUDE": "37.509057"
+        }
+    },
+    {
+        "pk": 256,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로9길 72",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956737",
+            "CCTV_LATITUDE": "37.508609"
+        }
+    },
+    {
+        "pk": 257,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로13마길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.959515",
+            "CCTV_LATITUDE": "37.509276"
+        }
+    },
+    {
+        "pk": 258,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로13길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926774",
+            "CCTV_LATITUDE": "37.496169"
+        }
+    },
+    {
+        "pk": 259,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 20다길 10 정호아트빌라 삼거리",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941307",
+            "CCTV_LATITUDE": "37.509867"
+        }
+    },
+    {
+        "pk": 260,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로26길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943087",
+            "CCTV_LATITUDE": "37.511058"
+        }
+    },
+    {
+        "pk": 261,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16다길 57 제일아파트 앞 사거리",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969946",
+            "CCTV_LATITUDE": "37.483324"
+        }
+    },
+    {
+        "pk": 262,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2가길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912668",
+            "CCTV_LATITUDE": "37.488435"
+        }
+    },
+    {
+        "pk": 263,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로22길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970485",
+            "CCTV_LATITUDE": "37.504369"
+        }
+    },
+    {
+        "pk": 264,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로16길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943763",
+            "CCTV_LATITUDE": "37.513025"
+        }
+    },
+    {
+        "pk": 265,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로134 신동아APT앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951117",
+            "CCTV_LATITUDE": "37.510455"
+        }
+    },
+    {
+        "pk": 266,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로13길 28",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944765",
+            "CCTV_LATITUDE": "37.509344"
+        }
+    },
+    {
+        "pk": 267,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로16길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943031",
+            "CCTV_LATITUDE": "37.507703"
+        }
+    },
+    {
+        "pk": 268,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로8나길 111",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93603",
+            "CCTV_LATITUDE": "37.507792"
+        }
+    },
+    {
+        "pk": 269,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로8다길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937069",
+            "CCTV_LATITUDE": "37.510858"
+        }
+    },
+    {
+        "pk": 270,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로9길 41",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937737",
+            "CCTV_LATITUDE": "37.503084"
+        }
+    },
+    {
+        "pk": 271,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15길 104",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936017",
+            "CCTV_LATITUDE": "37.504322"
+        }
+    },
+    {
+        "pk": 272,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로34길 36",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944858",
+            "CCTV_LATITUDE": "37.503191"
+        }
+    },
+    {
+        "pk": 273,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉10길 81-3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932943",
+            "CCTV_LATITUDE": "37.493222"
+        }
+    },
+    {
+        "pk": 274,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15다길 7-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932906",
+            "CCTV_LATITUDE": "37.502316"
+        }
+    },
+    {
+        "pk": 275,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로2길 11 상도3동주민센터",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93122",
+            "CCTV_LATITUDE": "37.499189"
+        }
+    },
+    {
+        "pk": 276,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로22나길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936451",
+            "CCTV_LATITUDE": "37.501751"
+        }
+    },
+    {
+        "pk": 277,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로25길 10-8 구립샛별어린이집",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938968",
+            "CCTV_LATITUDE": "37.499179"
+        }
+    },
+    {
+        "pk": 278,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로10나길 6 성대경로당 인근",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934927",
+            "CCTV_LATITUDE": "37.497119"
+        }
+    },
+    {
+        "pk": 279,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동길 77 앞 삼거리",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924775",
+            "CCTV_LATITUDE": "37.505018"
+        }
+    },
+    {
+        "pk": 280,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로8가길 11 골목길",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934142",
+            "CCTV_LATITUDE": "37.506328"
+        }
+    },
+    {
+        "pk": 281,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24사길 8 앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925253",
+            "CCTV_LATITUDE": "37.499062"
+        }
+    },
+    {
+        "pk": 282,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방길 88 새마을금고앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.909452",
+            "CCTV_LATITUDE": "37.489617"
+        }
+    },
+    {
+        "pk": 283,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방16가길 18 향나무빌라앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.910814",
+            "CCTV_LATITUDE": "37.490321"
+        }
+    },
+    {
+        "pk": 284,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방18길 1 장시회관 앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.90881",
+            "CCTV_LATITUDE": "37.490055"
+        }
+    },
+    {
+        "pk": 285,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방14가길 23 대천교회 앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912864",
+            "CCTV_LATITUDE": "37.490071"
+        }
+    },
+    {
+        "pk": 286,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22길 44 보라매어린이집",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.922301",
+            "CCTV_LATITUDE": "37.497688"
+        }
+    },
+    {
+        "pk": 287,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로9라길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925682",
+            "CCTV_LATITUDE": "37.494671"
+        }
+    },
+    {
+        "pk": 288,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22길 78",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.923779",
+            "CCTV_LATITUDE": "37.497733"
+        }
+    },
+    {
+        "pk": 289,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47바길41",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.953605",
+            "CCTV_LATITUDE": "37.503736"
+        }
+    },
+    {
+        "pk": 290,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로68길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955347",
+            "CCTV_LATITUDE": "37.493657"
+        }
+    },
+    {
+        "pk": 291,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로45길 81",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952966",
+            "CCTV_LATITUDE": "37.50263"
+        }
+    },
+    {
+        "pk": 292,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로61길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.957619",
+            "CCTV_LATITUDE": "37.494666"
+        }
+    },
+    {
+        "pk": 293,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로2길 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949675",
+            "CCTV_LATITUDE": "37.506576"
+        }
+    },
+    {
+        "pk": 294,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로13가길 6-2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931222",
+            "CCTV_LATITUDE": "37.500503"
+        }
+    },
+    {
+        "pk": 295,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로19길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936423",
+            "CCTV_LATITUDE": "37.499071"
+        }
+    },
+    {
+        "pk": 296,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로6길 16-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.956671",
+            "CCTV_LATITUDE": "37.50574"
+        }
+    },
+    {
+        "pk": 297,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로13길 11-1 연흥여인숙 골목",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962202",
+            "CCTV_LATITUDE": "37.508202"
+        }
+    },
+    {
+        "pk": 298,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로10라길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.964189",
+            "CCTV_LATITUDE": "37.503354"
+        }
+    },
+    {
+        "pk": 299,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로10길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960103",
+            "CCTV_LATITUDE": "37.506736"
+        }
+    },
+    {
+        "pk": 300,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로271길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979406",
+            "CCTV_LATITUDE": "37.479497"
+        }
+    },
+    {
+        "pk": 301,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로11길104",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975679",
+            "CCTV_LATITUDE": "37.481499"
+        }
+    },
+    {
+        "pk": 302,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로269길 87",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9749",
+            "CCTV_LATITUDE": "37.479149"
+        }
+    },
+    {
+        "pk": 303,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로271가길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979548",
+            "CCTV_LATITUDE": "37.477791"
+        }
+    },
+    {
+        "pk": 304,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로267길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.976136",
+            "CCTV_LATITUDE": "37.477572"
+        }
+    },
+    {
+        "pk": 305,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로41길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981921",
+            "CCTV_LATITUDE": "37.495837"
+        }
+    },
+    {
+        "pk": 306,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35가길 3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981049",
+            "CCTV_LATITUDE": "37.490564"
+        }
+    },
+    {
+        "pk": 307,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로27라길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9795",
+            "CCTV_LATITUDE": "37.486061"
+        }
+    },
+    {
+        "pk": 308,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로27길 225",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970536",
+            "CCTV_LATITUDE": "37.491784"
+        }
+    },
+    {
+        "pk": 309,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로9가길 58 경남아그네스빌",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968233",
+            "CCTV_LATITUDE": "37.487375"
+        }
+    },
+    {
+        "pk": 310,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 278",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967497",
+            "CCTV_LATITUDE": "37.492846"
+        }
+    },
+    {
+        "pk": 311,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로18길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.974581",
+            "CCTV_LATITUDE": "37.482706"
+        }
+    },
+    {
+        "pk": 312,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로257길 42 남성중학교",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972464",
+            "CCTV_LATITUDE": "37.478163"
+        }
+    },
+    {
+        "pk": 313,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16아길 59",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968574",
+            "CCTV_LATITUDE": "37.480995"
+        }
+    },
+    {
+        "pk": 314,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2길 40 장은해그린아파트",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963371",
+            "CCTV_LATITUDE": "37.491464"
+        }
+    },
+    {
+        "pk": 315,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로10길 93",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967531",
+            "CCTV_LATITUDE": "37.482142"
+        }
+    },
+    {
+        "pk": 316,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2차길 15-9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965904",
+            "CCTV_LATITUDE": "37.487781"
+        }
+    },
+    {
+        "pk": 317,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22가길 25-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.920797",
+            "CCTV_LATITUDE": "37.496829"
+        }
+    },
+    {
+        "pk": 318,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22바길 36",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.923564",
+            "CCTV_LATITUDE": "37.49628"
+        }
+    },
+    {
+        "pk": 319,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로14아길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.947494",
+            "CCTV_LATITUDE": "37.511964"
+        }
+    },
+    {
+        "pk": 320,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로21길18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939125",
+            "CCTV_LATITUDE": "37.509017"
+        }
+    },
+    {
+        "pk": 321,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로22길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936497",
+            "CCTV_LATITUDE": "37.502951"
+        }
+    },
+    {
+        "pk": 322,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉10길 72-4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932411",
+            "CCTV_LATITUDE": "37.493412"
+        }
+    },
+    {
+        "pk": 323,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로11가길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936121",
+            "CCTV_LATITUDE": "37.497827"
+        }
+    },
+    {
+        "pk": 324,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로9길 41",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.958014",
+            "CCTV_LATITUDE": "37.508005"
+        }
+    },
+    {
+        "pk": 325,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로10길 56",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967404",
+            "CCTV_LATITUDE": "37.504517"
+        }
+    },
+    {
+        "pk": 326,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로21길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980926",
+            "CCTV_LATITUDE": "37.483805"
+        }
+    },
+    {
+        "pk": 327,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로9다길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977302",
+            "CCTV_LATITUDE": "37.479556"
+        }
+    },
+    {
+        "pk": 328,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로269길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977614",
+            "CCTV_LATITUDE": "37.4778"
+        }
+    },
+    {
+        "pk": 329,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로29다길 7-5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980217",
+            "CCTV_LATITUDE": "37.488634"
+        }
+    },
+    {
+        "pk": 330,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로33바길 41",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977129",
+            "CCTV_LATITUDE": "37.491923"
+        }
+    },
+    {
+        "pk": 331,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로29가길 31-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9792",
+            "CCTV_LATITUDE": "37.486484"
+        }
+    },
+    {
+        "pk": 332,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 30",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972893",
+            "CCTV_LATITUDE": "37.482242"
+        }
+    },
+    {
+        "pk": 333,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로10가길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967853",
+            "CCTV_LATITUDE": "37.482603"
+        }
+    },
+    {
+        "pk": 334,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로15길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926814",
+            "CCTV_LATITUDE": "37.497172"
+        }
+    },
+    {
+        "pk": 335,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6가길 71",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934164",
+            "CCTV_LATITUDE": "37.49622"
+        }
+    },
+    {
+        "pk": 336,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로16길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936865",
+            "CCTV_LATITUDE": "37.497497"
+        }
+    },
+    {
+        "pk": 337,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로14길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942066",
+            "CCTV_LATITUDE": "37.513063"
+        }
+    },
+    {
+        "pk": 338,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로8나길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937035",
+            "CCTV_LATITUDE": "37.511822"
+        }
+    },
+    {
+        "pk": 339,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47사길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95339",
+            "CCTV_LATITUDE": "37.50329"
+        }
+    },
+    {
+        "pk": 340,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 162",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93725",
+            "CCTV_LATITUDE": "37.503677"
+        }
+    },
+    {
+        "pk": 341,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로12길 5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929952",
+            "CCTV_LATITUDE": "37.499398"
+        }
+    },
+    {
+        "pk": 342,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로14나길 24-5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962844",
+            "CCTV_LATITUDE": "37.507259"
+        }
+    },
+    {
+        "pk": 343,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로269길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.976625",
+            "CCTV_LATITUDE": "37.478254"
+        }
+    },
+    {
+        "pk": 344,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로27가길 45",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981091",
+            "CCTV_LATITUDE": "37.485534"
+        }
+    },
+    {
+        "pk": 345,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로17나길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973154",
+            "CCTV_LATITUDE": "37.484186"
+        }
+    },
+    {
+        "pk": 346,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16가길 56",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970505",
+            "CCTV_LATITUDE": "37.483839"
+        }
+    },
+    {
+        "pk": 347,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16다길 92",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96853",
+            "CCTV_LATITUDE": "37.484348"
+        }
+    },
+    {
+        "pk": 348,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동길 15-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927511",
+            "CCTV_LATITUDE": "37.501014"
+        }
+    },
+    {
+        "pk": 349,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로5길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933764",
+            "CCTV_LATITUDE": "37.499673"
+        }
+    },
+    {
+        "pk": 350,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.91077",
+            "CCTV_LATITUDE": "37.488065"
+        }
+    },
+    {
+        "pk": 351,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로94",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940411",
+            "CCTV_LATITUDE": "37.506076"
+        }
+    },
+    {
+        "pk": 352,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로27길27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939273",
+            "CCTV_LATITUDE": "37.511219"
+        }
+    },
+    {
+        "pk": 353,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로37길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.948749",
+            "CCTV_LATITUDE": "37.502657"
+        }
+    },
+    {
+        "pk": 354,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로13라길22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930206",
+            "CCTV_LATITUDE": "37.502854"
+        }
+    },
+    {
+        "pk": 355,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15길54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93455",
+            "CCTV_LATITUDE": "37.502821"
+        }
+    },
+    {
+        "pk": 356,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로12길57",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937463",
+            "CCTV_LATITUDE": "37.49539"
+        }
+    },
+    {
+        "pk": 357,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로13길5-30",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96169",
+            "CCTV_LATITUDE": "37.507693"
+        }
+    },
+    {
+        "pk": 358,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로17길 31",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938163",
+            "CCTV_LATITUDE": "37.506475"
+        }
+    },
+    {
+        "pk": 359,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로255길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971123",
+            "CCTV_LATITUDE": "37.476259"
+        }
+    },
+    {
+        "pk": 360,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로33가길 5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981733",
+            "CCTV_LATITUDE": "37.489482"
+        }
+    },
+    {
+        "pk": 361,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로26길54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.923754",
+            "CCTV_LATITUDE": "37.499218"
+        }
+    },
+    {
+        "pk": 362,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방길62",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.90967",
+            "CCTV_LATITUDE": "37.488652"
+        }
+    },
+    {
+        "pk": 363,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 1길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934462",
+            "CCTV_LATITUDE": "37.501576"
+        }
+    },
+    {
+        "pk": 364,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 21다길 34",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934924",
+            "CCTV_LATITUDE": "37.500714"
+        }
+    },
+    {
+        "pk": 365,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 17길 52 도화공원 인근",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935159",
+            "CCTV_LATITUDE": "37.500158"
+        }
+    },
+    {
+        "pk": 366,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 11길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.934862",
+            "CCTV_LATITUDE": "37.498462"
+        }
+    },
+    {
+        "pk": 367,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 37길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939761",
+            "CCTV_LATITUDE": "37.500382"
+        }
+    },
+    {
+        "pk": 368,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 25길 52-18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940733",
+            "CCTV_LATITUDE": "37.496874"
+        }
+    },
+    {
+        "pk": 369,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 25가길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942298",
+            "CCTV_LATITUDE": "37.498886"
+        }
+    },
+    {
+        "pk": 370,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 26길 68",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943389",
+            "CCTV_LATITUDE": "37.495547"
+        }
+    },
+    {
+        "pk": 371,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 29길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939855",
+            "CCTV_LATITUDE": "37.499455"
+        }
+    },
+    {
+        "pk": 372,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 22바길 37",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94704",
+            "CCTV_LATITUDE": "37.49659"
+        }
+    },
+    {
+        "pk": 373,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로10가길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941086",
+            "CCTV_LATITUDE": "37.501938"
+        }
+    },
+    {
+        "pk": 374,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로11길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960205",
+            "CCTV_LATITUDE": "37.50795"
+        }
+    },
+    {
+        "pk": 375,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방16길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.908983",
+            "CCTV_LATITUDE": "37.491031"
+        }
+    },
+    {
+        "pk": 376,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22바길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.923147",
+            "CCTV_LATITUDE": "37.496828"
+        }
+    },
+    {
+        "pk": 377,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 18길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945845",
+            "CCTV_LATITUDE": "37.512963"
+        }
+    },
+    {
+        "pk": 378,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로10길 75",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.938013",
+            "CCTV_LATITUDE": "37.509969"
+        }
+    },
+    {
+        "pk": 379,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 348",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952246",
+            "CCTV_LATITUDE": "37.49729"
+        }
+    },
+    {
+        "pk": 380,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로13길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930574",
+            "CCTV_LATITUDE": "37.499981"
+        }
+    },
+    {
+        "pk": 381,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로7길 25",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.957456",
+            "CCTV_LATITUDE": "37.507791"
+        }
+    },
+    {
+        "pk": 382,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로9나길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978043",
+            "CCTV_LATITUDE": "37.479316"
+        }
+    },
+    {
+        "pk": 383,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로33라길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979508",
+            "CCTV_LATITUDE": "37.489893"
+        }
+    },
+    {
+        "pk": 384,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로 110",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928556",
+            "CCTV_LATITUDE": "37.498858"
+        }
+    },
+    {
+        "pk": 385,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방16가길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.91194",
+            "CCTV_LATITUDE": "37.490214"
+        }
+    },
+    {
+        "pk": 386,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대림로19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.911346",
+            "CCTV_LATITUDE": "37.487114"
+        }
+    },
+    {
+        "pk": 387,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로44길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928203",
+            "CCTV_LATITUDE": "37.509762"
+        }
+    },
+    {
+        "pk": 388,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로44길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928612",
+            "CCTV_LATITUDE": "37.509766"
+        }
+    },
+    {
+        "pk": 389,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로44길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929407",
+            "CCTV_LATITUDE": "37.510863"
+        }
+    },
+    {
+        "pk": 390,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로36길 70",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930789",
+            "CCTV_LATITUDE": "37.503605"
+        }
+    },
+    {
+        "pk": 391,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 191",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949172",
+            "CCTV_LATITUDE": "37.51348"
+        }
+    },
+    {
+        "pk": 392,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 191",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949659",
+            "CCTV_LATITUDE": "37.513727"
+        }
+    },
+    {
+        "pk": 393,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 191",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949923",
+            "CCTV_LATITUDE": "37.513375"
+        }
+    },
+    {
+        "pk": 394,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962997",
+            "CCTV_LATITUDE": "37.510139"
+        }
+    },
+    {
+        "pk": 395,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.962616",
+            "CCTV_LATITUDE": "37.510605"
+        }
+    },
+    {
+        "pk": 396,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963005",
+            "CCTV_LATITUDE": "37.510433"
+        }
+    },
+    {
+        "pk": 397,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 55",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963374",
+            "CCTV_LATITUDE": "37.510569"
+        }
+    },
+    {
+        "pk": 398,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 213",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978479",
+            "CCTV_LATITUDE": "37.502832"
+        }
+    },
+    {
+        "pk": 399,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 213",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978591",
+            "CCTV_LATITUDE": "37.503508"
+        }
+    },
+    {
+        "pk": 400,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 213",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978403",
+            "CCTV_LATITUDE": "37.50369"
+        }
+    },
+    {
+        "pk": 401,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24나길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.921951",
+            "CCTV_LATITUDE": "37.498183"
+        }
+    },
+    {
+        "pk": 402,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.92183",
+            "CCTV_LATITUDE": "37.497948"
+        }
+    },
+    {
+        "pk": 403,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16사길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969925",
+            "CCTV_LATITUDE": "37.480192"
+        }
+    },
+    {
+        "pk": 404,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로28길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944981",
+            "CCTV_LATITUDE": "37.498835"
+        }
+    },
+    {
+        "pk": 405,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 16-19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954264",
+            "CCTV_LATITUDE": "37.510694"
+        }
+    },
+    {
+        "pk": 406,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 32-18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954547",
+            "CCTV_LATITUDE": "37.510467"
+        }
+    },
+    {
+        "pk": 407,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동6길 34",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930222",
+            "CCTV_LATITUDE": "37.500643"
+        }
+    },
+    {
+        "pk": 408,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로10길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.91249",
+            "CCTV_LATITUDE": "37.494448"
+        }
+    },
+    {
+        "pk": 409,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로16길 67-5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939241",
+            "CCTV_LATITUDE": "37.496129"
+        }
+    },
+    {
+        "pk": 410,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로39길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978767",
+            "CCTV_LATITUDE": "37.496589"
+        }
+    },
+    {
+        "pk": 411,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로39길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978253",
+            "CCTV_LATITUDE": "37.49655"
+        }
+    },
+    {
+        "pk": 412,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로68길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955625",
+            "CCTV_LATITUDE": "37.492122"
+        }
+    },
+    {
+        "pk": 413,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951721",
+            "CCTV_LATITUDE": "37.506938"
+        }
+    },
+    {
+        "pk": 414,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로4길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942867",
+            "CCTV_LATITUDE": "37.503157"
+        }
+    },
+    {
+        "pk": 415,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20나길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973922",
+            "CCTV_LATITUDE": "37.481829"
+        }
+    },
+    {
+        "pk": 416,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로62가길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952993",
+            "CCTV_LATITUDE": "37.493729"
+        }
+    },
+    {
+        "pk": 417,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로19라길 51",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935259",
+            "CCTV_LATITUDE": "37.506877"
+        }
+    },
+    {
+        "pk": 418,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로19라길 51",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935624",
+            "CCTV_LATITUDE": "37.506925"
+        }
+    },
+    {
+        "pk": 419,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15사길 8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932515",
+            "CCTV_LATITUDE": "37.503902"
+        }
+    },
+    {
+        "pk": 420,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로16길 98",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943188",
+            "CCTV_LATITUDE": "37.508747"
+        }
+    },
+    {
+        "pk": 421,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로16길 98",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943837",
+            "CCTV_LATITUDE": "37.508714"
+        }
+    },
+    {
+        "pk": 422,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로16길 98",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944103",
+            "CCTV_LATITUDE": "37.508663"
+        }
+    },
+    {
+        "pk": 423,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로6길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95425",
+            "CCTV_LATITUDE": "37.507588"
+        }
+    },
+    {
+        "pk": 424,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 65",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955397",
+            "CCTV_LATITUDE": "37.509515"
+        }
+    },
+    {
+        "pk": 425,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉길 175",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935217",
+            "CCTV_LATITUDE": "37.493161"
+        }
+    },
+    {
+        "pk": 426,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "솔밭로 97-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967198",
+            "CCTV_LATITUDE": "37.485484"
+        }
+    },
+    {
+        "pk": 427,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47라길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951054",
+            "CCTV_LATITUDE": "37.501598"
+        }
+    },
+    {
+        "pk": 428,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로8길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967874",
+            "CCTV_LATITUDE": "37.483475"
+        }
+    },
+    {
+        "pk": 429,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로44길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925766",
+            "CCTV_LATITUDE": "37.50658"
+        }
+    },
+    {
+        "pk": 430,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로12길 101",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.967973",
+            "CCTV_LATITUDE": "37.503954"
+        }
+    },
+    {
+        "pk": 431,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로9길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980006",
+            "CCTV_LATITUDE": "37.480565"
+        }
+    },
+    {
+        "pk": 432,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로9길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979999",
+            "CCTV_LATITUDE": "37.480376"
+        }
+    },
+    {
+        "pk": 433,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 57-7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97493",
+            "CCTV_LATITUDE": "37.485543"
+        }
+    },
+    {
+        "pk": 434,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 57-7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973199",
+            "CCTV_LATITUDE": "37.486744"
+        }
+    },
+    {
+        "pk": 435,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로30길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943821",
+            "CCTV_LATITUDE": "37.504794"
+        }
+    },
+    {
+        "pk": 436,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 69-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949559",
+            "CCTV_LATITUDE": "37.500072"
+        }
+    },
+    {
+        "pk": 437,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 69-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949426",
+            "CCTV_LATITUDE": "37.500047"
+        }
+    },
+    {
+        "pk": 438,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 69-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949276",
+            "CCTV_LATITUDE": "37.5"
+        }
+    },
+    {
+        "pk": 439,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 69-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949201",
+            "CCTV_LATITUDE": "37.49997"
+        }
+    },
+    {
+        "pk": 440,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 69-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949112",
+            "CCTV_LATITUDE": "37.499938"
+        }
+    },
+    {
+        "pk": 441,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로38길 69-12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949005",
+            "CCTV_LATITUDE": "37.499898"
+        }
+    },
+    {
+        "pk": 442,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6가길 41-2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933958",
+            "CCTV_LATITUDE": "37.496979"
+        }
+    },
+    {
+        "pk": 443,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로9다길 28",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969743",
+            "CCTV_LATITUDE": "37.486845"
+        }
+    },
+    {
+        "pk": 444,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로9나길 11",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970197",
+            "CCTV_LATITUDE": "37.486271"
+        }
+    },
+    {
+        "pk": 445,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로10길 38",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.91305",
+            "CCTV_LATITUDE": "37.494121"
+        }
+    },
+    {
+        "pk": 446,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로23길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940759",
+            "CCTV_LATITUDE": "37.495444"
+        }
+    },
+    {
+        "pk": 447,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로23길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943075",
+            "CCTV_LATITUDE": "37.492494"
+        }
+    },
+    {
+        "pk": 448,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로4길 52",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.964387",
+            "CCTV_LATITUDE": "37.485934"
+        }
+    },
+    {
+        "pk": 449,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로14마길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.964084",
+            "CCTV_LATITUDE": "37.506651"
+        }
+    },
+    {
+        "pk": 450,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16다길 57",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969545",
+            "CCTV_LATITUDE": "37.482204"
+        }
+    },
+    {
+        "pk": 451,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 96",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970144",
+            "CCTV_LATITUDE": "37.478152"
+        }
+    },
+    {
+        "pk": 452,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20다길 23",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973159",
+            "CCTV_LATITUDE": "37.480051"
+        }
+    },
+    {
+        "pk": 453,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로20바길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.974022",
+            "CCTV_LATITUDE": "37.479996"
+        }
+    },
+    {
+        "pk": 454,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로1길 9-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980634",
+            "CCTV_LATITUDE": "37.476951"
+        }
+    },
+    {
+        "pk": 455,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23나길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97428",
+            "CCTV_LATITUDE": "37.488404"
+        }
+    },
+    {
+        "pk": 456,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로39가길 31",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980199",
+            "CCTV_LATITUDE": "37.49387"
+        }
+    },
+    {
+        "pk": 457,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉1길 114",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932071",
+            "CCTV_LATITUDE": "37.496645"
+        }
+    },
+    {
+        "pk": 458,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 211",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941989",
+            "CCTV_LATITUDE": "37.50547"
+        }
+    },
+    {
+        "pk": 459,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 211",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941997",
+            "CCTV_LATITUDE": "37.505368"
+        }
+    },
+    {
+        "pk": 460,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2가길 188",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965725",
+            "CCTV_LATITUDE": "37.486202"
+        }
+    },
+    {
+        "pk": 461,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47가길 40",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954376",
+            "CCTV_LATITUDE": "37.503298"
+        }
+    },
+    {
+        "pk": 462,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2차길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965383",
+            "CCTV_LATITUDE": "37.487415"
+        }
+    },
+    {
+        "pk": 463,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉2라길 24-14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929625",
+            "CCTV_LATITUDE": "37.495177"
+        }
+    },
+    {
+        "pk": 464,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로13길 36",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937574",
+            "CCTV_LATITUDE": "37.506493"
+        }
+    },
+    {
+        "pk": 465,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로2길 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949769",
+            "CCTV_LATITUDE": "37.506531"
+        }
+    },
+    {
+        "pk": 466,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로2길 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.949816",
+            "CCTV_LATITUDE": "37.506467"
+        }
+    },
+    {
+        "pk": 467,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 27길 103",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.974419",
+            "CCTV_LATITUDE": "37.487257"
+        }
+    },
+    {
+        "pk": 468,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "강남초등길 14-3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951703",
+            "CCTV_LATITUDE": "37.506002"
+        }
+    },
+    {
+        "pk": 469,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 16-40",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95317",
+            "CCTV_LATITUDE": "37.510471"
+        }
+    },
+    {
+        "pk": 470,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23나길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975281",
+            "CCTV_LATITUDE": "37.4878"
+        }
+    },
+    {
+        "pk": 471,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로12가길 69",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94833",
+            "CCTV_LATITUDE": "37.51092"
+        }
+    },
+    {
+        "pk": 472,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 87",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96404",
+            "CCTV_LATITUDE": "37.508708"
+        }
+    },
+    {
+        "pk": 473,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "알마타길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926098",
+            "CCTV_LATITUDE": "37.509952"
+        }
+    },
+    {
+        "pk": 474,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 135",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961112",
+            "CCTV_LATITUDE": "37.505822"
+        }
+    },
+    {
+        "pk": 475,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로29길 214",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975788",
+            "CCTV_LATITUDE": "37.493039"
+        }
+    },
+    {
+        "pk": 476,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로8길 3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932714",
+            "CCTV_LATITUDE": "37.508469"
+        }
+    },
+    {
+        "pk": 477,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 146",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96466",
+            "CCTV_LATITUDE": "37.488596"
+        }
+    },
+    {
+        "pk": 478,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로17길 52",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935176",
+            "CCTV_LATITUDE": "37.499495"
+        }
+    },
+    {
+        "pk": 479,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "강남초등길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952201",
+            "CCTV_LATITUDE": "37.505953"
+        }
+    },
+    {
+        "pk": 480,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945095",
+            "CCTV_LATITUDE": "37.500713"
+        }
+    },
+    {
+        "pk": 481,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로29길 79",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936917",
+            "CCTV_LATITUDE": "37.501159"
+        }
+    },
+    {
+        "pk": 482,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동1길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926682",
+            "CCTV_LATITUDE": "37.500201"
+        }
+    },
+    {
+        "pk": 483,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로16길 30",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.916485",
+            "CCTV_LATITUDE": "37.495368"
+        }
+    },
+    {
+        "pk": 484,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로13길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979529",
+            "CCTV_LATITUDE": "37.481799"
+        }
+    },
+    {
+        "pk": 485,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 56",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9753",
+            "CCTV_LATITUDE": "37.485875"
+        }
+    },
+    {
+        "pk": 486,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "솔밭로 47",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965854",
+            "CCTV_LATITUDE": "37.481114"
+        }
+    },
+    {
+        "pk": 487,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 146",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940388",
+            "CCTV_LATITUDE": "37.510485"
+        }
+    },
+    {
+        "pk": 488,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.95201",
+            "CCTV_LATITUDE": "37.504804"
+        }
+    },
+    {
+        "pk": 489,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로26길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941451",
+            "CCTV_LATITUDE": "37.511874"
+        }
+    },
+    {
+        "pk": 490,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.913163",
+            "CCTV_LATITUDE": "37.488003"
+        }
+    },
+    {
+        "pk": 491,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로26길 16-37",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.954085",
+            "CCTV_LATITUDE": "37.511097"
+        }
+    },
+    {
+        "pk": 492,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 112",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975048",
+            "CCTV_LATITUDE": "37.487451"
+        }
+    },
+    {
+        "pk": 493,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로21길 59",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936671",
+            "CCTV_LATITUDE": "37.500508"
+        }
+    },
+    {
+        "pk": 494,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "알마타길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925882",
+            "CCTV_LATITUDE": "37.510839"
+        }
+    },
+    {
+        "pk": 495,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로2가길 133",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963739",
+            "CCTV_LATITUDE": "37.488495"
+        }
+    },
+    {
+        "pk": 496,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로12가길 60",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.948831",
+            "CCTV_LATITUDE": "37.509604"
+        }
+    },
+    {
+        "pk": 497,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 167",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.96289",
+            "CCTV_LATITUDE": "37.508026"
+        }
+    },
+    {
+        "pk": 498,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 28길 25",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945065",
+            "CCTV_LATITUDE": "37.498419"
+        }
+    },
+    {
+        "pk": 499,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로20길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941132",
+            "CCTV_LATITUDE": "37.508955"
+        }
+    },
+    {
+        "pk": 500,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6길 10",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932647",
+            "CCTV_LATITUDE": "37.498943"
+        }
+    },
+    {
+        "pk": 501,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로 19길 16-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927106",
+            "CCTV_LATITUDE": "37.497817"
+        }
+    },
+    {
+        "pk": 502,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 112",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972165",
+            "CCTV_LATITUDE": "37.489839"
+        }
+    },
+    {
+        "pk": 503,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6가길 149",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93621",
+            "CCTV_LATITUDE": "37.493744"
+        }
+    },
+    {
+        "pk": 504,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로36길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.92326",
+            "CCTV_LATITUDE": "37.504731"
+        }
+    },
+    {
+        "pk": 505,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석동 257-144",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.959819",
+            "CCTV_LATITUDE": "37.499093"
+        }
+    },
+    {
+        "pk": 506,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로36길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946542",
+            "CCTV_LATITUDE": "37.502263"
+        }
+    },
+    {
+        "pk": 507,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로58길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952323",
+            "CCTV_LATITUDE": "37.49521"
+        }
+    },
+    {
+        "pk": 508,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24가길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.920968",
+            "CCTV_LATITUDE": "37.499266"
+        }
+    },
+    {
+        "pk": 509,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로10길 59",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.916485",
+            "CCTV_LATITUDE": "37.495368"
+        }
+    },
+    {
+        "pk": 510,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로 86",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932289",
+            "CCTV_LATITUDE": "37.508869"
+        }
+    },
+    {
+        "pk": 511,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.948158",
+            "CCTV_LATITUDE": "37.507113"
+        }
+    },
+    {
+        "pk": 512,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942926",
+            "CCTV_LATITUDE": "37.49972"
+        }
+    },
+    {
+        "pk": 513,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.953811",
+            "CCTV_LATITUDE": "37.505047"
+        }
+    },
+    {
+        "pk": 514,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 112",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.974002",
+            "CCTV_LATITUDE": "37.48702"
+        }
+    },
+    {
+        "pk": 515,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로39가길 83",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978288",
+            "CCTV_LATITUDE": "37.494644"
+        }
+    },
+    {
+        "pk": 516,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 83",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960217",
+            "CCTV_LATITUDE": "37.501121"
+        }
+    },
+    {
+        "pk": 517,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 153",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961657",
+            "CCTV_LATITUDE": "37.507383"
+        }
+    },
+    {
+        "pk": 518,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로10길 102",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.966705",
+            "CCTV_LATITUDE": "37.482005"
+        }
+    },
+    {
+        "pk": 519,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16마길 73",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968357",
+            "CCTV_LATITUDE": "37.48268"
+        }
+    },
+    {
+        "pk": 520,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로 115",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961614",
+            "CCTV_LATITUDE": "37.508826"
+        }
+    },
+    {
+        "pk": 521,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로58길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.953014",
+            "CCTV_LATITUDE": "37.495769"
+        }
+    },
+    {
+        "pk": 522,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로3길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943794",
+            "CCTV_LATITUDE": "37.5084"
+        }
+    },
+    {
+        "pk": 523,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로16길 115",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942815",
+            "CCTV_LATITUDE": "37.509811"
+        }
+    },
+    {
+        "pk": 524,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로26길 11",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944096",
+            "CCTV_LATITUDE": "37.497511"
+        }
+    },
+    {
+        "pk": 525,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로21길 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937194",
+            "CCTV_LATITUDE": "37.49876"
+        }
+    },
+    {
+        "pk": 526,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방11길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.907773",
+            "CCTV_LATITUDE": "37.488586"
+        }
+    },
+    {
+        "pk": 527,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로44길 49",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928249",
+            "CCTV_LATITUDE": "37.509309"
+        }
+    },
+    {
+        "pk": 528,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 56-9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912822",
+            "CCTV_LATITUDE": "37.495507"
+        }
+    },
+    {
+        "pk": 529,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로5길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939972",
+            "CCTV_LATITUDE": "37.501197"
+        }
+    },
+    {
+        "pk": 530,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로25길 71",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940748",
+            "CCTV_LATITUDE": "37.496117"
+        }
+    },
+    {
+        "pk": 531,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로 47",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955139",
+            "CCTV_LATITUDE": "37.5063"
+        }
+    },
+    {
+        "pk": 532,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로41가길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950259",
+            "CCTV_LATITUDE": "37.504064"
+        }
+    },
+    {
+        "pk": 533,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉1길 235-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935794",
+            "CCTV_LATITUDE": "37.493205"
+        }
+    },
+    {
+        "pk": 534,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로24길 113",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926572",
+            "CCTV_LATITUDE": "37.499211"
+        }
+    },
+    {
+        "pk": 535,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로2길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951875",
+            "CCTV_LATITUDE": "37.507212"
+        }
+    },
+    {
+        "pk": 536,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로17길 37",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977601",
+            "CCTV_LATITUDE": "37.482898"
+        }
+    },
+    {
+        "pk": 537,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로4길 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961934",
+            "CCTV_LATITUDE": "37.499871"
+        }
+    },
+    {
+        "pk": 538,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로17길 37",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972331",
+            "CCTV_LATITUDE": "37.484974"
+        }
+    },
+    {
+        "pk": 539,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로50길 36-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950281",
+            "CCTV_LATITUDE": "37.497873"
+        }
+    },
+    {
+        "pk": 540,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로12길 89-19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965251",
+            "CCTV_LATITUDE": "37.504338"
+        }
+    },
+    {
+        "pk": 541,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로8나길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968404",
+            "CCTV_LATITUDE": "37.483954"
+        }
+    },
+    {
+        "pk": 542,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로8나길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9451",
+            "CCTV_LATITUDE": "37.49711"
+        }
+    },
+    {
+        "pk": 543,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로10길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935263",
+            "CCTV_LATITUDE": "37.49666"
+        }
+    },
+    {
+        "pk": 544,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35아길 32",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978086",
+            "CCTV_LATITUDE": "37.493531"
+        }
+    },
+    {
+        "pk": 545,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 47길 108",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951765",
+            "CCTV_LATITUDE": "37.504021"
+        }
+    },
+    {
+        "pk": 546,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 160",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94026",
+            "CCTV_LATITUDE": "37.511863"
+        }
+    },
+    {
+        "pk": 547,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 256",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.925275",
+            "CCTV_LATITUDE": "37.508744"
+        }
+    },
+    {
+        "pk": 548,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "알마타길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928356",
+            "CCTV_LATITUDE": "37.511181"
+        }
+    },
+    {
+        "pk": 549,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943868",
+            "CCTV_LATITUDE": "37.499131"
+        }
+    },
+    {
+        "pk": 550,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 112",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960918",
+            "CCTV_LATITUDE": "37.50363"
+        }
+    },
+    {
+        "pk": 551,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 138",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.966122",
+            "CCTV_LATITUDE": "37.488387"
+        }
+    },
+    {
+        "pk": 552,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로50길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950306",
+            "CCTV_LATITUDE": "37.497235"
+        }
+    },
+    {
+        "pk": 553,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로12길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935228",
+            "CCTV_LATITUDE": "37.497595"
+        }
+    },
+    {
+        "pk": 554,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로2길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960759",
+            "CCTV_LATITUDE": "37.499713"
+        }
+    },
+    {
+        "pk": 555,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석한강로 11",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.966237",
+            "CCTV_LATITUDE": "37.505574"
+        }
+    },
+    {
+        "pk": 556,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로17길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979523",
+            "CCTV_LATITUDE": "37.482764"
+        }
+    },
+    {
+        "pk": 557,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로36길 79",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930239",
+            "CCTV_LATITUDE": "37.507805"
+        }
+    },
+    {
+        "pk": 558,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "강남초등길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952123",
+            "CCTV_LATITUDE": "37.506472"
+        }
+    },
+    {
+        "pk": 559,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로17길 49",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973145",
+            "CCTV_LATITUDE": "37.485401"
+        }
+    },
+    {
+        "pk": 560,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 42",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912433",
+            "CCTV_LATITUDE": "37.488808"
+        }
+    },
+    {
+        "pk": 561,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 21길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937318",
+            "CCTV_LATITUDE": "37.49814"
+        }
+    },
+    {
+        "pk": 562,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로41길 2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.982475",
+            "CCTV_LATITUDE": "37.495509"
+        }
+    },
+    {
+        "pk": 563,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 46길 성원아파트 앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926585",
+            "CCTV_LATITUDE": "37.510918"
+        }
+    },
+    {
+        "pk": 564,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동길 3 대림초등학교",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927725",
+            "CCTV_LATITUDE": "37.500276"
+        }
+    },
+    {
+        "pk": 565,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 170 노벨어린이집",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943953",
+            "CCTV_LATITUDE": "37.497209"
+        }
+    },
+    {
+        "pk": 566,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로56길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951937",
+            "CCTV_LATITUDE": "37.495468"
+        }
+    },
+    {
+        "pk": 567,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 30길 24 삼성특수학교",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945516",
+            "CCTV_LATITUDE": "37.499312"
+        }
+    },
+    {
+        "pk": 568,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 19 신동아리버파크 앞 동아유치원",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9412",
+            "CCTV_LATITUDE": "37.50591"
+        }
+    },
+    {
+        "pk": 569,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 8길 50 시현유치원",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.948243",
+            "CCTV_LATITUDE": "37.508131"
+        }
+    },
+    {
+        "pk": 570,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "등용로 66 앞 영화초등학교",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.9323",
+            "CCTV_LATITUDE": "37.50697"
+        }
+    },
+    {
+        "pk": 571,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로 134",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950764",
+            "CCTV_LATITUDE": "37.509188"
+        }
+    },
+    {
+        "pk": 572,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 14 신상도 초등학교",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943881",
+            "CCTV_LATITUDE": "37.501019"
+        }
+    },
+    {
+        "pk": 573,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23나길 27 삼일초등학교 앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975792",
+            "CCTV_LATITUDE": "37.48819"
+        }
+    },
+    {
+        "pk": 574,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로29길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942026",
+            "CCTV_LATITUDE": "37.499832"
+        }
+    },
+    {
+        "pk": 575,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로29길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942816",
+            "CCTV_LATITUDE": "37.499499"
+        }
+    },
+    {
+        "pk": 576,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로26가길 4",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94431",
+            "CCTV_LATITUDE": "37.497895"
+        }
+    },
+    {
+        "pk": 577,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로26가길 4-7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945032",
+            "CCTV_LATITUDE": "37.497701"
+        }
+    },
+    {
+        "pk": 578,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로22가길 60",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945032",
+            "CCTV_LATITUDE": "37.497701"
+        }
+    },
+    {
+        "pk": 579,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로20길 82",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944588",
+            "CCTV_LATITUDE": "37.49588"
+        }
+    },
+    {
+        "pk": 580,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로22길 21",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944041",
+            "CCTV_LATITUDE": "37.494186"
+        }
+    },
+    {
+        "pk": 581,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로22다길 1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945288",
+            "CCTV_LATITUDE": "37.495605"
+        }
+    },
+    {
+        "pk": 582,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로22길 77",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.945765",
+            "CCTV_LATITUDE": "37.495079"
+        }
+    },
+    {
+        "pk": 583,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로26나길 41",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94631",
+            "CCTV_LATITUDE": "37.496694"
+        }
+    },
+    {
+        "pk": 584,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로26나길 49",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946503",
+            "CCTV_LATITUDE": "37.496379"
+        }
+    },
+    {
+        "pk": 585,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로 22바길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94675",
+            "CCTV_LATITUDE": "37.496013"
+        }
+    },
+    {
+        "pk": 586,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1나길 46",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.90677",
+            "CCTV_LATITUDE": "37.486064"
+        }
+    },
+    {
+        "pk": 587,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1나길 54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.906236",
+            "CCTV_LATITUDE": "37.485983"
+        }
+    },
+    {
+        "pk": 588,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방13길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.908904",
+            "CCTV_LATITUDE": "37.488216"
+        }
+    },
+    {
+        "pk": 589,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉길 71",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930788",
+            "CCTV_LATITUDE": "37.496623"
+        }
+    },
+    {
+        "pk": 590,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉8길 21",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930356",
+            "CCTV_LATITUDE": "37.49579"
+        }
+    },
+    {
+        "pk": 591,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉10길 32-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931329",
+            "CCTV_LATITUDE": "37.494684"
+        }
+    },
+    {
+        "pk": 592,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉길 87",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931265",
+            "CCTV_LATITUDE": "37.496047"
+        }
+    },
+    {
+        "pk": 593,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉길 98",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93159",
+            "CCTV_LATITUDE": "37.495718"
+        }
+    },
+    {
+        "pk": 594,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉12길 11",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931899",
+            "CCTV_LATITUDE": "37.49546"
+        }
+    },
+    {
+        "pk": 595,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉1가길 15",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.933216",
+            "CCTV_LATITUDE": "37.495067"
+        }
+    },
+    {
+        "pk": 596,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로19길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979552",
+            "CCTV_LATITUDE": "37.483447"
+        }
+    },
+    {
+        "pk": 597,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로13길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979573",
+            "CCTV_LATITUDE": "37.482246"
+        }
+    },
+    {
+        "pk": 598,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로11길 42",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.979416",
+            "CCTV_LATITUDE": "37.481254"
+        }
+    },
+    {
+        "pk": 599,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로26길 71",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978112",
+            "CCTV_LATITUDE": "37.480654"
+        }
+    },
+    {
+        "pk": 600,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로26길 48",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978081",
+            "CCTV_LATITUDE": "37.481787"
+        }
+    },
+    {
+        "pk": 601,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로17길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978243",
+            "CCTV_LATITUDE": "37.482813"
+        }
+    },
+    {
+        "pk": 602,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로15길 84",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.976858",
+            "CCTV_LATITUDE": "37.482426"
+        }
+    },
+    {
+        "pk": 603,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로22길 60",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.977",
+            "CCTV_LATITUDE": "37.480752"
+        }
+    },
+    {
+        "pk": 604,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로11길 27",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980044",
+            "CCTV_LATITUDE": "37.481237"
+        }
+    },
+    {
+        "pk": 605,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉7길 13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931186",
+            "CCTV_LATITUDE": "37.497292"
+        }
+    },
+    {
+        "pk": 606,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉1길 122",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932177",
+            "CCTV_LATITUDE": "37.496269"
+        }
+    },
+    {
+        "pk": 607,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉8길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.930349",
+            "CCTV_LATITUDE": "37.496118"
+        }
+    },
+    {
+        "pk": 608,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 56",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.975479",
+            "CCTV_LATITUDE": "37.4859"
+        }
+    },
+    {
+        "pk": 609,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 36-19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971877",
+            "CCTV_LATITUDE": "37.4822"
+        }
+    },
+    {
+        "pk": 610,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97253",
+            "CCTV_LATITUDE": "37.481846"
+        }
+    },
+    {
+        "pk": 611,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 51-8",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972615",
+            "CCTV_LATITUDE": "37.481251"
+        }
+    },
+    {
+        "pk": 612,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 20 나길58-14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972529",
+            "CCTV_LATITUDE": "37.481098"
+        }
+    },
+    {
+        "pk": 613,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 20 나길 52-1",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973252",
+            "CCTV_LATITUDE": "37.481138"
+        }
+    },
+    {
+        "pk": 614,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로19길 53",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978592",
+            "CCTV_LATITUDE": "37.483481"
+        }
+    },
+    {
+        "pk": 615,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로15길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980086",
+            "CCTV_LATITUDE": "37.482301"
+        }
+    },
+    {
+        "pk": 616,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로30길 96",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980747",
+            "CCTV_LATITUDE": "37.480552"
+        }
+    },
+    {
+        "pk": 617,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로13길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980886",
+            "CCTV_LATITUDE": "37.481688"
+        }
+    },
+    {
+        "pk": 618,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로17길 5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98095",
+            "CCTV_LATITUDE": "37.482727"
+        }
+    },
+    {
+        "pk": 619,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로27다길 26",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980079",
+            "CCTV_LATITUDE": "37.486047"
+        }
+    },
+    {
+        "pk": 620,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 131",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.970441",
+            "CCTV_LATITUDE": "37.478158"
+        }
+    },
+    {
+        "pk": 621,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방14가길 60",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.913815",
+            "CCTV_LATITUDE": "37.489576"
+        }
+    },
+    {
+        "pk": 622,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1가길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.909152",
+            "CCTV_LATITUDE": "37.486806"
+        }
+    },
+    {
+        "pk": 623,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로 105",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961094",
+            "CCTV_LATITUDE": "37.507731"
+        }
+    },
+    {
+        "pk": 624,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 100",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.94431",
+            "CCTV_LATITUDE": "37.512463"
+        }
+    },
+    {
+        "pk": 625,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 79",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944596",
+            "CCTV_LATITUDE": "37.51052"
+        }
+    },
+    {
+        "pk": 626,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로27길 18",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.98109",
+            "CCTV_LATITUDE": "37.487577"
+        }
+    },
+    {
+        "pk": 627,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로 11",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.932403",
+            "CCTV_LATITUDE": "37.5"
+        }
+    },
+    {
+        "pk": 628,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로5가길 7",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924697",
+            "CCTV_LATITUDE": "37.491633"
+        }
+    },
+    {
+        "pk": 629,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 16",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.922451",
+            "CCTV_LATITUDE": "37.49979"
+        }
+    },
+    {
+        "pk": 630,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노들로 734",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.940545",
+            "CCTV_LATITUDE": "37.515579"
+        }
+    },
+    {
+        "pk": 631,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 243",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.974561",
+            "CCTV_LATITUDE": "37.483275"
+        }
+    },
+    {
+        "pk": 632,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 166",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963004",
+            "CCTV_LATITUDE": "37.507985"
+        }
+    },
+    {
+        "pk": 633,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 250",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924102",
+            "CCTV_LATITUDE": "37.509074"
+        }
+    },
+    {
+        "pk": 634,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로43",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.947319",
+            "CCTV_LATITUDE": "37.508084"
+        }
+    },
+    {
+        "pk": 635,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 144",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961212",
+            "CCTV_LATITUDE": "37.506184"
+        }
+    },
+    {
+        "pk": 636,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로10길 24",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.914635",
+            "CCTV_LATITUDE": "37.494827"
+        }
+    },
+    {
+        "pk": 637,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로5길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.923247",
+            "CCTV_LATITUDE": "37.493077"
+        }
+    },
+    {
+        "pk": 638,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 283",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978879",
+            "CCTV_LATITUDE": "37.484313"
+        }
+    },
+    {
+        "pk": 639,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "보라매로 113",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.928122",
+            "CCTV_LATITUDE": "37.499645"
+        }
+    },
+    {
+        "pk": 640,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "매봉로 59",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951477",
+            "CCTV_LATITUDE": "37.507354"
+        }
+    },
+    {
+        "pk": 641,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로 29길 69",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.978391",
+            "CCTV_LATITUDE": "37.488698"
+        }
+    },
+    {
+        "pk": 642,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 348",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952497",
+            "CCTV_LATITUDE": "37.497427"
+        }
+    },
+    {
+        "pk": 643,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1가길 51",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.907536",
+            "CCTV_LATITUDE": "37.486643"
+        }
+    },
+    {
+        "pk": 644,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석한강로13",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.966237",
+            "CCTV_LATITUDE": "37.505574"
+        }
+    },
+    {
+        "pk": 645,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "남부순환로271길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980043",
+            "CCTV_LATITUDE": "37.477318"
+        }
+    },
+    {
+        "pk": 646,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로62길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.927943",
+            "CCTV_LATITUDE": "37.513898"
+        }
+    },
+    {
+        "pk": 647,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 31길 19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944259",
+            "CCTV_LATITUDE": "37.505252"
+        }
+    },
+    {
+        "pk": 648,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "장승배기로 4길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.941242",
+            "CCTV_LATITUDE": "37.501251"
+        }
+    },
+    {
+        "pk": 649,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 50길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.950306",
+            "CCTV_LATITUDE": "37.497235"
+        }
+    },
+    {
+        "pk": 650,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로 300",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980954",
+            "CCTV_LATITUDE": "37.484234"
+        }
+    },
+    {
+        "pk": 651,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로 54길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926338",
+            "CCTV_LATITUDE": "37.511935"
+        }
+    },
+    {
+        "pk": 652,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노들로 674 노량진수산시장",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.935908",
+            "CCTV_LATITUDE": "37.514706"
+        }
+    },
+    {
+        "pk": 653,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노들로 674 노량진수산시장",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.939487",
+            "CCTV_LATITUDE": "37.515498"
+        }
+    },
+    {
+        "pk": 654,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15길 120",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.937407",
+            "CCTV_LATITUDE": "37.504629"
+        }
+    },
+    {
+        "pk": 655,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 35",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.97253",
+            "CCTV_LATITUDE": "37.481846"
+        }
+    },
+    {
+        "pk": 656,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로22길 77",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924036",
+            "CCTV_LATITUDE": "37.497801"
+        }
+    },
+    {
+        "pk": 657,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 112 이수역로이파크 아파트 정문",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.972802",
+            "CCTV_LATITUDE": "37.48802"
+        }
+    },
+    {
+        "pk": 658,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 112 이수역로이파크 아파트 후문",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.973659",
+            "CCTV_LATITUDE": "37.488866"
+        }
+    },
+    {
+        "pk": 659,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "만양로 3",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.946634",
+            "CCTV_LATITUDE": "37.50521"
+        }
+    },
+    {
+        "pk": 660,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로 259",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.947027",
+            "CCTV_LATITUDE": "37.504028"
+        }
+    },
+    {
+        "pk": 661,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 52",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960359",
+            "CCTV_LATITUDE": "37.509961"
+        }
+    },
+    {
+        "pk": 662,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "흑석로13길 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960792",
+            "CCTV_LATITUDE": "37.509137"
+        }
+    },
+    {
+        "pk": 663,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 124",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.960846",
+            "CCTV_LATITUDE": "37.504668"
+        }
+    },
+    {
+        "pk": 664,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로14길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.942696",
+            "CCTV_LATITUDE": "37.512018"
+        }
+    },
+    {
+        "pk": 665,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로6길 63",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936232",
+            "CCTV_LATITUDE": "37.510348"
+        }
+    },
+    {
+        "pk": 666,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로47길 54",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.952039",
+            "CCTV_LATITUDE": "37.501698"
+        }
+    },
+    {
+        "pk": 667,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로15길112",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936969",
+            "CCTV_LATITUDE": "37.50455"
+        }
+    },
+    {
+        "pk": 668,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "성대로6나길 21",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.931622",
+            "CCTV_LATITUDE": "37.497933"
+        }
+    },
+    {
+        "pk": 669,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "양녕로25길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.943105",
+            "CCTV_LATITUDE": "37.498269"
+        }
+    },
+    {
+        "pk": 670,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로12나길 2-5",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963129",
+            "CCTV_LATITUDE": "37.506619"
+        }
+    },
+    {
+        "pk": 671,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로 19",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980704",
+            "CCTV_LATITUDE": "37.47831"
+        }
+    },
+    {
+        "pk": 672,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로35길 25",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.980785",
+            "CCTV_LATITUDE": "37.491167"
+        }
+    },
+    {
+        "pk": 673,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로23길 242",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968768",
+            "CCTV_LATITUDE": "37.492304"
+        }
+    },
+    {
+        "pk": 674,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16길 28",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.971333",
+            "CCTV_LATITUDE": "37.481764"
+        }
+    },
+    {
+        "pk": 675,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "사당로16다길 95",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.968227",
+            "CCTV_LATITUDE": "37.484487"
+        }
+    },
+    {
+        "pk": 676,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "대방동1길 29",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.924468",
+            "CCTV_LATITUDE": "37.500281"
+        }
+    },
+    {
+        "pk": 677,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 52",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.911988",
+            "CCTV_LATITUDE": "37.488921"
+        }
+    },
+    {
+        "pk": 678,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "국사봉길 22",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.929257",
+            "CCTV_LATITUDE": "37.498186"
+        }
+    },
+    {
+        "pk": 679,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로13길 17",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.961992",
+            "CCTV_LATITUDE": "37.508439"
+        }
+    },
+    {
+        "pk": 680,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 6길 53앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.936053",
+            "CCTV_LATITUDE": "37.510482"
+        }
+    },
+    {
+        "pk": 681,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 106길",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.965214",
+            "CCTV_LATITUDE": "37.50727"
+        }
+    },
+    {
+        "pk": 682,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "현충로 10길 91 앞",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.969343",
+            "CCTV_LATITUDE": "37.504431"
+        }
+    },
+    {
+        "pk": 683,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "서달로 175",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.963078",
+            "CCTV_LATITUDE": "37.508277"
+        }
+    },
+    {
+        "pk": 684,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로23가길 20",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.951035",
+            "CCTV_LATITUDE": "37.515045"
+        }
+    },
+    {
+        "pk": 685,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로17길 44",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.944121",
+            "CCTV_LATITUDE": "37.51617"
+        }
+    },
+    {
+        "pk": 686,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노들로 618",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.93069",
+            "CCTV_LATITUDE": "37.514322"
+        }
+    },
+    {
+        "pk": 687,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1길 109",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.906977",
+            "CCTV_LATITUDE": "37.485576"
+        }
+    },
+    {
+        "pk": 688,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 12",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.913309",
+            "CCTV_LATITUDE": "37.487969"
+        }
+    },
+    {
+        "pk": 689,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로 20-2",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.926876",
+            "CCTV_LATITUDE": "37.513328"
+        }
+    },
+    {
+        "pk": 690,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "노량진로32길 14-7 용양봉저정",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.955792",
+            "CCTV_LATITUDE": "37.512856"
+        }
+    },
+    {
+        "pk": 691,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "상도로53길 39",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.953525",
+            "CCTV_LATITUDE": "37.500576"
+        }
+    },
+    {
+        "pk": 692,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로 235",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.982788",
+            "CCTV_LATITUDE": "37.497296"
+        }
+    },
+    {
+        "pk": 693,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "동작대로 9",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.981602",
+            "CCTV_LATITUDE": "37.477315"
+        }
+    },
+    {
+        "pk": 694,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방1길 109",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.905829",
+            "CCTV_LATITUDE": "37.484968"
+        }
+    },
+    {
+        "pk": 695,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.912032",
+            "CCTV_LATITUDE": "37.486954"
+        }
+    },
+    {
+        "pk": 696,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "신대방2길 14",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.915488",
+            "CCTV_LATITUDE": "37.489106"
+        }
+    },
+    {
+        "pk": 697,
+        "model": "safeLoad.CCTV",
+        "fields": {
+            "CCTV_ADDRESS_NAME": "여의대방로20길 33",
+            "CCTV_KIND": 1,
+            "CCTV_LONGITUDE": "126.916806",
+            "CCTV_LATITUDE": "37.489675"
+        }
+    }
+]

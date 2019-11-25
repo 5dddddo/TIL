@@ -1,0 +1,9 @@
+[
+    {
+        "pk": 1,
+        "model": "safeLoad.CCTVKind",
+        "fields": {
+            "CCTV_RADIUS": 100
+        }
+    }
+]
