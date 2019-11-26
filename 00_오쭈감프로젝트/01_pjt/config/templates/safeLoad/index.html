@@ -23,251 +23,249 @@
   <link rel="stylesheet" href="{% static 'css/aos.css'%}">
   <link rel="stylesheet" href="{% static 'css/style.css'%}">
   <style>
+    .map_wrap,
+    .map_wrap * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+      font-size: 12px;
+    }
 
+    .map_wrap {
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
 
-.map_wrap,
-.map_wrap * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
-  font-size: 12px;
-}
+    #category {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      border-radius: 5px;
+      border: 1px solid #909090;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+      background: #fff;
+      overflow: hidden;
+      z-index: 2;
+    }
 
-.map_wrap {
-  position: relative;
-  width: 100%;
-  height: 350px;
-}
+    #category li {
+      float: left;
+      list-style: none;
+      width: 50px;
+      border-right: 1px solid #acacac;
+      padding: 6px 0;
+      text-align: center;
+      cursor: pointer;
+    }
 
-#category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 5px;
-  border: 1px solid #909090;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-  background: #fff;
-  overflow: hidden;
-  z-index: 2;
-}
+    #category li.on {
+      background: #eee;
+    }
 
-#category li {
-  float: left;
-  list-style: none;
-  width: 50px;
-  border-right: 1px solid #acacac;
-  padding: 6px 0;
-  text-align: center;
-  cursor: pointer;
-}
+    #category li:hover {
+      background: #ffe6e6;
+      border-left: 1px solid #acacac;
+      margin-left: -1px;
+    }
 
-#category li.on {
-  background: #eee;
-}
+    #category li:last-child {
+      margin-right: 0;
+      border-right: 0;
+    }
 
-#category li:hover {
-  background: #ffe6e6;
-  border-left: 1px solid #acacac;
-  margin-left: -1px;
-}
+    #category li span {
+      display: block;
+      margin: 0 auto 3px;
+      width: 27px;
+      height: 28px;
+    }
 
-#category li:last-child {
-  margin-right: 0;
-  border-right: 0;
-}
+    #category li .category_bg {
+      background:url("{% static 'images/marker.png' %}") no-repeat;
+    }
 
-#category li span {
-  display: block;
-  margin: 0 auto 3px;
-  width: 27px;
-  height: 28px;
-}
+    #category li .bank {
+      background-position: -10px 0;
+    }
 
-#category li .category_bg {
-  background:url("{% static 'images/marker.png' %}") no-repeat;
-}
+    #category li .mart {
+      background-position: -10px -36px;
+    }
 
-#category li .bank {
-  background-position: -10px 0;
-}
+    #category li .pharmacy {
+      background-position: -10px -72px;
+    }
 
-#category li .mart {
-  background-position: -10px -36px;
-}
+    #category li .oil {
+      background-position: -10px -108px;
+    }
 
-#category li .pharmacy {
-  background-position: -10px -72px;
-}
+    #category li .cafe {
+      background-position: -10px -144px;
+    }
 
-#category li .oil {
-  background-position: -10px -108px;
-}
+    #category li .store {
+      background-position: -10px -180px;
+    }
 
-#category li .cafe {
-  background-position: -10px -144px;
-}
+    #category li.on .category_bg {
+      background-position-x: -46px;
+    }
 
-#category li .store {
-  background-position: -10px -180px;
-}
+    .placeinfo_wrap {
+      position: absolute;
+      bottom: 28px;
+      left: -150px;
+      width: 300px;
+    }
 
-#category li.on .category_bg {
-  background-position-x: -46px;
-}
+    .placeinfo {
+      position: relative;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      background: #fff;
+    }
 
-.placeinfo_wrap {
-  position: absolute;
-  bottom: 28px;
-  left: -150px;
-  width: 300px;
-}
+    .placeinfo:nth-of-type(n) {
+      border: 0;
+      box-shadow: 0px 1px 2px #888;
+    }
 
-.placeinfo {
-  position: relative;
-  width: 100%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-  background: #fff;
-}
+    .placeinfo_wrap .after {
+      content: '';
+      position: relative;
+      margin-left: -12px;
+      left: 50%;
+      width: 22px;
+      height: 12px;
+      background: url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+    }
 
-.placeinfo:nth-of-type(n) {
-  border: 0;
-  box-shadow: 0px 1px 2px #888;
-}
+    .placeinfo a,
+    .placeinfo a:hover,
+    .placeinfo a:active {
+      color: #fff;
+      text-decoration: none;
+    }
 
-.placeinfo_wrap .after {
-  content: '';
-  position: relative;
-  margin-left: -12px;
-  left: 50%;
-  width: 22px;
-  height: 12px;
-  background: url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
-}
+    .placeinfo a,
+    .placeinfo span {
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
-.placeinfo a,
-.placeinfo a:hover,
-.placeinfo a:active {
-  color: #fff;
-  text-decoration: none;
-}
+    .placeinfo span {
+      margin: 5px 5px 0 5px;
+      cursor: default;
+      font-size: 13px;
+    }
 
-.placeinfo a,
-.placeinfo span {
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
+    .placeinfo .title {
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 6px 6px 0 0;
+      margin: -1px -1px 0 -1px;
+      padding: 10px;
+      color: #fff;
+      background: #d95050;
+      background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+    }
 
-.placeinfo span {
-  margin: 5px 5px 0 5px;
-  cursor: default;
-  font-size: 13px;
-}
+    .placeinfo .tel {
+      color: #0f7833;
+    }
 
-.placeinfo .title {
-  font-weight: bold;
-  font-size: 14px;
-  border-radius: 6px 6px 0 0;
-  margin: -1px -1px 0 -1px;
-  padding: 10px;
-  color: #fff;
-  background: #d95050;
-  background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
-}
+    .placeinfo .jibun {
+      color: #999;
+      font-size: 11px;
+      margin-top: 0;
+    }
 
-.placeinfo .tel {
-  color: #0f7833;
-}
+    .map_wrap {
+      overflow: hidden;
+      height: 330px
+    }
 
-.placeinfo .jibun {
-  color: #999;
-  font-size: 11px;
-  margin-top: 0;
-}
+    .blinking {
+      -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+      -moz-animation: blink 1.5s ease-in-out infinite alternate;
+      animation: blink 1.5s ease-in-out infinite alternate;
+    }
 
-.map_wrap {
-  overflow: hidden;
-  height: 330px
-}
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 0;
+      }
 
-.blinking {
-  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
-  -moz-animation: blink 1.5s ease-in-out infinite alternate;
-  animation: blink 1.5s ease-in-out infinite alternate;
-}
+      100% {
+        opacity: 1;
+      }
+    }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
+    @-moz-keyframes blink {
+      0% {
+        opacity: 0;
+      }
 
-  100% {
-    opacity: 1;
-  }
-}
+      100% {
+        opacity: 1;
+      }
+    }
 
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
 
-  100% {
-    opacity: 1;
-  }
-}
+      100% {
+        opacity: 1;
+      }
+    }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
+    #menu_wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 250px;
+      margin: 10px 0 30px 10px;
+      padding: 5px;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 1;
+      font-size: 12px;
+      border-radius: 10px;
+    }
 
-  100% {
-    opacity: 1;
-  }
-}
+    .bg_white {
+      background: #fff;
+    }
 
-#menu_wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 250px;
-  margin: 10px 0 30px 10px;
-  padding: 5px;
-  overflow-y: auto;
-  background: rgba(255, 255, 255, 0.7);
-  z-index: 1;
-  font-size: 12px;
-  border-radius: 10px;
-}
+    #menu_wrap hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid #5F5F5F;
+      margin: 3px 0;
+    }
 
-.bg_white {
-  background: #fff;
-}
+    #menu_wrap .option {
+      text-align: center;
+    }
 
-#menu_wrap hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 2px solid #5F5F5F;
-  margin: 3px 0;
-}
+    #menu_wrap .option p {
+      margin: 10px 0;
+    }
 
-#menu_wrap .option {
-  text-align: center;
-}
-
-#menu_wrap .option p {
-  margin: 10px 0;
-}
-
-#menu_wrap .option button {
-  margin-left: 5px;
-}
+    #menu_wrap .option button {
+      margin-left: 5px;
+    }
   </style>
 </head>
 
@@ -289,14 +287,13 @@
 
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="{% url 'safeLoad:index' %}">오쭈감</a></div>
+          <div class="site-logo mr-auto w-25"><a href="{% url 'safeLoad:index' %}">EyeLight</a></div>
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
                 <li><a href="#map-section" class="nav-link">Map</a></li>
-                <li><a href="#programs-section" class="nav-link">Programs</a></li>
-                <li><a href="#teachers-section" class="nav-link">Teachers</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact us</a></li>
               </ul>
             </nav>
           </div>
@@ -307,7 +304,7 @@
                 {% if user.is_authenticated %}
                 <li class="cta"> <a class="nav-link" href="{% url 'accounts:logout' %}"> <span>LOGOUT</span></a></li>
                 {% else %}
-                <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+                <li class="cta"> <a class="nav-link" href="#home-section"> <span>LOGIN</span></a></li>
                 {% endif %}
               </ul>
             </nav>
@@ -396,10 +393,22 @@
   <div class="site-section courses-entry-wrap" data-aos="fade-up" data-aos-delay="100">
     <div class="container">
       {% comment %} <div class="row"> {% endcomment %}
-      
+        <form onsubmit="SsearchPlaces(); return false;">
+          <div class="d-flex mb-3 justify-content-center">
+            <div class="col-md-5">
+              <input class='form-control text-center' type="text" value="역삼역" id="keyword" size="15">
+            </div>
+            <button class='btn btn-warning' type="submit"><span class="image blinking">검색하기</span></button>
+
+            위도 : <h1 id='latitude'></h1>
+            경도 : <h1 id='longitude'></h1>
+
+
+          </div>
+        </form>
         {% comment %} <div class="owl-carousel col-12 nonloop-block-14"> {% endcomment %}
           <div class="map_wrap">
-            <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+            <div id="map" style="width:100%;height:100%;position:;overflow:hidden;"></div>
             <ul id="category">
               <li id="CCTV" data-order="0">
                 <span class="category_bg bank"></span>
@@ -409,1116 +418,857 @@
                 <span class="category_bg mart"></span>
                 가로등
               </li>
+              <li>
+                <button onclick="panTo()">현위치</button>
+              </li>
             </ul>
           </div>
-{% comment %} 
-          <div id="menu_wrap" class="bg_white">
-            <div class="option"> {% endcomment %}
-              <div>
-                <form onsubmit="SsearchPlaces(); return false;">
-                  키워드 : <input class='form-control rounded-0' type="text" value="이태원 맛집" id="keyword" size="15">
-                  <button class ='btn btn-primary m-1' type="submit">검색하기</button>
-               
-                <button class ='btn btn-primary m-1' onclick="panTo()">현위치</button>
-                 </form>
-              </div>
-            {% comment %} </div>
-            <hr>
-          </div> {% endcomment %}
-          <ul>
-            <li>위도:<span id="latitude"></span></li>
-            <li>경도:<span id="longitude"></span></li>
-          </ul>
-          {% comment %} <p>지도를 클릭해보세요</p> {% endcomment %}
-          <p id="result"></p>
-          <p>로드뷰</p>
+
           <div id="rvWrapper" style="width:100%;height:300px;float:left">
-            <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
+            <div id="roadview" style="width:100%;height:100%"></div>
           </div>
-          <span class="image blinking"> 반짝이게 하고 싶은 이미지나 텍스트 </span>
           <a id="kakao-link-btn" href="javascript:;">
             <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
           </a>
-        
-        <div class="row justify-content-center">
-          <div class="col-7 text-center">
-            <button class="customPrevBtn btn btn-primary m-1">Prev</button>
-            <button class="customNextBtn btn btn-primary m-1">Next</button>
-          </div>
         </div>
-      {% comment %} </div> {% endcomment %}
-    </div>
 
+        <div class="site-section bg-light" id="contact-section">
+          <div class="container">
 
-      {% comment %} <div class="site-section" id="programs-section">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
-              <h2 class="section-title">Our Programs</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non
-                aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed
-                veniam!
-              </p>
-            </div>
-          </div>
-          <div class="row mb-5 align-items-center">
-            <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
-              <img src="/static/images/undraw_youtube_tutorial.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="text-black mb-4">We Are Excellent In Education</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus
-                fugiat quo molestiae illo.</p>
+            <div class="row justify-content-center">
+              <div class="col-lg-7 text-center aos-init aos-animate">
+                <h2 class="section-title mb-3">Contact Us</h2>
+                <p class="mb-5">EyeLight의 개선할 점을 알려주세요!<BR>
+                  가로등 / CCTV의 고장 신고도 환영이에영 >3< </p> <form method="post" data-aos="fade"
+                    action="{% url 'safeLoad:index' %}">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                      <div class="col-md-6 mb-3 mb-lg-0">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
 
-              <div class="d-flex align-items-center custom-icon-wrap mb-3">
-                <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
-                <div>
-                  <h3 class="m-0">22,931 Yearly Graduates</h3>
-                </div>
-              </div>
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Subject">
+                      </div>
+                    </div>
 
-              <div class="d-flex align-items-center custom-icon-wrap">
-                <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
-                <div>
-                  <h3 class="m-0">150 Universities Worldwide</h3>
-                </div>
-              </div>
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <textarea class="form-control" id="" cols="30" rows="10"
+                          placeholder="Write your message here."></textarea>
+                      </div>
+                    </div>
 
-            </div>
-          </div>
+                    <div class="form-group row justify-content-center">
+                      <div class="col-md-6">
 
-          <div class="row mb-5 align-items-center">
-            <div class="col-lg-7 mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-              <img src="/static/images/undraw_teaching.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-lg-4 mr-auto order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="text-black mb-4">Strive for Excellent</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus
-                fugiat quo molestiae illo.</p>
+                        <input type="submit" class="btn btn-primary py-3 px-5 btn-block btn-pill" value="Send Message">
+                      </div>
+                    </div>
 
-              <div class="d-flex align-items-center custom-icon-wrap mb-3">
-                <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
-                <div>
-                  <h3 class="m-0">22,931 Yearly Graduates</h3>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center custom-icon-wrap">
-                <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
-                <div>
-                  <h3 class="m-0">150 Universities Worldwide</h3>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="row mb-5 align-items-center">
-            <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
-              <img src="/static/images/undraw_teacher.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="text-black mb-4">Education is life</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus
-                fugiat quo molestiae illo.</p>
-
-              <div class="d-flex align-items-center custom-icon-wrap mb-3">
-                <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
-                <div>
-                  <h3 class="m-0">22,931 Yearly Graduates</h3>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center custom-icon-wrap">
-                <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
-                <div>
-                  <h3 class="m-0">150 Universities Worldwide</h3>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="site-section" id="teachers-section">
-        <div class="container">
-
-          <div class="row mb-5 justify-content-center">
-            <div class="col-lg-7 mb-5 text-center" data-aos="fade-up" data-aos-delay="">
-              <h2 class="section-title">Our Teachers</h2>
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque!
-                Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam
-                ullam,
-                illum sed veniam!</p>
-            </div>
-          </div>
-
-          <div class="row">
-
-            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="teacher text-center">
-                <img src="/static/images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
-                <div class="py-2">
-                  <h3 class="text-black">Benjamin Stone</h3>
-                  <p class="position">Physics Teacher</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto
-                    tempora, adipisci at provident.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="teacher text-center">
-                <img src="/static/images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
-                <div class="py-2">
-                  <h3 class="text-black">Katleen Stone</h3>
-                  <p class="position">Physics Teacher</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto
-                    tempora, adipisci at provident.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="teacher text-center">
-                <img src="/static/images/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
-                <div class="py-2">
-                  <h3 class="text-black">Sadie White</h3>
-                  <p class="position">Physics Teacher</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto
-                    tempora, adipisci at provident.</p>
-                </div>
+                    </form>
               </div>
             </div>
           </div>
         </div>
-      </div> {% endcomment %}
-
-      {% comment %} <div class="site-section bg-image overlay" style="background-image:url('/static//static/images/hero_1.jpg');">
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-8 text-center testimony">
-              <img src="/static/images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-              <h3 class="mb-4">Jerome Jensen</h3>
-              <blockquote>
-                <p>&ldquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem soluta sit eius
-                  necessitatibus voluptate excepturi beatae ad eveniet sapiente impedit quae modi quo provident odit
-                  molestias! Rem reprehenderit assumenda &rdquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div> {% endcomment %}
-
-      <div class="site-section pb-0">
-
-        <div class="future-blobs">
-          <div class="blob_2">
-            <img src="/static/images/blob_2.svg" alt="Image">
-          </div>
-          <div class="blob_1">
-            <img src="/static/images/blob_1.svg" alt="Image">
-          </div>
-        </div>
-        <div class="container">
-          <div class="row mb-5 justify-content-center" data-aos="fade-up" data-aos-delay="">
-            <div class="col-lg-7 text-center">
-              <h2 class="section-title">Why Choose Us</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 ml-auto align-self-start" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="p-4 rounded bg-white why-choose-us-box">
-
-                <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
-                  <div class="mr-3"><span class="custom-icon-inner"><span
-                        class="icon icon-graduation-cap"></span></span>
-                  </div>
-                  <div>
-                    <h3 class="m-0">22,931 Yearly Graduates</h3>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
-                  <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span>
-                  </div>
-                  <div>
-                    <h3 class="m-0">150 Universities Worldwide</h3>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
-                  <div class="mr-3"><span class="custom-icon-inner"><span
-                        class="icon icon-graduation-cap"></span></span>
-                  </div>
-                  <div>
-                    <h3 class="m-0">Top Professionals in The World</h3>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
-                  <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span>
-                  </div>
-                  <div>
-                    <h3 class="m-0">Expand Your Knowledge</h3>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
-                  <div class="mr-3"><span class="custom-icon-inner"><span
-                        class="icon icon-graduation-cap"></span></span>
-                  </div>
-                  <div>
-                    <h3 class="m-0">Best Online Teaching Assistant Courses</h3>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center custom-icon-wrap custom-icon-light">
-                  <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span>
-                  </div>
-                  <div>
-                    <h3 class="m-0">Best Teachers</h3>
-                  </div>
-                </div>
-
-              </div>
 
 
-            </div>
-            <div class="col-lg-7 align-self-end" data-aos="fade-left" data-aos-delay="200">
-              <img src="/static/images/person_transparent.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="site-section bg-light" id="contact-section">
-        <div class="container">
-
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-
-
-
-              <h2 class="section-title mb-3">Message Us</h2>
-              <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam
-                temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-
-              <form method="post" data-aos="fade" action="{% url 'safeLoad:index' %}">
-                {% csrf_token %}
-                <div class="form-group row">
-                  <div class="col-md-6 mb-3 mb-lg-0">
-                    <input type="text" class="form-control" placeholder="First name">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Last name">
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <input type="text" class="form-control" placeholder="Subject">
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <input type="email" class="form-control" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <textarea class="form-control" id="" cols="30" rows="10"
-                      placeholder="Write your message here."></textarea>
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <div class="col-md-6">
-
-                    <input type="submit" class="btn btn-primary py-3 px-5 btn-block btn-pill" value="Send Message">
-                  </div>
-                </div>
-
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <footer class="footer-section bg-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h3>About OneSchool</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis
-                corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
-            </div>
-
-            <div class="col-md-3 ml-auto">
-              <h3>Links</h3>
-              <ul class="list-unstyled footer-links">
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="#map-section">map</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Teachers</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-4">
-              <h3>Subscribe</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto?
-                Numquam, natus?</p>
-              <form action="#" class="footer-subscribe">
-                <div class="d-flex mb-5">
-                  <input type="text" class="form-control rounded-0" placeholder="Email">
-                  <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-                </div>
-              </form>
-            </div>
-
-          </div>
-
-          <div class="row pt-5 mt-5 text-center">
-            <div class="col-md-12">
-              <div class="border-top pt-5">
-                <p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
-                  </script> All rights reserved | This template is made with <i class="icon-heart"
-                    aria-hidden="true"></i>
-                  by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <footer class="footer-section bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>About EyeLight</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis
+                  corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.
                 </p>
               </div>
+
+              <div class="col-md-3 ml-auto">
+                <h3>Links</h3>
+                <ul class="list-unstyled footer-links">
+                  <li><a href="#home-section">Home</a></li>
+                  <li><a href="#map-section">Map</a></li>
+                  <li><a href="#contact-section">Contact Us</a></li>
+                </ul>
+              </div>
+
             </div>
 
+            <div class="row pt-5 mt-5 text-center">
+              <div class="col-md-12">
+                <div class="border-top pt-5">
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                      document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="icon-heart"
+                      aria-hidden="true"></i>
+                    by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
 
 
 
-    </div> <!-- .site-wrap -->
+      </div> <!-- .site-wrap -->
 
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
-    <script src="{% static 'js/jquery-ui.js' %}"></script>
-    <script src="{% static 'js/popper.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
-    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
-    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-    <script src="{% static 'js/aos.js' %}"></script>
-    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
-    <script src="{% static 'js/jquery.sticky.js' %}"></script>
-    <script src="{% static 'js/main.js'%}"></script>
-    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <script type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=05da056b27709d92bda513c7f8726c91&libraries=services,clusterer,drawing">
-    </script>
-    <script>
-      var container = document.getElementById('map');
-      var crd;
-      var options;
-      var map;
-      var marker;
+      <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+      <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+      <script src="{% static 'js/jquery-ui.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+      <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+      <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+      <script src="{% static 'js/aos.js' %}"></script>
+      <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+      <script src="{% static 'js/jquery.sticky.js' %}"></script>
+      <script src="{% static 'js/main.js'%}"></script>
+      <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+      <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+      <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=05da056b27709d92bda513c7f8726c91&libraries=services,clusterer,drawing">
+      </script>
+      <script>
+        var container = document.getElementById('map');
+        var crd;
+        var options;
+        var map;
+        var marker;
+        var locatelat;
+        var locatelong;
 
-      function panTo() {
-        map.panTo(options.center);
-        removeMarker2();
-        marker.setMap(map);
-      }
-
-      function removeMarker2() {
-        marker.setMap(null);
-      }
-      // 마커를 담을 배열입니다
-      var Smarkers = [];
-
-      // var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-      //   mapOption = {
-      //     center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-      //     level: 3 // 지도의 확대 레벨
-      //   };
-
-      // // 지도를 생성합니다    
-      // var map = new kakao.maps.Map(mapContainer, mapOption);
-
-      // 장소 검색 객체를 생성합니다
-      var ps = new kakao.maps.services.Places();
-
-      // 검색 결과 목록이나 마커를 클릭했을 때 장소명을 표출할 인포윈도우를 생성합니다
-      var infowindow = new kakao.maps.InfoWindow({
-        zIndex: 1
-      });
-
-      // 키워드로 장소를 검색합니다
-      SsearchPlaces();
-
-      // 키워드 검색을 요청하는 함수입니다
-      function SsearchPlaces() {
-
-        var Skeyword = document.getElementById('keyword').value;
-
-        if (!Skeyword.replace(/^\s+|\s+$/g, '')) {
-          alert('키워드를 입력해주세요!');
-          return false;
+        function panTo() {
+          map.panTo(options.center);
+          removeMarker2();
+          marker.setMap(map);
         }
 
-        // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
-        ps.keywordSearch(Skeyword, SplacesSearchCB);
-      }
-
-      // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
-      function SplacesSearchCB(data, status, pagination) {
-        if (status === kakao.maps.services.Status.OK) {
-
-          // 정상적으로 검색이 완료됐으면
-          // 검색 목록과 마커를 표출합니다
-          SdisplayPlaces(data);
-
-          // 페이지 번호를 표출합니다
-          // SdisplayPagination(pagination);
-
-        } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
-
-          alert('검색 결과가 존재하지 않습니다.');
-          return;
-
-        } else if (status === kakao.maps.services.Status.ERROR) {
-
-          alert('검색 결과 중 오류가 발생했습니다.');
-          return;
-
+        function removeMarker2() {
+          marker.setMap(null);
         }
-      }
+        // 마커를 담을 배열입니다
+        var Smarkers = [];
 
-      // 검색 결과 목록과 마커를 표출하는 함수입니다
-      function SdisplayPlaces(places) {
+        // var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        //   mapOption = {
+        //     center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+        //     level: 3 // 지도의 확대 레벨
+        //   };
 
-        var listEl = document.getElementById('placesList'),
-          menuEl = document.getElementById('menu_wrap'),
-          fragment = document.createDocumentFragment(),
-          bounds = new kakao.maps.LatLngBounds(),
-          listStr = '';
+        // // 지도를 생성합니다    
+        // var map = new kakao.maps.Map(mapContainer, mapOption);
 
-        // 검색 결과 목록에 추가된 항목들을 제거합니다
-        //SremoveAllChildNods(listEl);
+        // 장소 검색 객체를 생성합니다
+        var ps = new kakao.maps.services.Places();
 
-        // 지도에 표시되고 있는 마커를 제거합니다
-        //SremoveMarker();
+        // 검색 결과 목록이나 마커를 클릭했을 때 장소명을 표출할 인포윈도우를 생성합니다
+        var infowindow = new kakao.maps.InfoWindow({
+          zIndex: 1
+        });
 
-        for (var i = 0; i < places.length; i++) {
+        // 키워드로 장소를 검색합니다
+        SsearchPlaces();
 
-          // 마커를 생성하고 지도에 표시합니다
-          var SplacePosition = new kakao.maps.LatLng(places[i].y, places[i].x),
-            marker = SaddMarker(SplacePosition, i),
-            itemEl = SgetListItem(i, places[i]); // 검색 결과 항목 Element를 생성합니다
+        // 키워드 검색을 요청하는 함수입니다
+        function SsearchPlaces() {
 
-          // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
-          // LatLngBounds 객체에 좌표를 추가합니다
-          bounds.extend(SplacePosition);
+          var Skeyword = document.getElementById('keyword').value;
 
-          // 마커와 검색결과 항목에 mouseover 했을때
-          // 해당 장소에 인포윈도우에 장소명을 표시합니다
-          // mouseout 했을 때는 인포윈도우를 닫습니다
-          /*        (function (marker, title) {
-                    kakao.maps.event.addListener(marker, 'mouseover', function () {
-                      SdisplayInfowindow(marker, title);
-                    });
+          if (!Skeyword.replace(/^\s+|\s+$/g, '')) {
+            alert('키워드를 입력해주세요!');
+            return false;
+          }
 
-                    kakao.maps.event.addListener(marker, 'mouseout', function () {
-                      infowindow.close();
-                    });
-
-                    itemEl.onmouseover = function () {
-                      SdisplayInfowindow(marker, title);
-                    };
-
-                    itemEl.onmouseout = function () {
-                      infowindow.close();
-                    };
-                  })(marker, places[i].place_name);
-
-                  fragment.appendChild(itemEl);
-                  */
+          // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
+          ps.keywordSearch(Skeyword, SplacesSearchCB);
         }
 
-        /*      // 검색결과 항목들을 검색결과 목록 Elemnet에 추가합니다
-              listEl.appendChild(fragment);
-              menuEl.scrollTop = 0;
-        */
-        // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
-        map.setBounds(bounds);
-      }
+        // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
+        function SplacesSearchCB(data, status, pagination) {
+          if (status === kakao.maps.services.Status.OK) {
 
-      // 검색결과 항목을 Element로 반환하는 함수입니다
-      function SgetListItem(index, places) {
+            // 정상적으로 검색이 완료됐으면
+            // 검색 목록과 마커를 표출합니다
+            SdisplayPlaces(data);
 
-        var el = document.createElement('li'),
-          itemStr = '<span class="markerbg marker_' + (index + 1) + '"></span>' +
-          '<div class="info">' +
-          '   <h5>' + places.place_name + '</h5>';
+            // 페이지 번호를 표출합니다
+            // SdisplayPagination(pagination);
 
-        if (places.road_address_name) {
-          itemStr += '    <span>' + places.road_address_name + '</span>' +
-            '   <span class="jibun gray">' + places.address_name + '</span>';
-        } else {
-          itemStr += '    <span>' + places.address_name + '</span>';
+          } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+
+            alert('검색 결과가 존재하지 않습니다.');
+            return;
+
+          } else if (status === kakao.maps.services.Status.ERROR) {
+
+            alert('검색 결과 중 오류가 발생했습니다.');
+            return;
+
+          }
         }
 
-        itemStr += '  <span class="tel">' + places.phone + '</span>' +
-          '</div>';
+        // 검색 결과 목록과 마커를 표출하는 함수입니다
+        function SdisplayPlaces(places) {
 
-        el.innerHTML = itemStr;
-        el.className = 'item';
+          var listEl = document.getElementById('placesList'),
+            menuEl = document.getElementById('menu_wrap'),
+            fragment = document.createDocumentFragment(),
+            bounds = new kakao.maps.LatLngBounds(),
+            listStr = '';
 
-        return el;
-      }
+          // 검색 결과 목록에 추가된 항목들을 제거합니다
+          //SremoveAllChildNods(listEl);
 
-      // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
-      function SaddMarker(position, idx, title) {
-        var imageSrc =
-          'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-          imageSize = new kakao.maps.Size(36, 37), // 마커 이미지의 크기
-          imgOptions = {
-            spriteSize: new kakao.maps.Size(36, 691), // 스프라이트 이미지의 크기
-            spriteOrigin: new kakao.maps.Point(0, (idx * 46) + 10), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
-            offset: new kakao.maps.Point(13, 37) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
-          },
-          markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imgOptions),
-          marker = new kakao.maps.Marker({
-            position: position, // 마커의 위치
-            image: markerImage
-          });
+          // 지도에 표시되고 있는 마커를 제거합니다
+          //SremoveMarker();
 
-        //marker.setMap(map); // 지도 위에 마커를 표출합니다
-        //Smarkers.push(marker); // 배열에 생성된 마커를 추가합니다
+          for (var i = 0; i < places.length; i++) {
 
-        return marker;
-      }
+            // 마커를 생성하고 지도에 표시합니다
+            var SplacePosition = new kakao.maps.LatLng(places[i].y, places[i].x),
+              marker = SaddMarker(SplacePosition, i),
+              itemEl = SgetListItem(i, places[i]); // 검색 결과 항목 Element를 생성합니다
 
-      // 지도 위에 표시되고 있는 마커를 모두 제거합니다
-      function SremoveMarker() {
-        for (var i = 0; i < Smarkers.length; i++) {
-          Smarkers[i].setMap(null);
+            // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+            // LatLngBounds 객체에 좌표를 추가합니다
+            bounds.extend(SplacePosition);
+
+            // 마커와 검색결과 항목에 mouseover 했을때
+            // 해당 장소에 인포윈도우에 장소명을 표시합니다
+            // mouseout 했을 때는 인포윈도우를 닫습니다
+            /*        (function (marker, title) {
+                      kakao.maps.event.addListener(marker, 'mouseover', function () {
+                        SdisplayInfowindow(marker, title);
+                      });
+
+                      kakao.maps.event.addListener(marker, 'mouseout', function () {
+                        infowindow.close();
+                      });
+
+                      itemEl.onmouseover = function () {
+                        SdisplayInfowindow(marker, title);
+                      };
+
+                      itemEl.onmouseout = function () {
+                        infowindow.close();
+                      };
+                    })(marker, places[i].place_name);
+
+                    fragment.appendChild(itemEl);
+                    */
+          }
+
+          /*      // 검색결과 항목들을 검색결과 목록 Elemnet에 추가합니다
+                listEl.appendChild(fragment);
+                menuEl.scrollTop = 0;
+          */
+          // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+          map.setBounds(bounds);
         }
-        Smarkers = [];
-      }
 
-      // 검색결과 목록 하단에 페이지번호를 표시는 함수입니다
-      function SdisplayPagination(pagination) {
-        var paginationEl = document.getElementById('pagination'),
-          fragment = document.createDocumentFragment(),
-          i;
+        // 검색결과 항목을 Element로 반환하는 함수입니다
+        function SgetListItem(index, places) {
 
-        // 기존에 추가된 페이지번호를 삭제합니다
-        while (paginationEl.hasChildNodes()) {
-          paginationEl.removeChild(paginationEl.lastChild);
-        }
+          var el = document.createElement('li'),
+            itemStr = '<span class="markerbg marker_' + (index + 1) + '"></span>' +
+            '<div class="info">' +
+            '   <h5>' + places.place_name + '</h5>';
 
-        for (i = 1; i <= pagination.last; i++) {
-          var el = document.createElement('a');
-          el.href = "#";
-          el.innerHTML = i;
-
-          if (i === pagination.current) {
-            el.className = 'on';
+          if (places.road_address_name) {
+            itemStr += '    <span>' + places.road_address_name + '</span>' +
+              '   <span class="jibun gray">' + places.address_name + '</span>';
           } else {
-            el.onclick = (function (i) {
-              return function () {
-                pagination.gotoPage(i);
-              }
-            })(i);
+            itemStr += '    <span>' + places.address_name + '</span>';
           }
 
-          fragment.appendChild(el);
+          itemStr += '  <span class="tel">' + places.phone + '</span>' +
+            '</div>';
+
+          el.innerHTML = itemStr;
+          el.className = 'item';
+
+          return el;
         }
-        paginationEl.appendChild(fragment);
-      }
 
-      // 검색결과 목록 또는 마커를 클릭했을 때 호출되는 함수입니다
-      // 인포윈도우에 장소명을 표시합니다
-      function SdisplayInfowindow(marker, title) {
-        var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
-
-        infowindow.setContent(content);
-        infowindow.open(map, marker);
-      }
-
-      // 검색결과 목록의 자식 Element를 제거하는 함수입니다
-      function SremoveAllChildNods(el) {
-        while (el.hasChildNodes()) {
-          el.removeChild(el.lastChild);
-        }
-      }
-
-      $(function master() {
-        // Geolocation API에 액세스할 수 있는지를 확인
-        if (navigator.geolocation) {
-          //위치 정보를 얻기
-          navigator.geolocation.getCurrentPosition(function (pos) {
-
-            // 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
-            var placeOverlay = new kakao.maps.CustomOverlay({
-                zIndex: 1
-              }),
-              contentNode = document.createElement('div'), // 커스텀 오버레이의 컨텐츠 엘리먼트 입니다 
-              markers = [], // 마커를 담을 배열입니다
-              cctvmarkers = [],
-              slmarkers = [],
-              currCategory = ''; // 현재 선택된 카테고리를 가지고 있을 변수입니다
-
-            //var container = document.getElementById('map');
-            crd = pos.coords;
-            options = {
-              center: new kakao.maps.LatLng(crd.latitude, crd.longitude),
-              level: 3
-            };
-
-            map = new kakao.maps.Map(container, options);
-
-            var mapWrapper = document.getElementById('map'); //지도를 감싸고 있는 DIV태그
-            var mapCenter = new kakao.maps.LatLng(crd.latitude, crd.longitude);
-
-            map.addOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW); //지도 위에 로드뷰 도로 올리기
-
-            var rvContainer = document.getElementById('roadview'); //로드뷰를 표시할 div
-            var rv = new kakao.maps.Roadview(rvContainer); //로드뷰 객체
-            var rvClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
-
-            toggleRoadview(mapCenter);
-
-            // 마커 이미지를 생성합니다.
-            var markImage = new kakao.maps.MarkerImage(
-              'https://t1.daumcdn.net/localimg/localimages/07/2018/pc/roadview_minimap_wk_2018.png',
-              new kakao.maps.Size(26, 46), {
-                // 스프라이트 이미지를 사용합니다.
-                // 스프라이트 이미지 전체의 크기를 지정하고
-                spriteSize: new kakao.maps.Size(1666, 168),
-                // 사용하고 싶은 영역의 좌상단 좌표를 입력합니다.
-                // background-position으로 지정하는 값이며 부호는 반대입니다.
-                spriteOrigin: new kakao.maps.Point(705, 114),
-                offset: new kakao.maps.Point(13, 46)
-              }
-            );
-
-            // 드래그가 가능한 마커를 생성합니다.
-            var rvMarker = new kakao.maps.Marker({
-              image: markImage,
-              position: mapCenter,
-              draggable: true,
-              map: map
-            });
-
-            //마커에 dragend 이벤트를 할당합니다
-            kakao.maps.event.addListener(rvMarker, 'dragend', function (mouseEvent) {
-              var position = rvMarker.getPosition(); //현재 마커가 놓인 자리의 좌표
-              toggleRoadview(position); //로드뷰를 토글합니다
-            });
-
-            //지도에 클릭 이벤트를 할당합니다
-            kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
-
-              // 현재 클릭한 부분의 좌표를 리턴 
-              var position = mouseEvent.latLng;
-
-              rvMarker.setPosition(position);
-              toggleRoadview(position); //로드뷰를 토글합니다
-            });
-
-            //로드뷰 toggle함수
-            function toggleRoadview(position) {
-
-              //전달받은 좌표(position)에 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄웁니다
-              rvClient.getNearestPanoId(position, 50, function (panoId) {
-                if (panoId === null) {
-                  rvContainer.style.display = 'none'; //로드뷰를 넣은 컨테이너를 숨깁니다
-                  mapWrapper.style.width = '100%';
-                  map.relayout();
-                } else {
-                  mapWrapper.style.width = '100%';
-                  map.relayout(); //지도를 감싸고 있는 영역이 변경됨에 따라, 지도를 재배열합니다
-                  rvContainer.style.display = 'block'; //로드뷰를 넣은 컨테이너를 보이게합니다
-                  rv.setPanoId(panoId, position); //panoId를 통한 로드뷰 실행
-                  rv.relayout(); //로드뷰를 감싸고 있는 영역이 변경됨에 따라, 로드뷰를 재배열합니다
-                }
-              });
-            }
-            kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
-
-              // 클릭한 위도, 경도 정보를 가져옵니다 
-              var latlng = mouseEvent.latLng;
-
-              var message = '클릭한 위치의 위도는 ' + latlng.getLat() + ' 이고, ';
-              message += '경도는 ' + latlng.getLng() + ' 입니다';
-
-              var resultDiv = document.getElementById('result');
-              resultDiv.innerHTML = message;
-
-            });
-
-
-            console.log(crd.latitude);
-            console.log(crd.longitude);
-
-            var markerPosition = new kakao.maps.LatLng(crd.latitude, crd.longitude);
-
+        // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
+        function SaddMarker(position, idx, title) {
+          var imageSrc =
+            'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
+            imageSize = new kakao.maps.Size(36, 37), // 마커 이미지의 크기
+            imgOptions = {
+              spriteSize: new kakao.maps.Size(36, 691), // 스프라이트 이미지의 크기
+              spriteOrigin: new kakao.maps.Point(0, (idx * 46) + 10), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
+              offset: new kakao.maps.Point(13, 37) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
+            },
+            markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imgOptions),
             marker = new kakao.maps.Marker({
-              position: markerPosition
+              position: position, // 마커의 위치
+              image: markerImage
             });
 
-            marker.setMap(map);
+          //marker.setMap(map); // 지도 위에 마커를 표출합니다
+          //Smarkers.push(marker); // 배열에 생성된 마커를 추가합니다
 
-            $('#latitude').html(pos.coords.latitude); // 위도
-            $('#longitude').html(pos.coords.longitude); // 경도
-
-            // 장소 검색 객체를 생성합니다
-            var ps = new kakao.maps.services.Places(map);
-
-            // 지도에 idle 이벤트를 등록합니다
-            kakao.maps.event.addListener(map, 'idle', searchPlaces);
-
-            // 커스텀 오버레이의 컨텐츠 노드에 css class를 추가합니다 
-            contentNode.className = 'placeinfo_wrap';
-
-            // 커스텀 오버레이의 컨텐츠 노드에 mousedown, touchstart 이벤트가 발생했을때
-            // 지도 객체에 이벤트가 전달되지 않도록 이벤트 핸들러로 kakao.maps.event.preventMap 메소드를 등록합니다 
-            addEventHandle(contentNode, 'mousedown', kakao.maps.event.preventMap);
-            addEventHandle(contentNode, 'touchstart', kakao.maps.event.preventMap);
-
-            // 커스텀 오버레이 컨텐츠를 설정합니다
-            placeOverlay.setContent(contentNode);
-
-            // 각 카테고리에 클릭 이벤트를 등록합니다
-            addCategoryClickEvent();
-
-            // 엘리먼트에 이벤트 핸들러를 등록하는 함수입니다
-            function addEventHandle(target, type, callback) {
-              if (target.addEventListener) {
-                target.addEventListener(type, callback);
-              } else {
-                target.attachEvent('on' + type, callback);
-              }
-            }
-
-            // 카테고리 검색을 요청하는 함수입니다
-            function searchPlaces() {
-              if (!currCategory) {
-                console.log("검색실패")
-                return;
-              }
-              console.log("검색성공")
-              // 커스텀 오버레이를 숨깁니다 
-              placeOverlay.setMap(null);
-
-              // 지도에 표시되고 있는 마커를 제거합니다
-              removeMarker(); //********************************* 두개다?
-
-              ps.categorySearch(currCategory, placesSearchCB, {
-                useMapBounds: true
-              });
-            }
-
-            // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
-            function placesSearchCB(data, status, pagination) {
-              if (status === kakao.maps.services.Status.OK) {
-                console.log("장소검색이 완료")
-                console.log(status)
-                console.log(data)
-                // 정상적으로 검색이 완료됐으면 지도에 마커를 표출합니다
-                displayPlaces(data);
-              } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
-                // 검색결과가 없는경우 해야할 처리가 있다면 이곳에 작성해 주세요
-                console.log("장소검색이 안되고 있어요!  " + currCategory)
-                console.log(status)
-                console.log(data)
-                console.log(currCategory)
-
-       if (currCategory == "CCTV") {
-                data = [{% for ctv in cctv %} {
-                    cctv_mng: "{{ctv.CCTV_ADDRESS_NAME}}",
-                    x: "{{ctv.CCTV_LONGITUDE}}",
-                    y: "{{ctv.CCTV_LATITUDE}}",
-                  },
-                  {%endfor %}
-                ]
-              } else if (currCategory == "SL") {
-                data = [{% for map in strlmp %} {
-                    address_name: "{{map.STR_ADDRESS_NAME}}",
-                    x: "{{map.STR_LONGITUDE}}",
-                    y: "{{map.STR_LATITUDE}}",
-                  },
-                  {% endfor %}
-                ]
-                }
-
-                console.log(data)
-                displayPlaces(data);
-              } else if (status === kakao.maps.services.Status.ERROR) {
-                // 에러로 인해 검색결과가 나오지 않은 경우 해야할 처리가 있다면 이곳에 작성해 주세요
-
-              }
-            }
-
-
-
-            var cctvcnt = 0;
-            var slcnt = 0;
-            var circles = new Array();
-            var circle;
-            // 지도에 마커를 표출하는 함수입니다
-            function displayPlaces(places) {
-
-              // 몇번째 카테고리가 선택되어 있는지 얻어옵니다
-              // 이 순서는 스프라이트 이미지에서의 위치를 계산하는데 사용됩니다
-              var order = document.getElementById(currCategory).getAttribute('data-order');
-
-              //console.log(a.name)
-              //console.log(circle.radius)
-
-              //var objKeyArr = Object.keys(circle);   //객체의 key값들을 배열로 리턴
-              //console.log(circle)
-              //console.log('결과 개수 : ' + objKeyArr.length);
-              //for(var z=0;z<objKeyArr.length;z++){
-              //    console.log(objKeyArr[z])
-              //}
-
-              //console.log("asdasd "+circle.map)
-              //console.log("asdasd "+a.name)
-
-              for (var i = 0; i < places.length; i++) {
-
-                // 마커를 생성하고 지도에 표시합니다
-                var marker = addMarker(new kakao.maps.LatLng(places[i].y, places[i].x), order);
-                var radius2 = 20;
-                var mapCenter2 = new kakao.maps.LatLng(places[i].y, places[i].x); /// 반경 지우는 법 찾아내
-
-                if (currCategory == "SL") {
-                  //console.log(mapCenter2)
-                  fnCircle(places[i].y, places[i].x);
-                  slcnt++;
-                } else {
-                  cctvcnt++;
-                  //console.log("else"+currCategory)
-                  //for(var j=0; j<circles.length; j++)
-                  //    circles[j].setMap(null); // 하나만 삭제하는데 다 삭제하게 바꾸삼
-                  //console.log("실행완료")
-                }
-
-                // 마커와 검색결과 항목을 클릭 했을 때
-                // 장소정보를 표출하도록 클릭 이벤트를 등록합니다
-                (function (marker, place) {
-                  kakao.maps.event.addListener(marker, 'click', function () {
-                    displayPlaceInfo(place);
-                  });
-                })(marker, places[i]);
-              }
-              console.log("마커길이 : " + markers.length)
-            }
-
-            // 반경을 찍어주는 함수입니다.
-            function fnCircle(Lat, Lng) { // 서클을 객체에 담을 것. ********************
-              if (circle) { // 최초 실행시에는 circle이 없을테니 예외처리를 해줍니다.
-                // circle.setMap(null);
-              }
-
-              // 이 후로는 위에 질문에 작성하신 코드와 똑같이 진행하시면 됩니다.
-              circle = new kakao.maps.Circle({
-                map: map,
-                center: new kakao.maps.LatLng(Lat, Lng),
-                radius: 20,
-                strokeWeight: 2,
-                strokeColor: '#D7DF01',
-                strokeOpacity: 0.8,
-                strokeStyle: 'dashed',
-                fillColor: '#FFFF00',
-                fillOpacity: 0.5
-              });
-              circle.setMap(map);
-              circles.push(circle);
-            }
-
-            // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
-            function addMarker(position, order) {
-              var imageSrc =
-                'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-                imageSrc2 = '{% static 'images/marker.png' %}',
-                imageSize = new kakao.maps.Size(27, 28), // 마커 이미지의 크기
-                imgOptions = {
-                  spriteSize: new kakao.maps.Size(72, 208), // 스프라이트 이미지의 크기
-                  spriteOrigin: new kakao.maps.Point(46, (order * 36)), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
-                  offset: new kakao.maps.Point(11, 28) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
-                },
-                markerImage = new kakao.maps.MarkerImage(imageSrc2, imageSize, imgOptions),
-                marker = new kakao.maps.Marker({
-                  position: position, // 마커의 위치
-                  image: markerImage
-                });
-
-              marker.setMap(map); // 지도 위에 마커를 표출합니다
-              markers.push(marker); // 배열에 생성된 마커를 추가합니다
-
-              if (currCategory == "CCTV")
-                cctvmarkers.push(marker);
-              else
-                slmarkers.push(marker);
-
-
-              return marker;
-            }
-
-            // 지도 위에 표시되고 있는 마커를 모두 제거합니다
-            function removeMarker() {
-
-              if (currCategory == "CCTV") {
-                for (var i = 0; i < cctvcnt; i++) {
-                  cctvmarkers[i].setMap(null);
-                }
-                cctvmarkers = [];
-                cctvcnt = 0;
-              } else if (currCategory == "SL") {
-                for (var i = 0; i < slcnt; i++) {
-                  slmarkers[i].setMap(null);
-                }
-                slmarkers = [];
-                slcnt = 0;
-              } else {
-                for (var i = 0; i < markers.length; i++) {
-                  markers[i].setMap(null);
-                }
-                markers = [];
-                slcnt = 0;
-                ccvtcnt = 0;
-              }
-            }
-
-            // 클릭한 마커에 대한 장소 상세정보를 커스텀 오버레이로 표시하는 함수입니다
-            function displayPlaceInfo(place) {
-              var content = '<div class="placeinfo">' +
-                '   <a class="title" href="' + place.place_url + '" target="_blank" title="' + place
-                .place_name +
-                '">' + place.place_name + '</a>';
-
-              if (place.road_address_name) {
-                content += '    <span title="' + place.road_address_name + '">' + place.road_address_name +
-                  '</span>' +
-                  '  <span class="jibun" title="' + place.address_name + '">(지번 : ' + place.address_name +
-                  ')</span>';
-              } else {
-                content += '    <span title="' + place.address_name + '">' + place.address_name + '</span>';
-              }
-
-              content += '    <span class="tel">' + place.phone + '</span>' +
-                '</div>' +
-                '<div class="after"></div>';
-
-              contentNode.innerHTML = content;
-              placeOverlay.setPosition(new kakao.maps.LatLng(place.y, place.x));
-              placeOverlay.setMap(map);
-            }
-
-
-            // 각 카테고리에 클릭 이벤트를 등록합니다
-            function addCategoryClickEvent() {
-              var category = document.getElementById('category'),
-                children = category.children;
-
-              for (var i = 0; i < children.length; i++) {
-                children[i].onclick = onClickCategory;
-              }
-            }
-
-            // 카테고리를 클릭했을 때 호출되는 함수입니다
-            function onClickCategory() {
-              var id = this.id,
-                className = this.className;
-
-              console.log(id)
-              console.log(className)
-
-              placeOverlay.setMap(null);
-
-              if (className === 'on') {
-                currCategory = '';
-                changeCategoryClass();
-                removeMarker();
-                for (var j = 0; j < circles.length; j++)
-                  circles[j].setMap(null);
-              } else {
-                currCategory = id;
-                changeCategoryClass(this);
-                searchPlaces();
-              }
-            }
-
-            // 클릭된 카테고리에만 클릭된 스타일을 적용하는 함수입니다
-            function changeCategoryClass(el) {
-              var category = document.getElementById('category'),
-                children = category.children,
-                i;
-
-              for (i = 0; i < children.length; i++) {
-                children[i].className = '';
-              }
-
-              if (el) {
-                el.className = 'on';
-              }
-            }
-          });
-        } else {
-          alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.")
+          return marker;
         }
-      });
-    </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-      // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-      Kakao.init('2657b72743ad28a548eee264e4dde1d1');
-      // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-      Kakao.Link.createDefaultButton({
-        container: '#kakao-link-btn',
-        objectType: 'location',
-        address: '도와주세요 !!@$!$#@', // 현재위치로 수정
-        addressTitle: '도와주세요 !!', // 현재위치로 수정
-        content: {
-          title: 'Plz Help Me!!',
-          description: '{{user.member_msg}}', // 테이블에 있는 이름 "  "님 도와주세요!  테이블에 저장되어 있는 구조 메시지
-          imageUrl: 'https://contents.vryjam.com/wkJAoIPARB2oBeO.gif',
-          link: {
-            mobileWebUrl: 'http://127.0.0.1:8000/safeLoad/',
-            webUrl: 'http://127.0.0.1:8000/safeLoad/'
+
+        // 지도 위에 표시되고 있는 마커를 모두 제거합니다
+        function SremoveMarker() {
+          for (var i = 0; i < Smarkers.length; i++) {
+            Smarkers[i].setMap(null);
           }
-        },
-        social: {
-          //likeCount: 286,
-          //commentCount: 45,
-          //sharedCount: 845
-        },
-        buttons: [{
-          title: '웹으로 보기',
-          link: {
-            mobileWebUrl: 'http://127.0.0.1:8000/safeLoad/',
-            webUrl: 'http://127.0.0.1:8000/safeLoad/'
+          Smarkers = [];
+        }
+
+        // 검색결과 목록 하단에 페이지번호를 표시는 함수입니다
+        function SdisplayPagination(pagination) {
+          var paginationEl = document.getElementById('pagination'),
+            fragment = document.createDocumentFragment(),
+            i;
+
+          // 기존에 추가된 페이지번호를 삭제합니다
+          while (paginationEl.hasChildNodes()) {
+            paginationEl.removeChild(paginationEl.lastChild);
           }
-        }]
-      });
-      //]]>
-    </script>
+
+          for (i = 1; i <= pagination.last; i++) {
+            var el = document.createElement('a');
+            el.href = "#";
+            el.innerHTML = i;
+
+            if (i === pagination.current) {
+              el.className = 'on';
+            } else {
+              el.onclick = (function (i) {
+                return function () {
+                  pagination.gotoPage(i);
+                }
+              })(i);
+            }
+
+            fragment.appendChild(el);
+          }
+          paginationEl.appendChild(fragment);
+        }
+
+        // 검색결과 목록 또는 마커를 클릭했을 때 호출되는 함수입니다
+        // 인포윈도우에 장소명을 표시합니다
+        function SdisplayInfowindow(marker, title) {
+          var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
+
+          infowindow.setContent(content);
+          infowindow.open(map, marker);
+        }
+
+        // 검색결과 목록의 자식 Element를 제거하는 함수입니다
+        function SremoveAllChildNods(el) {
+          while (el.hasChildNodes()) {
+            el.removeChild(el.lastChild);
+          }
+        }
+              {% comment %} var geocoder = new kakao.maps.services.Geocoder();
+
+              var callback = function (result, status) {
+                if (status === kakao.maps.services.Status.OK) {
+                  detailAddr = !!result[0].road_address ? result[0].road_address
+                    .address_name : '';
+                  detailAddr += result[0].address.address_name;
+                };
+
+                console.log(detailAddr+'')
+              };
+              geocoder.coord2Address(locatelong, locatelat, callback);
+     console.log("밥ㅂ다"+locatelong)
+     console.log(locatelat) {% endcomment %}
+        $(function master() {
+          
+          // Geolocation API에 액세스할 수 있는지를 확인
+          if (navigator.geolocation) {
+            //위치 정보를 얻기
+            navigator.geolocation.getCurrentPosition(function (pos) {
+
+              // 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
+              var placeOverlay = new kakao.maps.CustomOverlay({
+                  zIndex: 1
+                }),
+                contentNode = document.createElement('div'), // 커스텀 오버레이의 컨텐츠 엘리먼트 입니다 
+                markers = [], // 마커를 담을 배열입니다
+                cctvmarkers = [],
+                slmarkers = [],
+                currCategory = ''; // 현재 선택된 카테고리를 가지고 있을 변수입니다
+
+              //var container = document.getElementById('map');
+              crd = pos.coords;
+              options = {
+                center: new kakao.maps.LatLng(crd.latitude, crd.longitude),
+                level: 3
+              };
+
+              map = new kakao.maps.Map(container, options);
+
+              var mapWrapper = document.getElementById('map'); //지도를 감싸고 있는 DIV태그
+              var mapCenter = new kakao.maps.LatLng(crd.latitude, crd.longitude);
+
+              map.addOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW); //지도 위에 로드뷰 도로 올리기
+
+              var rvContainer = document.getElementById('roadview'); //로드뷰를 표시할 div
+              var rv = new kakao.maps.Roadview(rvContainer); //로드뷰 객체
+              var rvClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+
+              toggleRoadview(mapCenter);
+
+              // 마커 이미지를 생성합니다.
+              var markImage = new kakao.maps.MarkerImage(
+                'https://t1.daumcdn.net/localimg/localimages/07/2018/pc/roadview_minimap_wk_2018.png',
+                new kakao.maps.Size(26, 46), {
+                  // 스프라이트 이미지를 사용합니다.
+                  // 스프라이트 이미지 전체의 크기를 지정하고
+                  spriteSize: new kakao.maps.Size(1666, 168),
+                  // 사용하고 싶은 영역의 좌상단 좌표를 입력합니다.
+                  // background-position으로 지정하는 값이며 부호는 반대입니다.
+                  spriteOrigin: new kakao.maps.Point(705, 114),
+                  offset: new kakao.maps.Point(13, 46)
+                }
+              );
+
+              // 드래그가 가능한 마커를 생성합니다.
+              var rvMarker = new kakao.maps.Marker({
+                image: markImage,
+                position: mapCenter,
+                draggable: true,
+                map: map
+              });
+
+              //마커에 dragend 이벤트를 할당합니다
+              kakao.maps.event.addListener(rvMarker, 'dragend', function (mouseEvent) {
+                var position = rvMarker.getPosition(); //현재 마커가 놓인 자리의 좌표
+                toggleRoadview(position); //로드뷰를 토글합니다
+              });
+
+              //지도에 클릭 이벤트를 할당합니다
+              kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+
+                // 현재 클릭한 부분의 좌표를 리턴 
+                var position = mouseEvent.latLng;
+
+                rvMarker.setPosition(position);
+                toggleRoadview(position); //로드뷰를 토글합니다
+              });
+
+              //로드뷰 toggle함수
+              function toggleRoadview(position) {
+
+                //전달받은 좌표(position)에 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄웁니다
+                rvClient.getNearestPanoId(position, 50, function (panoId) {
+                  if (panoId === null) {
+                    rvContainer.style.display = 'none'; //로드뷰를 넣은 컨테이너를 숨깁니다
+                    mapWrapper.style.width = '100%';
+                    map.relayout();
+                  } else {
+                    mapWrapper.style.width = '100%';
+                    map.relayout(); //지도를 감싸고 있는 영역이 변경됨에 따라, 지도를 재배열합니다
+                    rvContainer.style.display = 'block'; //로드뷰를 넣은 컨테이너를 보이게합니다
+                    rv.setPanoId(panoId, position); //panoId를 통한 로드뷰 실행
+                    rv.relayout(); //로드뷰를 감싸고 있는 영역이 변경됨에 따라, 로드뷰를 재배열합니다
+                  }
+                });
+              }
+              kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+
+                // 클릭한 위도, 경도 정보를 가져옵니다 
+                var latlng = mouseEvent.latLng;
+
+                var message = '클릭한 위치의 위도는 ' + latlng.getLat() + ' 이고, ';
+                message += '경도는 ' + latlng.getLng() + ' 입니다';
+
+                //var resultDiv = document.getElementById('result');
+                //resultDiv.innerHTML = message;
+
+              });
+
+
+              console.log(crd.latitude);
+              console.log(crd.longitude);
+
+
+
+              var markerPosition = new kakao.maps.LatLng(crd.latitude, crd.longitude);
+
+              marker = new kakao.maps.Marker({
+                position: markerPosition
+              });
+
+              marker.setMap(map);
+          
+
+              // 장소 검색 객체를 생성합니다
+              var ps = new kakao.maps.services.Places(map);
+              var geocoder = new kakao.maps.services.Geocoder();
+
+
+              let detailAddr
+
+              const callback = function (result, status) {
+                if (status === kakao.maps.services.Status.OK) {
+                  detailAddr = !!result[0].road_address ? result[0].road_address
+                    .address_name : '';
+                  detailAddr += result[0].address.address_name;
+                  console.log(detailAddr)
+
+                  Kakao.init('2657b72743ad28a548eee264e4dde1d1');
+                  // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                  Kakao.Link.createDefaultButton({
+                    container: '#kakao-link-btn',
+                    objectType: 'location',
+                    address: detailAddr, // 현재위치로 수정
+                    addressTitle:'의 위치', // 현재위치로 수정
+                    content: {
+                      title: 'Plz Help Me!!',
+                      description: '{{user.member_msg}}', // 테이블에 있는 이름 "  "님 도와주세요!  테이블에 저장되어 있는 구조 메시지
+                      imageUrl: 'https://contents.vryjam.com/wkJAoIPARB2oBeO.gif',
+                      link: {
+                        mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
+                        webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                      }
+                    },
+                    social: {
+                      //likeCount: 286,
+                      //commentCount: 45,
+                      //sharedCount: 845
+                    },
+                    buttons: [{
+                      title: '웹으로 보기',
+                      link: {
+                        mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
+                        webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                      }
+                    }]
+                  });
+                }}
+
+              geocoder.coord2Address(crd.longitude,crd.latitude, callback)
+
+              // 지도에 idle 이벤트를 등록합니다
+              //kakao.maps.event.addListener(map, 'idle', searchPlaces);
+
+              // 커스텀 오버레이의 컨텐츠 노드에 css class를 추가합니다 
+              contentNode.className = 'placeinfo_wrap';
+
+              // 커스텀 오버레이의 컨텐츠 노드에 mousedown, touchstart 이벤트가 발생했을때
+              // 지도 객체에 이벤트가 전달되지 않도록 이벤트 핸들러로 kakao.maps.event.preventMap 메소드를 등록합니다 
+              addEventHandle(contentNode, 'mousedown', kakao.maps.event.preventMap);
+              addEventHandle(contentNode, 'touchstart', kakao.maps.event.preventMap);
+
+              // 커스텀 오버레이 컨텐츠를 설정합니다
+              placeOverlay.setContent(contentNode);
+
+              // 각 카테고리에 클릭 이벤트를 등록합니다
+              addCategoryClickEvent();
+
+              // 엘리먼트에 이벤트 핸들러를 등록하는 함수입니다
+              function addEventHandle(target, type, callback) {
+                if (target.addEventListener) {
+                  target.addEventListener(type, callback);
+                } else {
+                  target.attachEvent('on' + type, callback);
+                }
+              }
+
+              // 카테고리 검색을 요청하는 함수입니다
+              function searchPlaces() {
+                if (!currCategory) {
+                  console.log("검색실패")
+                  return;
+                }
+                console.log("검색성공")
+                // 커스텀 오버레이를 숨깁니다 
+                placeOverlay.setMap(null);
+
+                // 지도에 표시되고 있는 마커를 제거합니다
+                removeMarker(); //********************************* 두개다?
+
+                ps.categorySearch(currCategory, placesSearchCB, {
+                  useMapBounds: true
+                });
+              }
+
+              // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
+              function placesSearchCB(data, status, pagination) {
+                if (status === kakao.maps.services.Status.OK) {
+                  console.log("장소검색이 완료")
+                  console.log(status)
+                  console.log(data)
+                  // 정상적으로 검색이 완료됐으면 지도에 마커를 표출합니다
+                  displayPlaces(data);
+                } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+                  // 검색결과가 없는경우 해야할 처리가 있다면 이곳에 작성해 주세요
+                  console.log("장소검색이 안되고 있어요!  " + currCategory)
+                  console.log(status)
+                  console.log(data)
+                  console.log(currCategory)
+
+                  if (currCategory == "CCTV") {
+                    data = [{% for ctv in cctv %} {
+                        cctv_pk: "{{ctv.id}}",
+                        cctv_mng: "{{ctv.CCTV_ADDRESS_NAME}}",
+                        x: "{{ctv.CCTV_LONGITUDE}}",
+                        y: "{{ctv.CCTV_LATITUDE}}",
+                      },
+                      {% endfor %}
+                    ]
+                  } else if (currCategory == "SL") {
+                    data = [{%for map in strlmp %} {
+                        strlamp_pk: "{{map.id}}",
+                        address_name: "{{map.STR_ADDRESS_NAME}}",
+                        x: "{{map.STR_LONGITUDE}}",
+                        y: "{{map.STR_LATITUDE}}",
+                      },
+                      {% endfor %}
+                    ]
+                  }
+                  console.log(data)
+                  displayPlaces(data);
+                } else if (status === kakao.maps.services.Status.ERROR) {
+                  // 에러로 인해 검색결과가 나오지 않은 경우 해야할 처리가 있다면 이곳에 작성해 주세요
+
+                }
+              }
+
+
+
+              var cctvcnt = 0;
+              var slcnt = 0;
+              var circles = new Array();
+              var circle;
+              // 지도에 마커를 표출하는 함수입니다
+              function displayPlaces(places) {
+
+                // 몇번째 카테고리가 선택되어 있는지 얻어옵니다
+                // 이 순서는 스프라이트 이미지에서의 위치를 계산하는데 사용됩니다
+                var order = document.getElementById(currCategory).getAttribute('data-order');
+
+
+                for (var i = 0; i < places.length; i++) {
+
+                  // 마커를 생성하고 지도에 표시합니다
+                  var marker = addMarker(new kakao.maps.LatLng(places[i].y, places[i].x), order);
+                  var radius2 = 20;
+                  var mapCenter2 = new kakao.maps.LatLng(places[i].y, places[i].x); /// 반경 지우는 법 찾아내
+
+                  if (currCategory == "SL") {
+                    //console.log(mapCenter2)
+                    fnCircle(places[i].y, places[i].x);
+                    slcnt++;
+                  } else {
+                    cctvcnt++;
+                  }
+
+                  // 마커와 검색결과 항목을 클릭 했을 때
+                  // 장소정보를 표출하도록 클릭 이벤트를 등록합니다
+                  (function (marker, place) {
+                    kakao.maps.event.addListener(marker, 'click', function () {
+                      displayPlaceInfo(place);
+                    });
+                  })(marker, places[i]);
+                }
+                console.log("마커길이 : " + markers.length)
+              }
+
+              // 반경을 찍어주는 함수입니다.
+              function fnCircle(Lat, Lng) { // 서클을 객체에 담을 것. ********************
+                if (circle) { // 최초 실행시에는 circle이 없을테니 예외처리를 해줍니다.
+                  // circle.setMap(null);
+                }
+
+                // 이 후로는 위에 질문에 작성하신 코드와 똑같이 진행하시면 됩니다.
+                circle = new kakao.maps.Circle({
+                  map: map,
+                  center: new kakao.maps.LatLng(Lat, Lng),
+                  radius: 20,
+                  strokeWeight: 2,
+                  strokeColor: '#D7DF01',
+                  strokeOpacity: 0.8,
+                  strokeStyle: 'dashed',
+                  fillColor: '#FFFF00',
+                  fillOpacity: 0.5
+                });
+                circle.setMap(map);
+                circles.push(circle);
+              }
+
+              // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
+              function addMarker(position, order) {
+                var imageSrc =
+                  'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
+                  imageSrc2 = '{% static 'images / marker.png ' %}',
+                  imageSize = new kakao.maps.Size(27, 28), // 마커 이미지의 크기
+                  imgOptions = {
+                    spriteSize: new kakao.maps.Size(72, 208), // 스프라이트 이미지의 크기
+                    spriteOrigin: new kakao.maps.Point(46, (order * 36)), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
+                    offset: new kakao.maps.Point(11, 28) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
+                  },
+                  markerImage = new kakao.maps.MarkerImage(imageSrc2, imageSize, imgOptions),
+                  marker = new kakao.maps.Marker({
+                    position: position, // 마커의 위치
+                    image: markerImage
+                  });
+
+                marker.setMap(map); // 지도 위에 마커를 표출합니다
+                markers.push(marker); // 배열에 생성된 마커를 추가합니다
+
+                if (currCategory == "CCTV")
+                  cctvmarkers.push(marker);
+                else
+                  slmarkers.push(marker);
+
+
+                return marker;
+              }
+
+              // 지도 위에 표시되고 있는 마커를 모두 제거합니다
+              function removeMarker() {
+
+                if (currCategory == "CCTV") {
+                  for (var i = 0; i < cctvcnt; i++) {
+                    cctvmarkers[i].setMap(null);
+                  }
+                  cctvmarkers = [];
+                  cctvcnt = 0;
+                } else if (currCategory == "SL") {
+                  for (var i = 0; i < slcnt; i++) {
+                    slmarkers[i].setMap(null);
+                  }
+                  slmarkers = [];
+                  slcnt = 0;
+                } else {
+                  for (var i = 0; i < markers.length; i++) {
+                    markers[i].setMap(null);
+                  }
+                  markers = [];
+                  slcnt = 0;
+                  ccvtcnt = 0;
+                }
+              }
+
+              // 클릭한 마커에 대한 장소 상세정보를 커스텀 오버레이로 표시하는 함수입니다
+              function displayPlaceInfo(place) {
+
+                var content = '<div class="placeinfo">'
+                if (place.cctv_mng) {
+                  content += ' <a class="" title="' + place.cctv_add + '">' + "CCTV " + place.cctv_pk + '</a>' +
+                    '<span class="tel">' + place.cctv_mng + '</span>';
+
+                } else {
+                  content += ' <a class="" title="' + place.cctv_add + '">' + "가로등 " + place.strlamp_pk +
+                    '</a>' + '<span class="tel">' + place.address_name + '</span>';
+                }
+                content += '</div>' + '<div class="after"></div>';
+
+                contentNode.innerHTML = content;
+                placeOverlay.setPosition(new kakao.maps.LatLng(place.y, place.x));
+                placeOverlay.setMap(map);
+              }
+
+
+              // 각 카테고리에 클릭 이벤트를 등록합니다
+              function addCategoryClickEvent() {
+                var category = document.getElementById('category'),
+                  children = category.children;
+
+                for (var i = 0; i < children.length; i++) {
+                  children[i].onclick = onClickCategory;
+                }
+              }
+
+              // 카테고리를 클릭했을 때 호출되는 함수입니다
+              function onClickCategory() {
+                var id = this.id,
+                  className = this.className;
+
+                console.log(id)
+                console.log(className)
+
+                placeOverlay.setMap(null);
+
+                if (className === 'on') {
+                  currCategory = '';
+                  changeCategoryClass();
+                  removeMarker();
+                  for (var j = 0; j < circles.length; j++)
+                    circles[j].setMap(null);
+                } else {
+                  currCategory = id;
+                  changeCategoryClass(this);
+                  searchPlaces();
+                }
+              }
+              Kakao.init('2657b72743ad28a548eee264e4dde1d1');
+              // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+              Kakao.Link.createDefaultButton({
+                container: '#kakao-link-btn',
+                objectType: 'location',
+                address: detailAddr+'', // 현재위치로 수정
+                addressTitle:detailAddr+'', // 현재위치로 수정
+                content: {
+                  title: 'Plz Help Me!!' + detailAddr,
+                  description: '{{user.member_msg}}', // 테이블에 있는 이름 "  "님 도와주세요!  테이블에 저장되어 있는 구조 메시지
+                  imageUrl: 'https://contents.vryjam.com/wkJAoIPARB2oBeO.gif',
+                  link: {
+                    mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
+                    webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                  }
+                },
+                social: {
+                  //likeCount: 286,
+                  //commentCount: 45,
+                  //sharedCount: 845
+                },
+                buttons: [{
+                  title: '웹으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
+                    webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                  }
+                }]
+              });
+              // 클릭된 카테고리에만 클릭된 스타일을 적용하는 함수입니다
+              function changeCategoryClass(el) {
+                var category = document.getElementById('category'),
+                  children = category.children,
+                  i;
+
+                for (i = 0; i < children.length; i++) {
+                  children[i].className = '';
+                }
+
+                if (el) {
+                  el.className = 'on';
+                }
+              }
+            });
+          } else {
+            alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.")
+          }
+        });
+      </script>
 </body>
 
 </html>

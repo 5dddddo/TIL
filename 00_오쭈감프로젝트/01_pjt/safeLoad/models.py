@@ -15,7 +15,7 @@ class StreetlampKind(models.Model):
 
 
 class Streetlamp(models.Model):
-    STR_ADDRESS_NAME = models.CharField(max_length=30)
+    STR_ADDRESS_NAME = models.CharField(max_length=50)
     STR_KIND = models.ForeignKey(StreetlampKind, on_delete=models.CASCADE)
     STR_LONGITUDE = models.CharField(max_length=20)
     STR_LATITUDE = models.CharField(max_length=20)
@@ -39,7 +39,7 @@ class CCTVKind(models.Model):
 
 
 class CCTV(models.Model):
-    CCTV_ADDRESS_NAME = models.CharField(max_length=30)
+    CCTV_ADDRESS_NAME = models.CharField(max_length=50)
     CCTV_KIND = models.ForeignKey(CCTVKind, on_delete=models.CASCADE)
     CCTV_LONGITUDE = models.CharField(max_length=20)
     CCTV_LATITUDE = models.CharField(max_length=20)
