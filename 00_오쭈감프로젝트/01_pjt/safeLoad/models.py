@@ -14,17 +14,17 @@ class StreetlampKind(models.Model):
         return f'{self.pk}'
 
 
-class Streetlamp(models.Model):
-    STR_ADDRESS_NAME = models.CharField(max_length=50)
-    STR_KIND = models.ForeignKey(StreetlampKind, on_delete=models.CASCADE)
-    STR_LONGITUDE = models.CharField(max_length=20)
-    STR_LATITUDE = models.CharField(max_length=20)
+# class Streetlamp(models.Model):
+#     STR_ADDRESS_NAME = models.CharField(max_length=50)
+#     STR_KIND = models.ForeignKey(StreetlampKind, on_delete=models.CASCADE)
+#     STR_LONGITUDE = models.CharField(max_length=20)
+#     STR_LATITUDE = models.CharField(max_length=20)
 
-    class Meta:
-        ordering = ['pk', ]
+#     class Meta:
+#         ordering = ['pk', ]
 
-    def __str__(self):
-        return f'{self.pk}'
+#     def __str__(self):
+#         return f'{self.pk}'
 
 
 class CCTVKind(models.Model):

@@ -325,12 +325,13 @@
             <div class="col-12">
               <div class="row align-items-center">
                 <div class="col-lg-6 mb-4">
-                  <h1 data-aos="fade-up" data-aos-delay="100">Learn From The Expert</h1>
-                  <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
+                                 <h1 data-aos="fade-up" data-aos-delay="100">EyeLight와 함께라면<br> 이제 안심하세요!</h1>
+                  <p class="mb-4" data-aos="fade-up" data-aos-delay="200">EyeLight가 어두운 길을 밝혀드릴게요.<br>
+                  
+                     {% if user.is_anonymous %}
                   <p data-aos="fade-up" data-aos-delay="300"><a href="{% url 'accounts:signup' %}"
                       class="btn btn-primary py-3 px-5 btn-pill">Sign Up Now</a></p>
-
+          {% endif %}
                 </div>
 
                 <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
@@ -344,7 +345,7 @@
                     <div class="form-group">
                       <input type="password" class="form-control" name="password" placeholder="Password">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group justify-content-center">
                       <input type="submit" class="btn btn-primary btn-pill" value="Login"></a>
                       <a href="{% provider_login_url 'kakao' %}" class="btn btn-warning btn-pill">Kakao Login</a>
                     </div>
@@ -396,15 +397,13 @@
         <form onsubmit="SsearchPlaces(); return false;">
           <div class="d-flex mb-3 justify-content-center">
             <div class="col-md-5">
+            
               <input class='form-control text-center' type="text" value="역삼역" id="keyword" size="15">
             </div>
             <button class='btn btn-warning' type="submit"><span class="image blinking">검색하기</span></button>
 
-            위도 : <h1 id='latitude'></h1>
-            경도 : <h1 id='longitude'></h1>
-
-
           </div>
+
         </form>
         {% comment %} <div class="owl-carousel col-12 nonloop-block-14"> {% endcomment %}
           <div class="map_wrap">
@@ -939,14 +938,14 @@
                     container: '#kakao-link-btn',
                     objectType: 'location',
                     address: detailAddr, // 현재위치로 수정
-                    addressTitle:'의 위치', // 현재위치로 수정
+                    addressTitle:'현재 신고자 위치', // 현재위치로 수정
                     content: {
                       title: 'Plz Help Me!!',
                       description: '{{user.member_msg}}', // 테이블에 있는 이름 "  "님 도와주세요!  테이블에 저장되어 있는 구조 메시지
                       imageUrl: 'https://contents.vryjam.com/wkJAoIPARB2oBeO.gif',
                       link: {
-                        mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
-                        webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                        mobileWebUrl: 'https://aqueous-reaches-12208.herokuapp.com',
+                        webUrl: 'https://aqueous-reaches-12208.herokuapp.com'
                       }
                     },
                     social: {
@@ -957,8 +956,8 @@
                     buttons: [{
                       title: '웹으로 보기',
                       link: {
-                        mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
-                        webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                        mobileWebUrl: 'https://aqueous-reaches-12208.herokuapp.com',
+                        webUrl: 'https://aqueous-reaches-12208.herokuapp.com'
                       }
                     }]
                   });
@@ -1118,7 +1117,7 @@
               function addMarker(position, order) {
                 var imageSrc =
                   'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-                  imageSrc2 = '{% static 'images / marker.png ' %}',
+                  imageSrc2 = '{% static 'images/marker.png ' %}',
                   imageSize = new kakao.maps.Size(27, 28), // 마커 이미지의 크기
                   imgOptions = {
                     spriteSize: new kakao.maps.Size(72, 208), // 스프라이트 이미지의 크기
@@ -1220,7 +1219,7 @@
                   searchPlaces();
                 }
               }
-              Kakao.init('2657b72743ad28a548eee264e4dde1d1');
+            /*  Kakao.init('2657b72743ad28a548eee264e4dde1d1');
               // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
               Kakao.Link.createDefaultButton({
                 container: '#kakao-link-btn',
@@ -1228,12 +1227,12 @@
                 address: detailAddr+'', // 현재위치로 수정
                 addressTitle:detailAddr+'', // 현재위치로 수정
                 content: {
-                  title: 'Plz Help Me!!' + detailAddr,
+                  title: 'Plz Help Me!!',
                   description: '{{user.member_msg}}', // 테이블에 있는 이름 "  "님 도와주세요!  테이블에 저장되어 있는 구조 메시지
                   imageUrl: 'https://contents.vryjam.com/wkJAoIPARB2oBeO.gif',
                   link: {
-                    mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
-                    webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                    mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/',
+                    webUrl: 'https://agile-bastion-22080.herokuapp.com/'
                   }
                 },
                 social: {
@@ -1244,11 +1243,11 @@
                 buttons: [{
                   title: '웹으로 보기',
                   link: {
-                    mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad',
-                    webUrl: 'https://agile-bastion-22080.herokuapp.com/safeLoad'
+                    mobileWebUrl: 'https://agile-bastion-22080.herokuapp.com/',
+                    webUrl: 'https://agile-bastion-22080.herokuapp.com/'
                   }
                 }]
-              });
+              }); */
               // 클릭된 카테고리에만 클릭된 스타일을 적용하는 함수입니다
               function changeCategoryClass(el) {
                 var category = document.getElementById('category'),
