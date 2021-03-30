@@ -29,7 +29,7 @@ pickleshare==0.7.5
 prompt-toolkit==2.0.10
 psycopg2==2.8.4
 pycodestyle==2.5.0
-Pygments==2.4.2
+Pygments==2.7.4
 pylint==2.4.4
 python-decouple==3.3
 python3-openid==3.1.0
